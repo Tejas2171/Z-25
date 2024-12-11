@@ -8,14 +8,29 @@
 }
 
 .x {
-  /* background-image: url('running.png');
+  position: relative;
+  background-color: #303030;
+  color: white; /* Ensure content is visible over the background */
+  z-index: 1; /* Keep content above the pseudo-element */
+}
+
+.x::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('—Pngtree—the running man_503706.png');
   background-size: cover;
+  /* transform: translateY(-800px); */
+  transform: translate(200px, -400px);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-blend-mode: overlay; */
-  background-color: #303030;
+  opacity: 0.2; /* Adjust this value for desired transparency */
+  z-index: -1; /* Place it behind the content */
 }
+
 
 #theme {
   -webkit-text-fill-color: #F0BD1B;

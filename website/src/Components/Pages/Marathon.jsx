@@ -133,9 +133,10 @@ const Marathon = () => {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Goodies */}
-      <section id="goodies" className="py-16 w-full">
+      <section id="goodies" className="bg-siteGray py-16 w-full">
         <div>
           <h1 className="reveal">《 DELIVERABLES 》</h1>
           <hr className="w-[700px] mx-auto my-5 border-siteGreen border-2"/>
@@ -225,7 +226,6 @@ const Marathon = () => {
           </div>
         </div>
       </section>
-      </div>
 
       {/* Footer */}
       <footer className="">
