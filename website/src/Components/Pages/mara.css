@@ -6,7 +6,25 @@
   font-family: myFont2;
   src:url('InstrumentSans-VariableFont_wdth,wght.ttf')
 }
+@font-face {
+  font-family: myFont3;
+  src:url('PantonRustHeavy-GrSh.ttf')
+}
+@font-face {
+  font-family: myFont4;
+  src:url('public/DIMIS___.TTF')
+}
 
+
+.smlg {
+  font-family: myFont4;
+  text-align: center;
+  font-size: 180px;
+  font-weight:900;
+  overflow: hidden;
+  line-height: 1;
+  color: #303030;
+}
 
 .x {
   position: relative;

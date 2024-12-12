@@ -257,8 +257,9 @@ const Marathon = () => {
       {/* Footer */}
       <footer className="">
         <div className="container flex min-h-[650px] bg-siteGreen">
-          <div className="bg-siteGreen w-full">
-            <img src="Screenshot 2024-12-08 205624.png" />
+          <div className="smlg bg-siteGreen w-full flex flex-col justify-center items-center">
+            <p>MARA</p>
+            <p>THON</p>
           </div>
           <div className="contact bg-siteWhite w-full py-12 px-6">
             <div className="mb-12">
