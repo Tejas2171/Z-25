@@ -7,6 +7,7 @@
   src:url('InstrumentSans-VariableFont_wdth,wght.ttf')
 }
 
+
 .x {
   position: relative;
   background-color: #303030;
@@ -23,18 +24,18 @@
   bottom: 0;
   background-image: url('—Pngtree—the running man_503706.png');
   background-size: cover;
-  /* transform: translateY(-800px); */
-  transform: translate(200px, -400px);
+  transform: translateY(-300px);
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.2; /* Adjust this value for desired transparency */
-  z-index: -1; /* Place it behind the content */
+  opacity: 0.2;
+  z-index: -1; 
 }
 
 
 #theme {
   -webkit-text-fill-color: #F0BD1B;
   margin: 0;
+  width: 100%;
   font-size: 30px;
 }
 
@@ -65,12 +66,19 @@ h1 {
 .category_card {
   width: 350px;
   height: 350px;
+  transition: ease-in-out;
+  transition-duration: 0.4s;
 }
   .category_card h2,button {
     -webkit-text-fill-color: #F0BD1B;
   }
   .category_card p {
     -webkit-text-fill-color: #f2f2e6;
+  }
+  .category_card:hover {
+    width: 100vh;
+    transition: ease-in-out;
+    transition-duration: 0.4s;
   }
 
 
@@ -183,4 +191,138 @@ h1 {
 .reveal.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  #theme, #timings, #categories, #goodies {
+    font-size: 16px;
+  }
+
+  .x::after {
+    transform: translateY(-200px);
+  }
+
+  .category_card {
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .each-card {
+    margin-bottom: 20px;
+  }
+
+  .each-card img {
+    height: auto;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hover-effect:hover {
+    transform: scale(1.02) rotate(0deg);
+  }
+
+  .contact h2 {
+    font-size: 24px;
+  }
+  .contact h3 {
+    font-size: 20px;
+  }
+
+  .contact .space-y-6 > div {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  #theme, #timings, #categories, #goodies {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .inside-theme {
+    padding: 60px 0 0 0;
+  }
+  .inside-theme > * {
+    margin: 0;
+    padding: 0px 50px;
+    text-align: center;
+  }
+  .theme-title {
+    padding: 0;
+    margin: 0;
+  }
+  .Theme-description {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-40px);
+  }
+
+  .inside-timings {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Add space between items */
+    margin: 0;
+    padding-top: 60px;
+    /* font-size: 14px; */
+  }
+
+  .inside-inside-timings {
+    flex: 1; /* Ensure equal spacing for child elements */
+    text-align: center; /* Optional: Center-align text inside each element */
+    margin: 0 10px; /* Optional: Add spacing between items */
+  }
+
+  .inside-inside-timings img {
+    width: 100%; /* Ensure images adapt to the container width */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 1; /* Ensure both images are fully visible */
+  }
+  .inside-inside-timings .img-1 {
+    display: none; /* Hide the default image */
+  }
+  .inside-inside-timings .img-2 {
+    display: block; /* Show the hover image by default */
+    position: static; /* Reset position to avoid overlap */
+  }
+
+
+  .category_card {
+    padding: 10px;
+    width: 300px;
+    margin: 0px auto;
+  }
+
+  .contact h2 {
+    font-size: 20px;
+  }
+  .contact h3 {
+    font-size: 18px;
+  }
 }

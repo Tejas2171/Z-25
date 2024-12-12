@@ -41,7 +41,7 @@ const Marathon = () => {
 
       {/* Theme Section */}
       <section id="theme" className="container">
-        <div className="bg-siteGreen py-32">
+        <div className="inside-theme bg-siteGreen py-32">
           <div className="w-full flex p-20 gap-20">
             <div className="Theme-title">
               <h1 className="reveal">RUN FOR</h1>
@@ -67,23 +67,50 @@ const Marathon = () => {
       <div className="x">
       {/* Timings and Location */}
       <section id="timings" className="">
-        <div className="w-full flex justify-evenly py-40 pt-48 ">
-          <div>
-            <img className="h-56" src="Time.png" alt="" />
+        <div className="inside-timings w-full flex justify-evenly py-40 pt-48 ">
+          <div className="inside-inside-timings relative group">
+            <img
+              className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+              src="Time.png"
+              alt="default"
+            />
+            <img
+              className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out "
+              src="5am.png"
+              alt="hover"
+            />
             <div className="py-8">
-              <p className="text-center "> TIME </p>
+              <p className="text-center">TIME</p>
             </div>
           </div>
-          <div>
-            <img className="h-56" src="Date.webp" alt="" />
+          <div className="inside-inside-timings relative group">
+            <img
+              className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+              src="Date.webp"
+              alt="default"
+            />
+            <img
+              className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+              src="12jan.png"
+              alt="hover"
+            />
             <div className="py-8">
-              <p className="text-center "> DATE </p>
+              <p className="text-center">DATE</p>
             </div>
           </div>
-          <div>
-            <img className="h-56" src="location-removebg-preview.png" alt="" />
+          <div className="inside-inside-timings relative group">
+            <img
+              className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+              src="location-removebg-preview.png"
+              alt="default"
+            />
+            <img
+              className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+              src="ground.png"
+              alt="hover"
+            />
             <div className="py-8">
-              <p className="text-center "> LOCATION </p>
+              <p className="text-center">LOCATION</p>
             </div>
           </div>
         </div>
@@ -94,7 +121,7 @@ const Marathon = () => {
         <div>
           <div>
             <h1 className="reveal">《 CATEGORIES 》</h1>
-            <hr className="w-[700px] mx-auto my-5 border-siteGreen border-2"/>
+            <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2"/>
           </div>
           <div className="flex justify-center py-32">
             <div className="card relative rounded-2xl">
@@ -138,8 +165,8 @@ const Marathon = () => {
       {/* Goodies */}
       <section id="goodies" className="bg-siteGray py-16 w-full">
         <div>
-          <h1 className="reveal">《 DELIVERABLES 》</h1>
-          <hr className="w-[700px] mx-auto my-5 border-siteGreen border-2"/>
+          <h1 className="reveal">《 GOODIES 》</h1>
+          <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2"/>
         </div>
         <div className="py-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-24 max-w-[80%] mx-auto">
           <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
@@ -275,7 +302,7 @@ const Marathon = () => {
                 </a>
               </div>
             </div>
-            <hr className="border-t-2 border-siteGreen my-4" />
+            {/* <hr className="border-t-2 border-siteGreen my-4" /> */}
             <div className="text-center">
               <h2 className="text-5xl mb-6">For Any Queries, Contact</h2>
               <div className="space-y-6">
@@ -293,7 +320,7 @@ const Marathon = () => {
                 </div>
               </div>
             </div>
-            <hr className="border-t-2 border-siteGreen my-4" />
+            {/* <hr className="border-t-2 border-siteGreen my-4" /> */}
             <div className="flex-col justify-center items-center">
               <div className="text-2xl">
                 <h3>Copyright © 2025. All Rights Reserved.</h3>
