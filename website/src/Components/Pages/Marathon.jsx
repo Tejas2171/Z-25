@@ -37,7 +37,9 @@ const Marathon = () => {
   return (
     <div className="">
       {/* Hero Section */}
-      <section id="home"></section>
+      <section id="hero" className="flex smlg justify-center items-center">
+          <p>MARATHON</p>
+      </section>
 
       {/* Theme Section */}
       <section id="theme" className="container">
