@@ -37,8 +37,11 @@ const Marathon = () => {
   return (
     <div className="">
       {/* Hero Section */}
-      <section id="hero" className="flex smlg justify-center items-center">
-          <p>MARATHON</p>
+      <section id="hero" className="">
+          <div className="un z-20 relative">ZEST`25</div>
+          <div className="main z-10 flex smlgmain justify-center items-center">
+            <p>MARATHON</p>
+          </div>
       </section>
 
       {/* Theme Section */}
@@ -81,7 +84,7 @@ const Marathon = () => {
               src="5am.png"
               alt="hover"
             />
-            <div className="py-8">
+            <div className="pt-8">
               <p className="text-center">TIME</p>
             </div>
           </div>
@@ -96,7 +99,7 @@ const Marathon = () => {
               src="12jan.png"
               alt="hover"
             />
-            <div className="py-8">
+            <div className="pt-8">
               <p className="text-center">DATE</p>
             </div>
           </div>
@@ -111,7 +114,7 @@ const Marathon = () => {
               src="ground.png"
               alt="hover"
             />
-            <div className="py-8">
+            <div className="pt-8">
               <p className="text-center">LOCATION</p>
             </div>
           </div>
@@ -120,12 +123,12 @@ const Marathon = () => {
 
       {/* Categories */}
       <section id="categories" className="container w-full p-16">
-        <div>
-          <div>
+        <div className="inside-categories">
+          <div className="inside-inside-categories1">
             <h1 className="reveal">《 CATEGORIES 》</h1>
             <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2"/>
           </div>
-          <div className="flex justify-center py-32">
+          <div className="inside-inside-categories2 flex justify-center py-32">
             <div className="card relative rounded-2xl">
               <div className="lines"></div>
               <div className="category_card w-full flex flex-col justify-evenly items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg">
@@ -165,90 +168,90 @@ const Marathon = () => {
       </div>
 
       {/* Goodies */}
-      <section id="goodies" className="bg-siteGray py-16 w-full">
+      <section id="goodies" className="bg-siteGray py-32 w-full">
         <div>
           <h1 className="reveal">《 GOODIES 》</h1>
           <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2"/>
         </div>
-        <div className="py-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-24 max-w-[80%] mx-auto">
+        <div className="py-6 md:py-32 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-24 max-w-[80%] mx-auto">
           <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-10">
+            <div className="p-2 md:p-10">
               <img
                 src="T-shirt (2).png"
                 alt="Image 1"
-                className="w-full h-48 object-cover"
+                className="w-full h-16 md:h-48 object-cover"
               />
             </div>
-            <div className="pb-8">
-              <h4 className="text-3xl text-center font-extrabold hover-effect">
+            <div className="pb-1 md:pb-8">
+              <h4 className="text-xs md:text-3xl text-center font-extrabold hover-effect">
                 Finishers Medal
               </h4>
             </div>
           </div>
           <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-10">
+            <div className="p-2 md:p-10">
               <img
                 src="medals (2).png"
                 alt="Image 1"
                 className="w-full h-48 object-cover"
               />
             </div>
-            <div className="pb-8">
-              <h4 className="text-3xl text-center font-extrabold">T-shirt</h4>
+            <div className="pb-1 md:pb-8">
+              <h4 className="text-xs md:text-3xl text-center font-extrabold">T-shirt</h4>
             </div>
           </div>
           <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-10">
+            <div className="p-2 md:p-10">
               <img
                 src="certificates (2).png"
                 alt="Image 1"
                 className="w-full h-48 object-cover"
               />
             </div>
-            <div className="pb-8">
-              <h4 className="text-3xl text-center font-extrabold">
+            <div className="pb-1 md:pb-8">
+              <h4 className="text-xs md:text-3xl text-center font-extrabold">
                 Certificates
               </h4>
             </div>
           </div>
           <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-10">
+            <div className="p-2 md:p-10">
               <img
                 src="refreshments (2).png"
                 alt="Image 1"
                 className="w-full h-48 object-cover"
               />
             </div>
-            <div className="pb-8">
-              <h4 className="text-3xl text-center font-extrabold">
+            <div className="pb-1 md:pb-8">
+              <h4 className="text-xs md:text-3xl text-center font-extrabold">
                 Refreshments
               </h4>
             </div>
           </div>
           <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-10">
+            <div className="p-2 md:p-10">
               <img
                 src="welcome (2).png"
                 alt="Image 1"
                 className="w-full h-48 object-cover"
               />
             </div>
-            <div className="pb-8">
-              <h4 className="text-3xl text-center font-extrabold">
+            <div className="pb-1 md:pb-8">
+              <h4 className="text-xs md:text-3xl text-center font-extrabold">
                 Welcome Kit
               </h4>
             </div>
           </div>
           <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-10">
+            <div className="p-2 md:p-10">
               <img
                 src="medical (2).png"
                 alt="Image 1"
                 className="w-full h-48 object-cover"
               />
             </div>
-            <div className="pb-8">
-              <h4 className="text-3xl text-center font-extrabold">
+            <div className="pb-1 md:pb-8">
+              <h4 className="text-xs md:text-3xl text-center font-extrabold">
                 Medical Support
               </h4>
             </div>
@@ -257,8 +260,8 @@ const Marathon = () => {
       </section>
 
       {/* Footer */}
-      <footer className="">
-        <div className="container flex min-h-[650px] bg-siteGreen">
+      <footer className="footer">
+        <div className="left-side container flex min-h-[650px] bg-siteGreen">
           <div className="smlg bg-siteGreen w-full flex flex-col justify-center items-center">
             <p>MARA</p>
             <p>THON</p>
@@ -266,7 +269,7 @@ const Marathon = () => {
           <div className="contact bg-siteWhite w-full py-12 px-6">
             <div className="mb-12">
               <h2 className="text-5xl text-center mb-6">Follow Us</h2>
-              <div className="flex justify-center gap-8">
+              <div className="logos flex justify-center gap-8">
                 {/* Instagram */}
                 <a
                   href="https://instagram.com"
@@ -305,7 +308,7 @@ const Marathon = () => {
                 </a>
               </div>
             </div>
-            {/* <hr className="border-t-2 border-siteGreen my-4" /> */}
+            <hr className="border-t-2 border-siteGreen my-4" />
             <div className="text-center">
               <h2 className="text-5xl mb-6">For Any Queries, Contact</h2>
               <div className="space-y-6">
@@ -323,7 +326,7 @@ const Marathon = () => {
                 </div>
               </div>
             </div>
-            {/* <hr className="border-t-2 border-siteGreen my-4" /> */}
+            <hr className="border-t-2 border-siteGreen my-4" />
             <div className="flex-col justify-center items-center">
               <div className="text-2xl">
                 <h3>Copyright © 2025. All Rights Reserved.</h3>
