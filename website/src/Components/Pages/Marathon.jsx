@@ -45,9 +45,9 @@ const Marathon = () => {
       </section>
 
       {/* Theme Section */}
-      <section id="theme" className="container">
-        <div className="inside-theme bg-siteGreen py-32">
-          <div className="w-full flex p-20 gap-20">
+      <section id="theme" className="">
+        <div className="inside-theme w-full bg-siteGreen py-32">
+          <div className="w-full flex gap-20 p-20">
             <div className="Theme-title">
               <h1 className="reveal">RUN FOR</h1>
               <h1 className="reveal">UPLIFTMENT</h1>
@@ -69,7 +69,7 @@ const Marathon = () => {
         </div>
       </section>
 
-      <div className="x">
+      <div className="x w-full">
       {/* Timings and Location */}
       <section id="timings" className="">
         <div className="inside-timings w-full flex justify-evenly py-40 pt-48 ">
@@ -122,7 +122,7 @@ const Marathon = () => {
       </section>
 
       {/* Categories */}
-      <section id="categories" className="container w-full p-16">
+      <section id="categories" className="p-16 ">
         <div className="inside-categories">
           <div className="inside-inside-categories1">
             <h1 className="reveal">《 CATEGORIES 》</h1>
@@ -261,7 +261,7 @@ const Marathon = () => {
 
       {/* Footer */}
       <footer className="footer">
-        <div className="left-side container flex min-h-[650px] bg-siteGreen">
+        <div className="left-side  flex min-h-[650px] bg-siteGreen">
           <div className="smlg bg-siteGreen w-full flex flex-col justify-center items-center">
             <p>MARA</p>
             <p>THON</p>
