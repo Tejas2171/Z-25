@@ -14,7 +14,7 @@ const Marathon = () => {
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
           observer.unobserve(entry.target); // Stop observing once revealed
@@ -23,7 +23,7 @@ const Marathon = () => {
     }, options);
 
     // Observe each element with the 'reveal' class
-    revealElements.forEach(element => {
+    revealElements.forEach((element) => {
       observer.observe(element);
     });
 
@@ -33,15 +33,26 @@ const Marathon = () => {
     };
   }, []);
 
-
   return (
     <div className="">
       {/* Hero Section */}
       <section id="hero" className="">
-          <div className="un z-20 relative">ZEST`25</div>
-          <div className="main z-10 flex smlgmain justify-center items-center">
-            <p>MARATHON</p>
-          </div>
+        <video
+          autoPlay
+          muted
+          loop
+          className="z-10 absolute top-0 left-0 w-full h-full object-cover opacity-40"
+        >
+          <source
+            src="Marathon-edit.mov"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div className="un z-30 relative">ZEST`25</div>
+        <div className="main z-20 flex smlgmain justify-center items-center">
+          MARATHON
+        </div>
       </section>
 
       {/* Theme Section */}
@@ -70,108 +81,113 @@ const Marathon = () => {
       </section>
 
       <div className="x w-full">
-      {/* Timings and Location */}
-      <section id="timings" className="">
-        <div className="inside-timings w-full flex justify-evenly py-40 pt-48 ">
-          <div className="inside-inside-timings relative group">
-            <img
-              className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
-              src="Time.png"
-              alt="default"
-            />
-            <img
-              className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out "
-              src="5am.png"
-              alt="hover"
-            />
-            <div className="pt-8">
-              <p className="text-center">TIME</p>
+        {/* Timings and Location */}
+        <section id="timings" className="">
+          <div className="inside-timings w-full flex justify-evenly py-40 pt-48 ">
+            <div className="inside-inside-timings relative group">
+              <img
+                className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+                src="Time.png"
+                alt="default"
+              />
+              <img
+                className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out "
+                src="5am.png"
+                alt="hover"
+              />
+              <div className="pt-8">
+                <p className="text-center">TIME</p>
+              </div>
+            </div>
+            <div className="inside-inside-timings relative group">
+              <img
+                className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+                src="Date.webp"
+                alt="default"
+              />
+              <img
+                className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                src="12jan.png"
+                alt="hover"
+              />
+              <div className="pt-8">
+                <p className="text-center">DATE</p>
+              </div>
+            </div>
+            <div className="inside-inside-timings relative group">
+              <img
+                className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+                src="location-removebg-preview.png"
+                alt="default"
+              />
+              <img
+                className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+                src="ground.png"
+                alt="hover"
+              />
+              <div className="pt-8">
+                <p className="text-center">LOCATION</p>
+              </div>
             </div>
           </div>
-          <div className="inside-inside-timings relative group">
-            <img
-              className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
-              src="Date.webp"
-              alt="default"
-            />
-            <img
-              className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
-              src="12jan.png"
-              alt="hover"
-            />
-            <div className="pt-8">
-              <p className="text-center">DATE</p>
-            </div>
-          </div>
-          <div className="inside-inside-timings relative group">
-            <img
-              className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
-              src="location-removebg-preview.png"
-              alt="default"
-            />
-            <img
-              className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
-              src="ground.png"
-              alt="hover"
-            />
-            <div className="pt-8">
-              <p className="text-center">LOCATION</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Categories */}
-      <section id="categories" className="p-16 ">
-        <div className="inside-categories">
-          <div className="inside-inside-categories1">
-            <h1 className="reveal">《 CATEGORIES 》</h1>
-            <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2"/>
+        {/* Categories */}
+        <section id="categories" className="p-16 ">
+          <div className="inside-categories">
+            <div className="inside-inside-categories1">
+              <h1 className="reveal">《 CATEGORIES 》</h1>
+              <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
+            </div>
+            <div className="inside-inside-categories2 flex justify-center py-32">
+              <div className="card relative rounded-2xl">
+                <div className="lines"></div>
+                <div className="category_card w-full flex flex-col justify-evenly items-center relative p-6 max-w-lg rounded-lg shadow-lg">
+                  <h2 className="text-4xl font-bold text-center">3 KM</h2>
+                  <h3 className="text-2xl">Fun Run</h3>
+                  <p className="text-sm">Perfect for beginners and families!</p>
+                  <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+                    Register
+                  </button>
+                </div>
+              </div>
+              <div className="card relative rounded-2xl">
+                <div className="lines"></div>
+                <div className="category_card w-full flex flex-col justify-evenly items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg">
+                  <h2 className="text-4xl font-bold text-center">5 KM</h2>
+                  <h3 className="text-2xl">Fitness Run</h3>
+                  <p className="text-sm">
+                    Ideal for team-building and staying active
+                  </p>
+                  <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+                    Register
+                  </button>
+                </div>
+              </div>
+              <div className="card relative rounded-2xl">
+                <div className="lines"></div>
+                <div className="category_card w-full flex flex-col justify-evenly items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg">
+                  <h2 className="text-4xl font-bold text-center">10 KM</h2>
+                  <h3 className="text-2xl">Challenging Run</h3>
+                  <p className="text-sm">
+                    Push your limits and achieve greatness!
+                  </p>
+                  <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+                    Register
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="inside-inside-categories2 flex justify-center py-32">
-            <div className="card relative rounded-2xl">
-              <div className="lines"></div>
-              <div className="category_card w-full flex flex-col justify-evenly items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg">
-                <h2 className="text-4xl font-bold text-center">3 KM</h2>
-                <h3 className="text-2xl">Fun Run</h3>
-                <p className="text-sm">Perfect for beginners and families!</p>
-                <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
-                  Register
-                </button>
-              </div>
-            </div>
-            <div className="card relative rounded-2xl">
-              <div className="lines"></div>
-              <div className="category_card w-full flex flex-col justify-evenly items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg">
-                <h2 className="text-4xl font-bold text-center">5 KM</h2>
-                <h3 className="text-2xl">Fitness Run</h3>
-                <p className="text-sm">Ideal for team-building and staying active</p>
-                <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
-                  Register
-                </button>
-              </div>
-            </div>
-            <div className="card relative rounded-2xl">
-              <div className="lines"></div>
-              <div className="category_card w-full flex flex-col justify-evenly items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg">
-                <h2 className="text-4xl font-bold text-center">10 KM</h2>
-                <h3 className="text-2xl">Challenging Run</h3>
-                <p className="text-sm">Push your limits and achieve greatness!</p>
-                <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
-                  Register
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
       </div>
 
       {/* Goodies */}
-      <section id="goodies" className="bg-siteGray py-32 w-full">
+      <div className="y">
+      <section id="goodies" className=" bg-siteGray py-32 w-full">
         <div>
           <h1 className="reveal">《 GOODIES 》</h1>
-          <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2"/>
+          <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
         </div>
         <div className="py-6 md:py-32 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-24 max-w-[80%] mx-auto">
           <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
@@ -183,7 +199,7 @@ const Marathon = () => {
               />
             </div>
             <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold hover-effect">
+              <h4 className="text-xs md:text-3xl text-center font-extrabold">
                 Finishers Medal
               </h4>
             </div>
@@ -197,7 +213,9 @@ const Marathon = () => {
               />
             </div>
             <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">T-shirt</h4>
+              <h4 className="text-xs md:text-3xl text-center font-extrabold">
+                T-shirt
+              </h4>
             </div>
           </div>
           <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
@@ -258,10 +276,11 @@ const Marathon = () => {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Footer */}
       <footer className="footer">
-        <div className="left-side  flex min-h-[650px] bg-siteGreen">
+        <div className="left-side flex min-h-[650px] bg-siteGreen">
           <div className="smlg bg-siteGreen w-full flex flex-col justify-center items-center">
             <p>MARA</p>
             <p>THON</p>
