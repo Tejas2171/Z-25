@@ -344,7 +344,6 @@ h1 {
   .inside-theme {
     position: relative;
     padding: 60px 0 0 0;
-    background-color: #your-color; /* Set your desired background color */
     z-index: 1;
   }
   
