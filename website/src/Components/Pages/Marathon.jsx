@@ -1,6 +1,7 @@
 import "./mara.css";
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { useEffect } from "react";
+// import Home from "./spline";
 
 const Marathon = () => {
   useEffect(() => {
@@ -33,6 +34,49 @@ const Marathon = () => {
     };
   }, []);
 
+  const TimingCard = ({ defaultSrc, hoverSrc, text }) => (
+    <div className="inside-inside-timings relative group">
+      <img
+        className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
+        src={defaultSrc}
+        alt="default"
+      />
+      <img
+        className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
+        src={hoverSrc}
+        alt="hover"
+      />
+      <div className="pt-8">
+        <p className="text-center">{text}</p>
+      </div>
+    </div>
+  );
+
+  const Card = ({ imgSrc, title }) => (
+    <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+      <div className="p-2 md:p-10">
+        <img src={imgSrc} alt={title} className="w-full h-48 object-cover" />
+      </div>
+      <div className="pb-1 md:pb-8">
+        <h4 className="text-xs md:text-3xl text-center font-extrabold">{title}</h4>
+      </div>
+    </div>
+  );
+
+  const RunCard = ({ distance, title, description }) => (
+    <div className="card relative rounded-2xl group">
+      <div className="lines"></div>
+      <div className="category_card w-full flex flex-col justify-center items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-300 ease-in-out">
+        <h2 className="text-4xl font-bold text-center">{distance} KM</h2>
+        <h3 className="text-2xl text-center">{title}</h3>
+        <p className="text-sm text-center">{description}</p>
+        <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+          Register
+        </button>
+      </div>
+    </div>
+  );
+  
   return (
     <div className="">
       {/* Hero Section */}
@@ -53,6 +97,7 @@ const Marathon = () => {
         <div className="main z-20 flex smlgmain justify-center items-center">
           MARATHON
         </div>
+        {/* <Home/> */}
       </section>
 
       {/* Theme Section */}
@@ -84,51 +129,9 @@ const Marathon = () => {
         {/* Timings and Location */}
         <section id="timings" className="">
           <div className="inside-timings w-full flex justify-evenly py-40 pt-48 ">
-            <div className="inside-inside-timings relative group">
-              <img
-                className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
-                src="Time.png"
-                alt="default"
-              />
-              <img
-                className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out "
-                src="5am.png"
-                alt="hover"
-              />
-              <div className="pt-8">
-                <p className="text-center">TIME</p>
-              </div>
-            </div>
-            <div className="inside-inside-timings relative group">
-              <img
-                className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
-                src="Date.webp"
-                alt="default"
-              />
-              <img
-                className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
-                src="12jan.png"
-                alt="hover"
-              />
-              <div className="pt-8">
-                <p className="text-center">DATE</p>
-              </div>
-            </div>
-            <div className="inside-inside-timings relative group">
-              <img
-                className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
-                src="location-removebg-preview.png"
-                alt="default"
-              />
-              <img
-                className="h-56 img-2 absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
-                src="ground.png"
-                alt="hover"
-              />
-              <div className="pt-8">
-                <p className="text-center">LOCATION</p>
-              </div>
-            </div>
+            <TimingCard defaultSrc="Time.png" hoverSrc="5am.png" text="TIME" />
+            <TimingCard defaultSrc="Date.webp" hoverSrc="12jan.png" text="DATE" />
+            <TimingCard defaultSrc="location-removebg-preview.png" hoverSrc="ground.png" text="LOCATION" />
           </div>
         </section>
 
@@ -140,44 +143,24 @@ const Marathon = () => {
               <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
             </div>
             <div className="inside-inside-categories2 flex justify-center py-32">
-              <div className="card relative rounded-2xl">
-                <div className="lines"></div>
-                <div className="category_card w-full flex flex-col justify-evenly items-center relative p-6 max-w-lg rounded-lg shadow-lg">
-                  <h2 className="text-4xl font-bold text-center">3 KM</h2>
-                  <h3 className="text-2xl">Fun Run</h3>
-                  <p className="text-sm">Perfect for beginners and families!</p>
-                  <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
-                    Register
-                  </button>
-                </div>
-              </div>
-              <div className="card relative rounded-2xl">
-                <div className="lines"></div>
-                <div className="category_card w-full flex flex-col justify-evenly items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg">
-                  <h2 className="text-4xl font-bold text-center">5 KM</h2>
-                  <h3 className="text-2xl">Fitness Run</h3>
-                  <p className="text-sm">
-                    Ideal for team-building and staying active
-                  </p>
-                  <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
-                    Register
-                  </button>
-                </div>
-              </div>
-              <div className="card relative rounded-2xl">
-                <div className="lines"></div>
-                <div className="category_card w-full flex flex-col justify-evenly items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg">
-                  <h2 className="text-4xl font-bold text-center">10 KM</h2>
-                  <h3 className="text-2xl">Challenging Run</h3>
-                  <p className="text-sm">
-                    Push your limits and achieve greatness!
-                  </p>
-                  <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
-                    Register
-                  </button>
-                </div>
-              </div>
-            </div>
+            <div className="flex flex-wrap justify-center gap-8 py-6">
+    <RunCard
+      distance="3"
+      title="Fun Run"
+      description="Perfect for beginners and families!"
+    />
+    <RunCard
+      distance="5"
+      title="Fitness Run"
+      description="Ideal for team-building and staying active"
+    />
+    <RunCard
+      distance="10"
+      title="Challenging Run"
+      description="Push your limits and achieve greatness!"
+    />
+  </div>
+          </div>
           </div>
         </section>
       </div>
@@ -186,94 +169,19 @@ const Marathon = () => {
       <div className="y">
       <section id="goodies" className=" bg-siteGray py-32 w-full">
         <div>
-          <h1 className="reveal">《 GOODIES 》</h1>
-          <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
+        <h1 className="reveal">
+  《 GOODIES 》
+</h1>
+<hr className="w-1/2 sm:w-2/3 md:w-3/4 lg:w-1/2 mx-auto my-5 border-siteGreen border-2" />
+
         </div>
         <div className="py-6 md:py-32 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-24 max-w-[80%] mx-auto">
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="T-shirt (2).png"
-                alt="Image 1"
-                className="w-full h-16 md:h-48 object-cover"
-              />
-            </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                Finishers Medal
-              </h4>
-            </div>
-          </div>
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="medals (2).png"
-                alt="Image 1"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                T-shirt
-              </h4>
-            </div>
-          </div>
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="certificates (2).png"
-                alt="Image 1"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                Certificates
-              </h4>
-            </div>
-          </div>
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="refreshments (2).png"
-                alt="Image 1"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                Refreshments
-              </h4>
-            </div>
-          </div>
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="welcome (2).png"
-                alt="Image 1"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                Welcome Kit
-              </h4>
-            </div>
-          </div>
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="medical (2).png"
-                alt="Image 1"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                Medical Support
-              </h4>
-            </div>
-          </div>
+        <Card imgSrc="T-shirt (2).png" title="Finishers Medal" />
+        <Card imgSrc="medals (2).png" title="T-shirt" />
+        <Card imgSrc="certificates (2).png" title="Certificates" />
+        <Card imgSrc="refreshments (2).png" title="Refreshments" />
+        <Card imgSrc="welcome (2).png" title="Welcome Kit" />
+        <Card imgSrc="medical (2).png" title="Medical Support" />
         </div>
       </section>
       </div>
