@@ -94,10 +94,9 @@ const Marathon = () => {
           Your browser does not support the video tag.
         </video>
         <div className="un z-30 relative">ZEST`25</div>
-        <div className="main z-20 flex smlgmain justify-center items-center">
+        <div className="main z-20 flex smlgmain justify-center items-center ">
           MARATHON
         </div>
-        {/* <Home/> */}
       </section>
 
       {/* Theme Section */}
@@ -238,20 +237,18 @@ const Marathon = () => {
             <hr className="border-t-2 border-siteGreen my-4" />
             <div className="text-center">
               <h2 className="text-5xl mb-6">For Any Queries, Contact</h2>
-              <div className="space-y-6">
-                <div className="flex-col items-center gap-4 text-3xl font-medium">
-                  <div>Jayesh Awachar</div>
-                  <div className="text-lg text-gray-600">+91 90228 90253</div>
-                </div>
-                <div className="flex-col items-center gap-4 text-3xl font-medium">
-                  <div>Adhiraj Ghadge</div>
-                  <div className="text-lg text-gray-600">+91 83698 24221</div>
-                </div>
-                <div className="flex-col items-center gap-4 text-3xl font-medium">
-                  <div>Nagesh Kanchangire</div>
-                  <div className="text-lg text-gray-600">+91 90045 27329</div>
-                </div>
-              </div>
+              <div className="space-y-6 text-center">
+  {[
+    { name: "Jayesh Awachar", phone: "+91 90228 90253" },
+    { name: "Adhiraj Ghadge", phone: "+91 83698 24221" },
+    { name: "Nagesh Kanchangire", phone: "+91 90045 27329" },
+  ].map((contact, index) => (
+    <div key={index} className="flex flex-col gap-1 text-3xl font-medium">
+      <div>{contact.name}</div>
+      <div className="text-lg text-gray-600">{contact.phone}</div>
+    </div>
+  ))}
+</div>
             </div>
             <hr className="border-t-2 border-siteGreen my-4" />
             <div className="flex-col justify-center items-center">

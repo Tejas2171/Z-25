@@ -25,16 +25,16 @@ body {
 }
 
 
-.smlgmain {
+.smlgmain , .smlg {
   font-family: myFont4;
   text-align: center;
-  font-size: 240px;
+  font-size: 200px;
   font-weight:900;
   overflow: hidden;
   line-height: 1;
   color: #303030;
 }
-.smlg {
+/* .smlg {
   font-family: myFont4;
   text-align: center;
   font-size: 180px;
@@ -42,7 +42,7 @@ body {
   overflow: hidden;
   line-height: 1;
   color: #303030;
-}
+} */
 
 .x {
   position: relative;
@@ -93,7 +93,6 @@ body {
   #hero {
     width: 100%;
     height: 100vh;
-    /* background-color: rgb(66, 66, 43); */
     background-color: #000;
     color: #F0BD1B;
     position: relative;
@@ -195,9 +194,6 @@ h1 {
  }
 
 
-
-
-
  .card {
   position: relative;
   background: rgba(42, 42, 42, 1); /* Change opacity using rgba */
@@ -289,11 +285,15 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   #theme, #timings, #categories, #goodies {
-    font-size: 16px;
+    font-size: 20px;
+  }
+
+  .smlgmain {
+    font-size: 150px;
   }
 
   .x::after {
@@ -347,7 +347,11 @@ h1 {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 50px;
+    font-size: 30px;
+  }
+
+  #categories h1{
+    font-size: 27px;
   }
 
   #theme, #timings, #categories, #goodies {
@@ -358,7 +362,7 @@ h1 {
   }
 
   .smlgmain {
-    font-size: 70px;
+    font-size: 60px;
   }
   .smlg {
     font-size: 80px;
@@ -372,7 +376,7 @@ h1 {
   }
   #hero .un {
     top: 165px;
-    left: 25px;
+    left: 12px;
     font-size: 30px;
   }
 
