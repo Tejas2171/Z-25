@@ -1,20 +1,19 @@
 @font-face {
   font-family: myFont;
-  src:url('LuckiestGuy-Regular.ttf')
+  src: url("LuckiestGuy-Regular.ttf");
 }
 @font-face {
   font-family: myFont2;
-  src:url('InstrumentSans-VariableFont_wdth,wght.ttf')
+  src: url("InstrumentSans-VariableFont_wdth,wght.ttf");
 }
 @font-face {
   font-family: myFont3;
-  src:url('PantonRustHeavy-GrSh.ttf')
+  src: url("PantonRustHeavy-GrSh.ttf");
 }
 @font-face {
   font-family: myFont4;
-  src:url('DIMIS___.TTF')
+  src: url("DIMIS___.TTF");
 }
-
 
 * {
   box-sizing: border-box;
@@ -22,14 +21,14 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #303030;
 }
-
 
 .smlgmain {
   font-family: myFont4;
   text-align: center;
   font-size: 240px;
-  font-weight:900;
+  font-weight: 900;
   overflow: hidden;
   line-height: 1;
   color: #303030;
@@ -38,7 +37,7 @@ body {
   font-family: myFont4;
   text-align: center;
   font-size: 180px;
-  font-weight:900;
+  font-weight: 900;
   overflow: hidden;
   line-height: 1;
   color: #303030;
@@ -52,19 +51,19 @@ body {
 }
 
 .x::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('—Pngtree—the running man_503706.png');
+  background-image: url("—Pngtree—the running man_503706.png");
   background-size: cover;
   transform: translateY(-300px);
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.2;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .y {
@@ -75,13 +74,13 @@ body {
 }
 
 .y::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/istockphoto-503427908-612x612-removebg-preview.png');
+  background-image: url("/istockphoto-503427908-612x612-removebg-preview.png");
   background-size: cover;
   transform: translate(-950px, -400px);
   background-position: center;
@@ -89,16 +88,15 @@ body {
   opacity: 0.15;
 }
 
-
-  #hero {
-    width: 100%;
-    height: 100vh;
-    /* background-color: rgb(66, 66, 43); */
-    background-color: #000;
-    color: #F0BD1B;
-    position: relative;
-    overflow: hidden;
-  }
+#hero {
+  width: 100%;
+  /* height: 100vh; */
+  /* background-color: rgb(66, 66, 43); */
+  background-color: #000;
+  color: #f0bd1b;
+  position: relative;
+  overflow: hidden;
+}
 
 #hero .un {
   top: 150px;
@@ -111,16 +109,26 @@ body {
 #hero .main {
   width: 100%;
   height: 100vh;
-  color: #F0BD1B;
+  color: #f0bd1b;
   position: absolute;
   opacity: 0.7;
-  top: 0;
-  left: 0;
+  top: 540px;
+  left: 350px;
+  font-size: 170px;
+}
+.main2 {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  position: absolute;
+  opacity: 0.7;
+  top: 540px;
+  left: 350px;
+  font-size: 170px;
 }
 
-
 #theme {
-  -webkit-text-fill-color: #F0BD1B;
+  -webkit-text-fill-color: #f0bd1b;
   margin: 0;
   width: 100%;
   font-size: 30px;
@@ -134,18 +142,17 @@ h1 {
   line-height: 1;
 }
 
-
 #timings {
-  -webkit-text-fill-color: #F0BD1B;
+  -webkit-text-fill-color: #f0bd1b;
   margin: 0;
   font-size: 30px;
- }
- #timings p {
-  -webkit-text-fill-color: #F2F2E6;
- }
+}
+#timings p {
+  -webkit-text-fill-color: #f2f2e6;
+}
 
 #categories {
-  -webkit-text-fill-color: #5F8053;
+  -webkit-text-fill-color: #5f8053;
   margin: 0;
   font-size: 30px;
   z-index: 5;
@@ -158,47 +165,43 @@ h1 {
   transition-duration: 0.4s;
   z-index: 5;
 }
-  .category_card h2,button {
-    -webkit-text-fill-color: #F0BD1B;
-  }
-  .category_card p {
-    -webkit-text-fill-color: #f2f2e6;
-  }
-  .category_card:hover {
-    z-index: 5;
-    width: 100vh;
-    transition: ease-in-out;
-    transition-duration: 0.4s;
-  }
-
+.category_card h2,
+button {
+  -webkit-text-fill-color: #f0bd1b;
+}
+.category_card p {
+  -webkit-text-fill-color: #f2f2e6;
+}
+.category_card:hover {
+  z-index: 5;
+  width: 100vh;
+  transition: ease-in-out;
+  transition-duration: 0.4s;
+}
 
 #goodies {
-  -webkit-text-fill-color: #5F8053;
+  -webkit-text-fill-color: #5f8053;
   margin: 0;
   font-size: 30px;
-  }
-  .each-card {
-    font-family: myFont2;
-    background-color: #F2F2E6;
-    z-index: 2;
-  } 
+}
+.each-card {
+  font-family: myFont2;
+  background-color: #f2f2e6;
+  z-index: 2;
+}
 
 .contact {
-  -webkit-text-fill-color: rgba(35, 31, 32, 0.7); 
+  -webkit-text-fill-color: rgba(35, 31, 32, 0.7);
   font-family: myFont2;
-} 
+}
 .contact h3 {
   font-family: myFont;
 }
 .contact h2 {
-   font-family: myFont;
- }
+  font-family: myFont;
+}
 
-
-
-
-
- .card {
+.card {
   position: relative;
   background: rgba(42, 42, 42, 1); /* Change opacity using rgba */
   border-radius: 20px;
@@ -226,7 +229,7 @@ h1 {
   background: linear-gradient(
     transparent,
     #f2f2e6,
-    #F2F2E6,
+    #f2f2e6,
     #f2f2e6,
     transparent
   );
@@ -251,16 +254,13 @@ h1 {
   }
 }
 
-
-
-
 /* Hover Effects */
 .hover-effect {
-  transition: 
-    transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), /* Smooth scaling and rotation */
-    box-shadow 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), /* Smooth shadow effect */
-    background-color 0.6s ease, /* Smooth background change */
-    -webkit-text-fill-color 0.6s ease; /* Smooth text color change */
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1),
+    /* Smooth scaling and rotation */ box-shadow 0.6s
+      cubic-bezier(0.25, 0.8, 0.25, 1),
+    /* Smooth shadow effect */ background-color 0.6s ease,
+    /* Smooth background change */ -webkit-text-fill-color 0.6s ease; /* Smooth text color change */
 }
 
 .hover-effect:hover {
@@ -269,8 +269,6 @@ h1 {
   background-color: #97bb8a; /* Smooth background color change */
   -webkit-text-fill-color: #ffce2b; /* Smooth text color change */
 }
-
-
 
 /* Add this CSS to your styles file */
 .reveal {
@@ -284,15 +282,15 @@ h1 {
   transform: translateY(0);
 }
 
-
-
-
 @media (max-width: 768px) {
   h1 {
     font-size: 40px;
   }
 
-  #theme, #timings, #categories, #goodies {
+  #theme,
+  #timings,
+  #categories,
+  #goodies {
     font-size: 16px;
   }
 
@@ -350,7 +348,10 @@ h1 {
     font-size: 50px;
   }
 
-  #theme, #timings, #categories, #goodies {
+  #theme,
+  #timings,
+  #categories,
+  #goodies {
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -368,7 +369,7 @@ h1 {
     height: 500px;
   }
   #hero .main {
-    height:500px
+    height: 500px;
   }
   #hero .un {
     top: 165px;
@@ -376,13 +377,12 @@ h1 {
     font-size: 30px;
   }
 
-
   .inside-theme {
     position: relative;
     padding: 60px 0 0 0;
     z-index: 1;
   }
-  
+
   .inside-theme::before {
     content: "";
     position: absolute;
@@ -390,17 +390,15 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('istockphoto-503427908-612x612-removebg-preview.png');
+    background-image: url("istockphoto-503427908-612x612-removebg-preview.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transform: translate(-250px, 130px);
-    opacity: 0.4; 
-    z-index: -1; 
+    opacity: 0.4;
+    z-index: -1;
   }
-  
-  
-  
+
   .inside-theme > * {
     margin: 0;
     padding: 0px 50px;
@@ -446,14 +444,13 @@ h1 {
     position: static; /* Reset position to avoid overlap */
   }
 
-
   .inside-categories {
     margin: 0;
   }
   .inside-categories * {
     overflow: hidden;
   }
-  .inside-inside-categories1 h1{
+  .inside-inside-categories1 h1 {
     font-size: 45px;
   }
   .inside-inside-categories2 {
@@ -466,15 +463,12 @@ h1 {
     margin: 0px auto;
   }
 
-
-
   .contact {
     /* margin: 0; */
     /* padding: 0; */
     width: 100%;
   }
 
-  
   .contact h2 {
     font-size: 20px;
   }

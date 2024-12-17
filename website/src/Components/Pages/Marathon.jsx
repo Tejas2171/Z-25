@@ -1,6 +1,10 @@
 import "./mara.css";
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { useEffect } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Marathon = () => {
   useEffect(() => {
@@ -33,26 +37,47 @@ const Marathon = () => {
     };
   }, []);
 
+  useGSAP(() => {
+    // Initial State
+    gsap.set(".abc", {
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", 
+      borderRadius: '0 0 0% 0%'
+    });
+    
+    // Animation
+    gsap.to(".abc", {
+      clipPath: "polygon(14% 6%, 72% 0%, 90% 90%, 0% 100%)", 
+      borderRadius: '0 0 40% 10%',
+      // duration: 2, 
+      ease: "power1.inOut", 
+      scrollTrigger: {
+        trigger: ".abc",
+        start: "center center", 
+        end: "bottom center", 
+        scrub: true, 
+      },
+    });
+  });
+  
+
   return (
     <div className="">
       {/* Hero Section */}
-      <section id="hero" className="">
-        <video
-          autoPlay
-          muted
-          loop
-          className="z-10 absolute top-0 left-0 w-full h-full object-cover opacity-40"
-        >
-          <source
-            src="Marathon-edit.mov"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <div className="un z-30 relative">ZEST`25</div>
-        <div className="main z-20 flex smlgmain justify-center items-center">
-          MARATHON
+      <section className=" relative overflow-hidden bg-siteGreen">
+        <div id="hero" className="abc z-10 min-h-screen">
+          <video
+            autoPlay
+            muted
+            loop
+            className="z-10 absolute top-0 left-0 w-full h-full object-cover opacity-40"
+          >
+            <source src="Marathon-edit.mov" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="un z-30 relative">ZEST`25</div>
+          <div className="main absolute z-20 smlgmain">MARATHON</div>
         </div>
+        <div className="main2 absolute smlgmain">MARATHON</div>
       </section>
 
       {/* Theme Section */}
@@ -184,98 +209,98 @@ const Marathon = () => {
 
       {/* Goodies */}
       <div className="y">
-      <section id="goodies" className=" bg-siteGray py-32 w-full">
-        <div>
-          <h1 className="reveal">《 GOODIES 》</h1>
-          <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
-        </div>
-        <div className="py-6 md:py-32 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-24 max-w-[80%] mx-auto">
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="T-shirt (2).png"
-                alt="Image 1"
-                className="w-full h-16 md:h-48 object-cover"
-              />
+        <section id="goodies" className=" bg-siteGray py-32 w-full">
+          <div>
+            <h1 className="reveal">《 GOODIES 》</h1>
+            <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
+          </div>
+          <div className="py-6 md:py-32 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-24 max-w-[80%] mx-auto">
+            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+              <div className="p-2 md:p-10">
+                <img
+                  src="T-shirt (2).png"
+                  alt="Image 1"
+                  className="w-full h-16 md:h-48 object-cover"
+                />
+              </div>
+              <div className="pb-1 md:pb-8">
+                <h4 className="text-xs md:text-3xl text-center font-extrabold">
+                  Finishers Medal
+                </h4>
+              </div>
             </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                Finishers Medal
-              </h4>
+            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+              <div className="p-2 md:p-10">
+                <img
+                  src="medals (2).png"
+                  alt="Image 1"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+              <div className="pb-1 md:pb-8">
+                <h4 className="text-xs md:text-3xl text-center font-extrabold">
+                  T-shirt
+                </h4>
+              </div>
+            </div>
+            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+              <div className="p-2 md:p-10">
+                <img
+                  src="certificates (2).png"
+                  alt="Image 1"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+              <div className="pb-1 md:pb-8">
+                <h4 className="text-xs md:text-3xl text-center font-extrabold">
+                  Certificates
+                </h4>
+              </div>
+            </div>
+            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+              <div className="p-2 md:p-10">
+                <img
+                  src="refreshments (2).png"
+                  alt="Image 1"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+              <div className="pb-1 md:pb-8">
+                <h4 className="text-xs md:text-3xl text-center font-extrabold">
+                  Refreshments
+                </h4>
+              </div>
+            </div>
+            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+              <div className="p-2 md:p-10">
+                <img
+                  src="welcome (2).png"
+                  alt="Image 1"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+              <div className="pb-1 md:pb-8">
+                <h4 className="text-xs md:text-3xl text-center font-extrabold">
+                  Welcome Kit
+                </h4>
+              </div>
+            </div>
+            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+              <div className="p-2 md:p-10">
+                <img
+                  src="medical (2).png"
+                  alt="Image 1"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+              <div className="pb-1 md:pb-8">
+                <h4 className="text-xs md:text-3xl text-center font-extrabold">
+                  Medical Support
+                </h4>
+              </div>
             </div>
           </div>
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="medals (2).png"
-                alt="Image 1"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                T-shirt
-              </h4>
-            </div>
-          </div>
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="certificates (2).png"
-                alt="Image 1"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                Certificates
-              </h4>
-            </div>
-          </div>
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="refreshments (2).png"
-                alt="Image 1"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                Refreshments
-              </h4>
-            </div>
-          </div>
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="welcome (2).png"
-                alt="Image 1"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                Welcome Kit
-              </h4>
-            </div>
-          </div>
-          <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
-            <div className="p-2 md:p-10">
-              <img
-                src="medical (2).png"
-                alt="Image 1"
-                className="w-full h-48 object-cover"
-              />
-            </div>
-            <div className="pb-1 md:pb-8">
-              <h4 className="text-xs md:text-3xl text-center font-extrabold">
-                Medical Support
-              </h4>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
       </div>
 
       {/* Footer */}
@@ -347,10 +372,10 @@ const Marathon = () => {
             </div>
             <hr className="border-t-2 border-siteGreen my-4" />
             <div className="flex-col justify-center items-center">
-              <div className="text-2xl">
+              <div className="text-2xl text-center">
                 <h3>Copyright © 2025. All Rights Reserved.</h3>
               </div>
-              <div className="text-2xl font-light">
+              <div className="text-2xl font-light text-center">
                 <h3>Designed by ZEST`25</h3>
               </div>
             </div>
