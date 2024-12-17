@@ -48,11 +48,10 @@ const Marathon = () => {
     gsap.to(".abc", {
       clipPath: "polygon(14% 6%, 72% 0%, 90% 90%, 0% 100%)", 
       borderRadius: '0 0 40% 10%',
-      // duration: 2, 
       ease: "power1.inOut", 
       scrollTrigger: {
         trigger: ".abc",
-        start: "center center", 
+        start: "center center",  
         end: "bottom center", 
         scrub: true, 
       },
