@@ -406,10 +406,6 @@ const Marathon = () => {
                   <div className="text-lg text-gray-600">+91 90228 90253</div>
                 </div>
                 <div className="flex-col items-center gap-4 text-3xl font-medium">
-                  <div>Adhiraj Ghadge</div>
-                  <div className="text-lg text-gray-600">+91 83698 24221</div>
-                </div>
-                <div className="flex-col items-center gap-4 text-3xl font-medium">
                   <div>Nagesh Kanchangire</div>
                   <div className="text-lg text-gray-600">+91 90045 27329</div>
                 </div>
