@@ -1,5 +1,5 @@
 import "./mara.css";
-import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin , FaYoutube} from "react-icons/fa";
 import { useEffect } from "react";
 // import Home from "./spline";
 
@@ -76,7 +76,7 @@ const Marathon = () => {
       </div>
     </div>
   );
-  
+
   return (
     <div className="">
       {/* Hero Section */}
@@ -142,47 +142,47 @@ const Marathon = () => {
               <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
             </div>
             <div className="inside-inside-categories2 flex justify-center py-32">
-            <div className="flex flex-wrap justify-center gap-8 py-6">
-    <RunCard
-      distance="3"
-      title="Fun Run"
-      description="Perfect for beginners and families!"
-    />
-    <RunCard
-      distance="5"
-      title="Fitness Run"
-      description="Ideal for team-building and staying active"
-    />
-    <RunCard
-      distance="10"
-      title="Challenging Run"
-      description="Push your limits and achieve greatness!"
-    />
-  </div>
-          </div>
+              <div className="flex flex-wrap justify-center gap-8 py-6">
+                <RunCard
+                  distance="3"
+                  title="Fun Run"
+                  description="Perfect for beginners and families!"
+                />
+                <RunCard
+                  distance="5"
+                  title="Fitness Run"
+                  description="Ideal for team-building and staying active"
+                />
+                <RunCard
+                  distance="10"
+                  title="Challenging Run"
+                  description="Push your limits and achieve greatness!"
+                />
+              </div>
+            </div>
           </div>
         </section>
       </div>
 
       {/* Goodies */}
       <div className="y">
-      <section id="goodies" className=" bg-siteGray py-32 w-full">
-        <div>
-        <h1 className="reveal">
-  《 GOODIES 》
-</h1>
-<hr className="w-1/2 sm:w-2/3 md:w-3/4 lg:w-1/2 mx-auto my-5 border-siteGreen border-2" />
+        <section id="goodies" className=" bg-siteGray py-32 w-full">
+          <div>
+            <h1 className="reveal">
+              《 GOODIES 》
+            </h1>
+            <hr className="w-1/2 sm:w-2/3 md:w-3/4 lg:w-1/2 mx-auto my-5 border-siteGreen border-2" />
 
-        </div>
-        <div className="py-6 md:py-32 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-24 max-w-[80%] mx-auto">
-        <Card imgSrc="T-shirt (2).png" title="Finishers Medal" />
-        <Card imgSrc="medals (2).png" title="T-shirt" />
-        <Card imgSrc="certificates (2).png" title="Certificates" />
-        <Card imgSrc="refreshments (2).png" title="Refreshments" />
-        <Card imgSrc="welcome (2).png" title="Welcome Kit" />
-        <Card imgSrc="medical (2).png" title="Medical Support" />
-        </div>
-      </section>
+          </div>
+          <div className="py-6 md:py-32 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-24 max-w-[80%] mx-auto">
+            <Card imgSrc="T-shirt (2).png" title="Finishers Medal" />
+            <Card imgSrc="medals (2).png" title="T-shirt" />
+            <Card imgSrc="certificates (2).png" title="Certificates" />
+            <Card imgSrc="refreshments (2).png" title="Refreshments" />
+            <Card imgSrc="welcome (2).png" title="Welcome Kit" />
+            <Card imgSrc="medical (2).png" title="Medical Support" />
+          </div>
+        </section>
       </div>
 
       {/* Footer */}
@@ -195,10 +195,10 @@ const Marathon = () => {
           <div className="contact bg-siteWhite w-full py-12 px-6">
             <div className="mb-12">
               <h2 className="text-5xl text-center mb-6">Follow Us</h2>
-              <div className="logos flex justify-center gap-8">
+              <div className="logos flex justify-center gap-3">
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/coepzest/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform "
@@ -207,7 +207,7 @@ const Marathon = () => {
                 </a>
                 {/* Twitter */}
                 <a
-                  href="https://twitter.com"
+                  href="https://www.facebook.com/p/Coep-Zest-100095705100399/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
@@ -216,7 +216,7 @@ const Marathon = () => {
                 </a>
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com"
+                  href="https://x.com/CoepZest24"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
@@ -225,39 +225,46 @@ const Marathon = () => {
                 </a>
                 {/* Facebook */}
                 <a
-                  href="https://facebook.com"
+                  href="https://in.linkedin.com/in/coep-zest-483627165?original_referer=https%3A%2F%2Fwww.google.com%2F"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
                 >
                   <FaLinkedin className="w-10 h-10 text-[#303030] text-opacity-70" />
                 </a>
+                <a
+                  href="https://www.youtube.com/@coepzest2271"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition-transform"
+                ><FaYoutube className="w-10 h-10 text-[#303030] text-opacity-70" /></a>
               </div>
             </div>
             <hr className="border-t-2 border-siteGreen my-4" />
             <div className="text-center">
               <h2 className="text-5xl mb-6">For Any Queries, Contact</h2>
               <div className="space-y-6 text-center">
-  {[
-    { name: "Jayesh Awachar", phone: "+91 90228 90253" },
-    { name: "Adhiraj Ghadge", phone: "+91 83698 24221" },
-    { name: "Nagesh Kanchangire", phone: "+91 90045 27329" },
-  ].map((contact, index) => (
-    <div key={index} className="flex flex-col gap-1 text-3xl font-medium">
-      <div>{contact.name}</div>
-      <div className="text-lg text-gray-600">{contact.phone}</div>
-    </div>
-  ))}
-</div>
+                {[
+                  { name: "Jayesh Awachar", phone: "+91 90228 90253" },
+                  { name: "Adhiraj Ghadge", phone: "+91 83698 24221" },
+                  { name: "Nagesh Kanchangire", phone: "+91 90045 27329" },
+                ].map((contact, index) => (
+                  <div key={index} className="flex flex-col gap-1 text-3xl font-medium">
+                    <div>{contact.name}</div>
+                    <div className="text-lg text-gray-600">{contact.phone}</div>
+                  </div>
+                ))}
+              </div>
             </div>
             <hr className="border-t-2 border-siteGreen my-4" />
             <div className="flex-col justify-center items-center">
-              <div className="text-2xl">
-                <h3>Copyright © 2025. All Rights Reserved.</h3>
-              </div>
-              <div className="text-2xl font-light">
+              {/* <div className="text-2xl"> */}
+                <h3 className="text-2xl">Copyright © 2025. All Rights Reserved.</h3>
+              {/* </div> */}
+              {/* <div className="text-2xl font-light">
                 <h3>Designed by ZEST`25</h3>
-              </div>
+              </div> */}
+              <h3 className="text-2xl font-light">Designed by ZEST`25</h3>
             </div>
           </div>
         </div>
