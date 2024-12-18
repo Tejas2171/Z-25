@@ -397,7 +397,7 @@ const Marathon = () => {
                 </a>
               </div>
             </div>
-            <hr className="border-t-2 border-siteGreen my-4" />
+            <hr className="border-t-2 border-siteGreen my-10" />
             <div className="text-center">
               <h2 className="text-5xl mb-6">For Any Queries, Contact</h2>
               <div className="space-y-6">
@@ -406,16 +406,12 @@ const Marathon = () => {
                   <div className="text-lg text-gray-600">+91 90228 90253</div>
                 </div>
                 <div className="flex-col items-center gap-4 text-3xl font-medium">
-                  <div>Adhiraj Ghadge</div>
-                  <div className="text-lg text-gray-600">+91 83698 24221</div>
-                </div>
-                <div className="flex-col items-center gap-4 text-3xl font-medium">
                   <div>Nagesh Kanchangire</div>
                   <div className="text-lg text-gray-600">+91 90045 27329</div>
                 </div>
               </div>
             </div>
-            <hr className="border-t-2 border-siteGreen my-4" />
+            <hr className="border-t-2 border-siteGreen my-10" />
             <div className="flex-col justify-center items-center">
               <div className="text-2xl text-center">
                 <h3>Copyright © 2025. All Rights Reserved.</h3>
