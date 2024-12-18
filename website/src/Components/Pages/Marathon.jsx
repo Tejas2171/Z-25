@@ -1,5 +1,5 @@
 import "./mara.css";
-import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin , FaYoutube} from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { useEffect } from "react";
 // import Home from "./spline";
 
@@ -35,7 +35,7 @@ const Marathon = () => {
   }, []);
 
   const TimingCard = ({ defaultSrc, hoverSrc, text }) => (
-    <div className="inside-inside-timings relative group">
+    <div className="inside-inside-timings relative group w-full max-w-[250px]">
       <img
         className="h-56 img-1 opacity-100 group-hover:opacity-0 transition-opacity duration-500 ease-in-out"
         src={defaultSrc}
@@ -46,8 +46,8 @@ const Marathon = () => {
         src={hoverSrc}
         alt="hover"
       />
-      <div className="pt-8">
-        <p className="text-center">{text}</p>
+      <div className="pt-8 text-center">
+        <p className="text-center text-[12px] sm:text-[12px] md:text-[14px] lg:text-[30px] ">{text}</p>
       </div>
     </div>
   );
@@ -64,7 +64,7 @@ const Marathon = () => {
   );
 
   const RunCard = ({ distance, title, description }) => (
-    <div className="card relative rounded-2xl group">
+    <div className="card relative rounded-2xl group ">
       <div className="lines"></div>
       <div className="category_card w-full flex flex-col justify-center items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg group-hover:scale-105 group-hover:translate-y-[-10px] transition-all duration-300 ease-in-out">
         <h2 className="text-4xl font-bold text-center">{distance} KM</h2>
@@ -128,9 +128,9 @@ const Marathon = () => {
         {/* Timings and Location */}
         <section id="timings" className="">
           <div className="inside-timings w-full flex justify-evenly py-40 pt-48 ">
-            <TimingCard defaultSrc="Time.png" hoverSrc="5am.png" text="TIME" />
-            <TimingCard defaultSrc="Date.webp" hoverSrc="12jan.png" text="DATE" />
-            <TimingCard defaultSrc="location-removebg-preview.png" hoverSrc="ground.png" text="LOCATION" />
+            <TimingCard defaultSrc="Time.png" hoverSrc="5am.png" text="TIME" className="flex-1 max-w-[300px] sm:max-w-[200px]"/>
+            <TimingCard defaultSrc="Date.webp" hoverSrc="12jan.png" text="DATE" className="flex-1 max-w-[300px] sm:max-w-[200px]"/>
+            <TimingCard defaultSrc="location-removebg-preview.png" hoverSrc="ground.png" text="LOCATION" className="flex-1 max-w-[300px] sm:max-w-[200px]"/>
           </div>
         </section>
 
@@ -142,7 +142,7 @@ const Marathon = () => {
               <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
             </div>
             <div className="inside-inside-categories2 flex justify-center py-32">
-              <div className="flex flex-wrap justify-center gap-8 py-6">
+              <div className="flex flex-wrap justify-center gap-5 py-6">
                 <RunCard
                   distance="3"
                   title="Fun Run"
@@ -196,48 +196,38 @@ const Marathon = () => {
             <div className="mb-12">
               <h2 className="text-5xl text-center mb-6">Follow Us</h2>
               <div className="logos flex justify-center gap-3">
-                {/* Instagram */}
-                <a
-                  href="https://www.instagram.com/coepzest/?hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:scale-110 transition-transform "
-                >
-                  <FaInstagram className="w-10 h-10 text-[#303030] text-opacity-70" />
-                </a>
-                {/* Twitter */}
-                <a
-                  href="https://www.facebook.com/p/Coep-Zest-100095705100399/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:scale-110 transition-transform"
-                >
-                  <FaFacebook className="w-10 h-10 text-[#303030] text-opacity-70" />
-                </a>
-                {/* LinkedIn */}
-                <a
-                  href="https://x.com/CoepZest24"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:scale-110 transition-transform"
-                >
-                  <FaTwitter className="w-10 h-10 text-[#303030] text-opacity-70" />
-                </a>
-                {/* Facebook */}
-                <a
-                  href="https://in.linkedin.com/in/coep-zest-483627165?original_referer=https%3A%2F%2Fwww.google.com%2F"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:scale-110 transition-transform"
-                >
-                  <FaLinkedin className="w-10 h-10 text-[#303030] text-opacity-70" />
-                </a>
-                <a
-                  href="https://www.youtube.com/@coepzest2271"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:scale-110 transition-transform"
-                ><FaYoutube className="w-10 h-10 text-[#303030] text-opacity-70" /></a>
+                {[
+                  {
+                    href: "https://www.instagram.com/coepzest/?hl=en",
+                    Icon: FaInstagram,
+                  },
+                  {
+                    href: "https://www.facebook.com/p/Coep-Zest-100095705100399/",
+                    Icon: FaFacebook,
+                  },
+                  {
+                    href: "https://x.com/CoepZest24",
+                    Icon: FaTwitter,
+                  },
+                  {
+                    href: "https://in.linkedin.com/in/coep-zest-483627165?original_referer=https%3A%2F%2Fwww.google.com%2F",
+                    Icon: FaLinkedin,
+                  },
+                  {
+                    href: "https://www.youtube.com/@coepzest2271",
+                    Icon: FaYoutube,
+                  },
+                ].map(({ href, Icon }) => (
+                  <a
+                    key={href}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:scale-110 transition-transform"
+                  >
+                    <Icon className="w-10 h-10 text-[#303030] text-opacity-70" />
+                  </a>
+                ))}
               </div>
             </div>
             <hr className="border-t-2 border-siteGreen my-4" />
@@ -258,12 +248,7 @@ const Marathon = () => {
             </div>
             <hr className="border-t-2 border-siteGreen my-4" />
             <div className="flex-col justify-center items-center">
-              {/* <div className="text-2xl"> */}
-                <h3 className="text-2xl">Copyright © 2025. All Rights Reserved.</h3>
-              {/* </div> */}
-              {/* <div className="text-2xl font-light">
-                <h3>Designed by ZEST`25</h3>
-              </div> */}
+              <h3 className="text-2xl">Copyright © 2025. All Rights Reserved.</h3>
               <h3 className="text-2xl font-light">Designed by ZEST`25</h3>
             </div>
           </div>

@@ -301,9 +301,11 @@ h1 {
   }
 
   .category_card {
-    width: 100%;
-    padding: 15px;
+    width: 90%;
+    padding: 10px;
     margin: 10px auto;
+    height:330px;
+    width:300px;
   }
 
   .each-card {
@@ -362,7 +364,7 @@ h1 {
   }
 
   .smlgmain {
-    font-size: 60px;
+    font-size: 50px;
   }
   .smlg {
     font-size: 80px;
@@ -441,6 +443,8 @@ h1 {
     width: 100%; /* Ensure images adapt to the container width */
     height: auto; /* Maintain aspect ratio */
     opacity: 1; /* Ensure both images are fully visible */
+    max-height: 14rem; /* Constrain height */
+  object-fit: cover; /* Crop excess if needed */
   }
   .inside-inside-timings .img-1 {
     display: none; /* Hide the default image */
@@ -466,7 +470,7 @@ h1 {
   .category_card {
     padding: 10px;
     width: 280px;
-    height: 300px;
+    height: 270px;
     margin: 0px auto;
   }
 
