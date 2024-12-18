@@ -82,7 +82,7 @@ body {
   bottom: 0;
   background-image: url("/istockphoto-503427908-612x612-removebg-preview.png");
   background-size: cover;
-  transform: translate(-950px, -400px);
+  transform: translate(-950px, -250px);
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.15;
@@ -90,7 +90,7 @@ body {
 
 #hero {
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;  
   /* background-color: rgb(66, 66, 43); */
   background-color: #000;
   color: #f0bd1b;
@@ -99,11 +99,11 @@ body {
 }
 
 #hero .un {
-  top: 450px;
-  left: 750px;
-  font-family: myFont;
-  font-size: 50px;
-  opacity: 0.7;
+  top: 300px;
+  left: 200px;
+  font-family: myFont4;
+  font-size: 80px;
+  opacity: 0.5  ;
 }
 
 #hero .main {
@@ -112,9 +112,9 @@ body {
   color: #f0bd1b;
   position: absolute;
   opacity: 0.7;
-  top: 540px;
-  left: 350px;
-  font-size: 170px;
+  top: 520px;
+  left: 280px;
+  font-size: 200px;
 }
 .main2 {
   width: 100%;
@@ -122,9 +122,9 @@ body {
   color: #fff;
   position: absolute;
   opacity: 0.7;
-  top: 540px;
-  left: 350px;
-  font-size: 170px;
+  top: 520px;
+  left: 280px;
+  font-size: 200px;
 }
 
 #theme {
@@ -159,7 +159,6 @@ h1 {
 }
 
 .category_card {
-  width: 350px;
   height: 350px;
   transition: ease-in-out;
   transition-duration: 0.4s;
@@ -174,7 +173,6 @@ button {
 }
 .category_card:hover {
   z-index: 5;
-  width: 100vh;
   transition: ease-in-out;
   transition-duration: 0.4s;
 }
@@ -182,6 +180,7 @@ button {
 #goodies {
   -webkit-text-fill-color: #5f8053;
   margin: 0;
+  z-index: 1;
   font-size: 30px;
 }
 .each-card {
@@ -207,6 +206,7 @@ button {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  width: 390px;
   z-index: 5;
 }
 
@@ -281,6 +281,64 @@ button {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
+
+
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal-body img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   h1 {
@@ -366,23 +424,23 @@ button {
     padding: 30px;
   }
   #hero {
-    height: 500px;
+    max-height: 80vh;
   }
   #hero .main {
     height: 500px;
-    top:600px;
+    top: 350px;
     left: 40px;
     font-size: 60px;
   }
   .main2 {
     height: 500px;
-    top:600px;
+    top: 350px;
     left: 40px;
     font-size: 60px;
   }
   #hero .un {
-    top: 550px;
-    left: 95px;
+    top: 250px;
+    left: 15px;
     font-size: 30px;
   }
 
@@ -464,6 +522,9 @@ button {
   }
   .inside-inside-categories2 {
     padding-top: 80px;
+  }
+  .card {
+    width: 290px;
   }
   .category_card {
     padding: 10px;

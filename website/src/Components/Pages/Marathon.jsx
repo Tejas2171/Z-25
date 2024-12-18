@@ -40,43 +40,54 @@ const Marathon = () => {
   useGSAP(() => {
     // Initial State
     gsap.set(".abc", {
-      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", 
-      borderRadius: '0 0 0% 0%'
+      clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+      borderRadius: "0 0 0% 0%",
     });
-    
+
     // Animation
     gsap.to(".abc", {
-      clipPath: "polygon(14% 6%, 72% 0%, 90% 90%, 0% 100%)", 
-      borderRadius: '0 0 40% 10%',
-      ease: "power1.inOut", 
+      clipPath: "polygon(14% 6%, 72% 0%, 86% 88%, 0% 100%)",
+      borderRadius: "0 0 54% 10%",
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: ".abc",
-        start: "center center",  
-        end: "bottom center", 
-        scrub: true, 
+        start: "top 0",
+        end: "bottom center",
+        scrub: true,
       },
     });
   });
-  
 
   return (
     <div className="">
       {/* Hero Section */}
-      <section className=" relative overflow-hidden bg-siteGreen">
-        <div id="hero" className="abc z-10 min-h-screen">
+      <section className="relative overflow-hidden bg-siteGreen">
+        <div>
+          <div className="coep-logo absolute z-40 top-4 left-4 w-32 lg:top-10 lg:left-10 lg:w-52 opacity-60">
+            <img src="Coep logo white.png" />
+          </div>
+          <div className="line-logo absolute z-40 top-5 left-16 w-32 lg:top-14 lg:left-32 lg:w-48 opacity-60">
+            <img src="line.png" />
+          </div>
+          <div className="fit-logo absolute z-40 top-9 left-36 w-24 lg:top-14 lg:left-64 lg:w-48 opacity-60">
+            <img src="pngaaa.com-1098574.png" />
+          </div>
+        </div>
+        <div id="hero" className="abc z-10">
           <video
             autoPlay
             muted
             loop
-            className="z-10 absolute top-0 left-0 w-full h-full object-cover opacity-40"
+            className="z-10 absolute top-0 left-0 w-full h-full object-cover opacity-50"
           >
             <source src="Marathon-edit.mov" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="un z-30 relative">ZEST`25</div>
-          <div className="main absolute z-20 smlgmain">MARATHON</div>
+          {/* <div className="un z-30 relative">ZEST`25</div> */}
+          <div className="un z-30 relative">COEP Zest`25 presents marathon</div>
+          <div className="main absolute z-20 smlgmain">RUNATHON</div>
         </div>
-        <div className="main2 absolute smlgmain">MARATHON</div>
+        <div className="main2 absolute smlgmain">RUNATHON</div>
       </section>
 
       {/* Theme Section */}
@@ -157,48 +168,83 @@ const Marathon = () => {
         </section>
 
         {/* Categories */}
-        <section id="categories" className="p-16 ">
+        <section id="categories" className="p-16">
           <div className="inside-categories">
             <div className="inside-inside-categories1">
-              <h1 className="reveal">《 CATEGORIES 》</h1>
+              <h1 className="reveal">&#12298; CATEGORIES &#12299;</h1>
               <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
             </div>
-            <div className="inside-inside-categories2 flex justify-center py-32">
+            <div className="inside-inside-categories2 flex justify-center items-center gap-10 py-32">
+              <div className="card relative rounded-2xl ">
+                <div className="lines"></div>
+                <div className="category_card w-full flex flex-col justify-evenly items-center relative p-6  rounded-lg shadow-lg">
+                  <h2 className="text-4xl font-bold text-center">3 KM</h2>
+                  <h3 className="text-2xl">Fun Run</h3>
+                  <p className="text-sm">
+                    Perfect for beginners and families !
+                  </p>
+                  <a
+                    href="https://unstop.com/p/coep-zest-marathon25-college-of-engineering-coep-pune-1295467"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+                      Register
+                    </button>
+                  </a>
+                </div>
+              </div>
               <div className="card relative rounded-2xl">
                 <div className="lines"></div>
                 <div className="category_card w-full flex flex-col justify-evenly items-center relative p-6 max-w-lg rounded-lg shadow-lg">
-                  <h2 className="text-4xl font-bold text-center">3 KM</h2>
-                  <h3 className="text-2xl">Fun Run</h3>
-                  <p className="text-sm">Perfect for beginners and families!</p>
-                  <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
-                    Register
-                  </button>
-                </div>
-              </div>
-              <div className="card relative rounded-2xl">
-                <div className="lines"></div>
-                <div className="category_card w-full flex flex-col justify-evenly items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg">
                   <h2 className="text-4xl font-bold text-center">5 KM</h2>
                   <h3 className="text-2xl">Fitness Run</h3>
-                  <p className="text-sm">
-                    Ideal for team-building and staying active
-                  </p>
-                  <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
-                    Register
-                  </button>
+                  <p className="text-sm">Ideal for staying active and fit !</p>
+                  <a
+                    href="https://unstop.com/p/coep-tech-zest25-marathon-5-km-fitness-run-college-of-engineering-coep-pune-1297369"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+                      Register
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className="card relative rounded-2xl">
                 <div className="lines"></div>
-                <div className="category_card w-full flex flex-col justify-evenly items-center relative z-5 p-6 max-w-lg rounded-lg shadow-lg">
+                <div className="category_card w-full flex flex-col justify-evenly items-center relative p-6 max-w-lg rounded-lg shadow-lg">
+                  <h2 className="text-4xl font-bold text-center">5 KM</h2>
+                  <h3 className="text-2xl">Corporate Run</h3>
+                  <p className="text-sm">A step up for aspiring runners !</p>
+                  <a
+                    href="https://unstop.com/p/coep-tech-zest25-marathon-5-km-corporate-run-college-of-engineering-coep-pune-1297572"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+                      Register
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <div className="card relative rounded-2xl">
+                <div className="lines"></div>
+                <div className="category_card w-full flex flex-col justify-evenly items-center relative p-6 max-w-lg rounded-lg shadow-lg">
                   <h2 className="text-4xl font-bold text-center">10 KM</h2>
-                  <h3 className="text-2xl">Challenging Run</h3>
+                  <h3 className="text-2xl">Endurance Run</h3>
                   <p className="text-sm">
-                    Push your limits and achieve greatness!
+                    Push your limits and achieve greatness !
                   </p>
-                  <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
-                    Register
-                  </button>
+                  <a
+                    href="https://unstop.com/p/coep-tech-zest25-marathon-10-km-endurance-run-college-of-engineering-coep-pune-1297613"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+                      Register
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -208,7 +254,7 @@ const Marathon = () => {
 
       {/* Goodies */}
       <div className="y">
-        <section id="goodies" className=" bg-siteGray py-32 w-full">
+        <section id="goodies" className=" bg-siteGray pb-32 pt-16 w-full">
           <div>
             <h1 className="reveal">《 GOODIES 》</h1>
             <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
@@ -306,7 +352,7 @@ const Marathon = () => {
       <footer className="footer">
         <div className="left-side flex min-h-[650px] bg-siteGreen">
           <div className="smlg bg-siteGreen w-full flex flex-col justify-center items-center">
-            <p>MARA</p>
+            <p>RUNA</p>
             <p>THON</p>
           </div>
           <div className="contact bg-siteWhite w-full py-12 px-6">
@@ -315,7 +361,7 @@ const Marathon = () => {
               <div className="logos flex justify-center gap-8">
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/coepzest/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform "
@@ -324,25 +370,25 @@ const Marathon = () => {
                 </a>
                 {/* Twitter */}
                 <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:scale-110 transition-transform"
-                >
-                  <FaFacebook className="w-10 h-10 text-[#303030] text-opacity-70" />
-                </a>
-                {/* LinkedIn */}
-                <a
-                  href="https://linkedin.com"
+                  href="https://x.com/CoepZest24?t=abJe0XPGflvl-Py_WDaUYw&s=08&mx=2"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
                 >
                   <FaTwitter className="w-10 h-10 text-[#303030] text-opacity-70" />
                 </a>
+                {/* LinkedIn */}
+                <a
+                  href="https://www.facebook.com/people/Coep-Zest/100095705100399/?mibextid=ZbWKwL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition-transform"
+                >
+                  <FaFacebook className="w-10 h-10 text-[#303030] text-opacity-70" />
+                </a>
                 {/* Facebook */}
                 <a
-                  href="https://facebook.com"
+                  href="https://www.linkedin.com/company/zest-coep/mycompany/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform"
