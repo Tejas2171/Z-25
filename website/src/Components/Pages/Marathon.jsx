@@ -397,10 +397,14 @@ const Marathon = () => {
                 </a>
               </div>
             </div>
-            <hr className="border-t-2 border-siteGreen my-10" />
+            <hr className="border-t-2 border-siteGreen my-6" />
             <div className="text-center">
               <h2 className="text-5xl mb-6">For Any Queries, Contact</h2>
               <div className="space-y-6">
+                <div className="flex-col items-center gap-4 text-3xl font-medium">
+                  <div>Abhishek Ambekar</div>
+                  <div className="text-lg text-gray-600">+91 94213 16991</div>
+                </div>
                 <div className="flex-col items-center gap-4 text-3xl font-medium">
                   <div>Jayesh Awachar</div>
                   <div className="text-lg text-gray-600">+91 90228 90253</div>
@@ -411,7 +415,7 @@ const Marathon = () => {
                 </div>
               </div>
             </div>
-            <hr className="border-t-2 border-siteGreen my-10" />
+            <hr className="border-t-2 border-siteGreen my-6" />
             <div className="flex-col justify-center items-center">
               <div className="text-2xl text-center">
                 <h3>Copyright © 2025. All Rights Reserved.</h3>

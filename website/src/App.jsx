@@ -10,6 +10,7 @@ import Accomodation from './Components/Pages/Accomodation';
 import Gallery from './Components/Pages/Gallery';
 import Sponser from './Components/Pages/Sponser';
 import Contact from './Components/Pages/Contact';
+import Loader from './Components/Layout/Loader';
 
 
 const App = () => {
@@ -58,6 +59,7 @@ const App = () => {
     {
       path: "/marathon",
       element: <Marathon />,
+      loader: Loader,
     },
     {
       path: "*",
