@@ -15,46 +15,46 @@ import Contact from './Components/Pages/Contact';
 const App = () => {
 
   const router = createBrowserRouter([
-    {
-      path: "/",
-      element: (
-        <AppLayout />
-      ),
-      children: [
-        {
-          path: "/",
-          element: <Home />
-        },
-        {
-          path: "/events",
-          element: <Events />,
-        },
-        {
-          path: "/coreTeam",
-          element: <CoreTeam />,
-        },
-        {
-          path: "/supportingTeam",
-          element: <SupportingTeam />,
-        },
-        {
-          path: "/accomodation",
-          element: <Accomodation />,
-        },
-        {
-          path: "/gallery",
-          element: <Gallery />,
-        },
-        {
-          path: "/sponsers",
-          element: <Sponser />,
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
-        },
-      ],
-    },
+    // {
+    //   path: "/",
+    //   element: (
+    //     <AppLayout />
+    //   ),
+    //   children: [
+    //     {
+    //       path: "/",
+    //       element: <Home />
+    //     },
+    //     {
+    //       path: "/events",
+    //       element: <Events />,
+    //     },
+    //     {
+    //       path: "/coreTeam",
+    //       element: <CoreTeam />,
+    //     },
+    //     {
+    //       path: "/supportingTeam",
+    //       element: <SupportingTeam />,
+    //     },
+    //     {
+    //       path: "/accomodation",
+    //       element: <Accomodation />,
+    //     },
+    //     {
+    //       path: "/gallery",
+    //       element: <Gallery />,
+    //     },
+    //     {
+    //       path: "/sponsers",
+    //       element: <Sponser />,
+    //     },
+    //     {
+    //       path: "/contact",
+    //       element: <Contact />,
+    //     },
+    //   ],
+    // },
     {
       path: "/marathon",
       element: <Marathon />,

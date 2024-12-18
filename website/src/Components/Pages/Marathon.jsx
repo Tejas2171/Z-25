@@ -52,7 +52,7 @@ const Marathon = () => {
       scrollTrigger: {
         trigger: ".abc",
         start: "top 0",
-        end: "bottom center",
+        end: "top -300",
         scrub: true,
       },
     });
