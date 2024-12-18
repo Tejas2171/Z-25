@@ -7,8 +7,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Marathon = () => {
+  
   useEffect(() => {
-    // Create an Intersection Observer
     const revealElements = document.querySelectorAll(".reveal");
 
     const options = {
