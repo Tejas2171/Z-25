@@ -2,7 +2,7 @@
     font-family: myFont;
     src: url("/fonts/LuckiestGuy-Regular.ttf");
   }
- 
+
 .fontstyle{
     font-family: myFont;
     -webkit-text-fill-color: #5f8053;
@@ -14,8 +14,9 @@
 }
 .cardcontainer{
     width: 100vw;
-    height: 100%;
+    height: 100vh;
    justify-items: center;
+   
  
     }
 .teamCard{
@@ -42,6 +43,7 @@ gap: 25px;
 .cardHeading{
     font-family: myFont;
     -webkit-text-fill-color: #f1f1f1;
+    font-size: 90px;
 }
 .cards{
     display: flex;
@@ -51,3 +53,89 @@ gap: 25px;
 .portfolios{
     padding: 15vh 0;
 }
+#wave-background {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .parallax use {
+    animation: moveWave 12s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+  }
+  
+  .parallax use:nth-child(1) {
+    animation-duration: 10s; 
+    animation-delay: 0s;
+    opacity: 0.8;
+  }
+  
+  .parallax use:nth-child(2) {
+    animation-duration: 12s; 
+    animation-delay: -2s; 
+    opacity: 0.6;
+  }
+  
+  .parallax use:nth-child(3) {
+    animation-duration: 14s; 
+    animation-delay: -4s; 
+    opacity: 0.4;
+  }
+  
+  @keyframes moveWave {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    10% {
+      transform: translateX(-10%) translateY(5px);  
+    }
+    20% {
+      transform: translateX(-20%) translateY(0);
+    }
+    30% {
+      transform: translateX(-30%) translateY(10px);  
+    }
+    40% {
+      transform: translateX(-40%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(5px);
+    }
+    60% {
+      transform: translateX(-60%) translateY(0);
+    }
+    70% {
+      transform: translateX(-70%) translateY(10px);  
+    }
+    80% {
+      transform: translateX(-80%) translateY(0);
+    }
+    90% {
+      transform: translateX(-90%) translateY(5px); 
+    }
+    100% {
+      transform: translateX(-100%) translateY(0); 
+    }
+  }
+  #wave-background::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(255, 255, 0, 0.1), transparent);
+    opacity: 0.5;
+    z-index: -2;
+    animation: rippleEffect 5s infinite;
+  }
