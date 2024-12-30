@@ -38,10 +38,11 @@ const App = () => {
     //       path: "/supportingTeam",
     //       element: <SupportingTeam />,
     //     },
-    //     {
-    //       path: "/accomodation",
-    //       element: <Accomodation />,
-    //     },
+     {
+       path: "/accomodation",
+       element: <Accomodation />,
+       loader: Loader,
+     },
     //     {
     //       path: "/gallery",
     //       element: <Gallery />,
@@ -56,10 +57,10 @@ const App = () => {
     //     },
     //   ],
     // },
-    {
-      path: "/marathon",
-      element: <Marathon />,
-      loader: Loader,
+   {
+     path: "/marathon",
+     element: <Marathon />,
+     loader: Loader,
     },
     {
       path: "*",
