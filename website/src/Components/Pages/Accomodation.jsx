@@ -1,9 +1,11 @@
+import React from 'react'
+
 const Accomodation = () => {
-    return (
-        <>
-            <p>Accomodation</p>
-        </>
-    )
+  return (
+    <div>
+      
+    </div>
+  )
 }
 
 export default Accomodation;

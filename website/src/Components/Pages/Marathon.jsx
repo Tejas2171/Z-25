@@ -46,8 +46,8 @@ const Marathon = () => {
         src={hoverSrc}
         alt="hover"
       />
-      <div className="pt-8 text-center">
-        <p className="text-center text-[12px] sm:text-[12px] md:text-[14px] lg:text-[30px] ">{text}</p>
+      <div className="pt-8 ">
+        <p className="text-center text-[25px] sm:text-[12px] md:text-[25px] lg:text-[30px] ">{text}</p>
       </div>
     </div>
   );
