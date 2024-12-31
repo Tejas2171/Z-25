@@ -1,10 +1,49 @@
 .card {
+    position: relative;
     padding: 30px;
     text-align: center;
     max-width: 350px;
     font-size: 30px;
     font-family: myFont4;
     color: #f0bd1b;
+    overflow: hidden;
+    background:#303030 ;
+    z-index: 1;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05); /* Slightly increase the card size */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Add a subtle shadow for the pop-out effect */
+}
+
+.card::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:linear-gradient(135deg, #c0c0c0, #dcdcdc, #f0f0f0, #dcdcdc, #c0c0c0);
+    z-index:-2;
+    padding: 6px;
+    border-radius: 16px;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude; 
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: #303030; /* Matches the card background */
+    z-index: -1; /* Place it behind the card content */
+    border-radius: 10px; /* Matches the card's border-radius */
 }
 
 img {

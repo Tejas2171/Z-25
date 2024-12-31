@@ -1,6 +1,33 @@
+.sponsor-page {
+    min-height: 100vh; /* Ensures the background covers the entire viewport */
+    position:relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background static on scroll */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f0bd1b;
+}
+.sponsor-page::before{
+    content: ''; /* No text, just an empty box */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/mediaBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background static */
+    opacity: 0.2; /* Adjust the opacity (0 = fully transparent, 1 = fully opaque) */
+    z-index: -1; /* Make sure the background is behind the content */
+}
 .header {
+    background: transparent;
     font-family: myFont4;
-    background-color: #303030;
     width: 100%;
     /* height: 100vh; */
     /* background-color: #000; */
@@ -24,6 +51,8 @@
     gap: 40px;
     justify-content: center;
 }
+
+
 
 /* responsive */
 @media (min-width:800px) and (max-width:1210px) {
