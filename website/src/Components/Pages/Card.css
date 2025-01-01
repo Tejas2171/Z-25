@@ -1,11 +1,29 @@
+@font-face {
+    font-family: myFont;
+    src: url("/fonts/LuckiestGuy-Regular.ttf");
+}
+@font-face {
+    font-family: myFont2;
+    src: url("/fonts/InstrumentSans-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+    font-family: myFont3;
+    src: url("/fonts/PantonRustHeavy-GrSh.ttf");
+}
+@font-face {
+    font-family: myFont4;
+    src: url("/fonts/DIMIS___.TTF");
+}
+
 .card {
     position: relative;
     padding: 30px;
     text-align: center;
     max-width: 350px;
     font-size: 30px;
-    font-family: myFont4;
-    color: #f0bd1b;
+    font-family: myFont3;
+    -webkit-text-fill-color: #f0bd1b;
+    /* color: #f0bd1b; */
     overflow: hidden;
     background:#303030 ;
     z-index: 1;
@@ -54,11 +72,21 @@ img {
 /* responsive */
 @media (max-width:800px) {
     .card {
-        max-width: 250px;
-        font-size: 25px;
+        max-width: 400px;
+        font-size: 35px;
     }
 
     img {
-        height: 90px;
+        height: 110px;
+    }
+}
+
+@media (max-width:500px) {
+    .card {
+        max-width: 300px;
+        font-size: 30px;
+    }
+    img {
+        height: 95px;
     }
 }
