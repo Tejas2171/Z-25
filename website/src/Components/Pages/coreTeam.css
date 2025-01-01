@@ -12,6 +12,16 @@
     text-align: center;
 
 }
+@media (max-width: 720px) {
+  .title{
+    font-size: 50px;
+  }
+  .teamInfo > h1{
+font-size: 35px;
+  }
+
+}
+
 .cardcontainer{
     width: 100vw;
     height: 100vh;
@@ -19,14 +29,7 @@
    
  
     }
-.teamCard{
-    height: 100%;
-    width: 25vw;
-    background-color: #232323;
-    justify-items: center;
-    padding: 3% 0 0 0;
-    border-radius: 10px;
-}  
+
 .profilePic{
 width: 80%;
 border-radius: 10px;
@@ -34,22 +37,37 @@ border-radius: 10px;
 .teamInfo > h1{
     font-size: 50px;
 }
-.teamContacts{
-    display: flex;
-    height: 50px;
-justify-content: center;
-gap: 25px;
-}
+
 .cardHeading{
     font-family: myFont;
     -webkit-text-fill-color: #f1f1f1;
     font-size: 90px;
 }
+@media (max-width:720px) {
+  .cardHeading{
+    font-size: 50px;
+  }
+  
+}
+/* @media (min-width:720px) {
+  .cardHeading{
+    font-size: 60px;
+  }
+  
+} */
 .cards{
     display: flex;
     justify-content: center;
     gap: 15vw;
+    align-items: center;
 }
+@media (max-width:720px) {
+  .cards{
+   flex-direction: column;
+  }
+  
+}
+
 .portfolios{
     padding: 15vh 0;
 }
@@ -139,3 +157,76 @@ gap: 25px;
     z-index: -2;
     animation: rippleEffect 5s infinite;
   }
+ 
+.teamCard {
+  position: relative;
+  width: 350px;
+  height: 470px;
+  background-color: #222;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.teamCard::after {
+  content: "";
+  position: absolute;
+  top: var(--mouse-y, 50%);
+  left: var(--mouse-x, 50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  opacity: 0;
+}
+
+.teamCard:hover::after {
+  opacity: 1;
+}
+
+.profilePic {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+  object-fit: cover;
+ 
+  margin-bottom: 15px;
+}
+
+.teamInfo {
+  text-align: center;
+}
+
+.teamInfo h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.teamContacts {
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+}
+
+.teamContacts img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.teamContacts img:hover {
+  transform: scale(1.2);
+}

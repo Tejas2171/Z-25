@@ -3,6 +3,70 @@ import "./coreTeam.css";
 
 
 const CoreTeam = () => {
+    useEffect(() => {
+        const cards = document.querySelectorAll(".teamCard");
+    
+        const clamp = (min, max, val) => Math.max(min, Math.min(max, val));
+    
+        const animateCard = (card, x, y, duration) => {
+          const rotate = `rotateX(${x}deg) rotateY(${-y}deg)`;
+          const skew = `skew(${x / 20}deg, ${y / 20}deg)`;
+    
+          card.animate(
+            {
+              transform: `${rotate} ${skew}`,
+            },
+            {
+              duration: duration,
+              fill: "forwards",
+              easing: "ease-in-out",
+            }
+          );
+        };
+    
+        const handleMouseLeave = (card) => {
+          animateCard(card, 0, 0, 300);
+        };
+    
+        const handleMouseMove = (e, card) => {
+          const rect = card.getBoundingClientRect();
+          const xFromCenter = (e.clientX - rect.left - rect.width / 2) / rect.width;
+          const yFromCenter = (e.clientY - rect.top - rect.height / 2) / rect.height;
+    
+          rotateCard(card, xFromCenter, yFromCenter, 300);
+          animateHoverEffect(card, e.clientX, e.clientY);
+        };
+    
+        const rotateCard = (card, xFromCenter, yFromCenter, duration) => {
+          const xAxisRotation = clamp(-10, 10, yFromCenter * 20);
+          const yAxisRotation = clamp(-10, 10, xFromCenter * 20);
+    
+          animateCard(card, xAxisRotation, yAxisRotation, duration);
+        };
+    
+        const animateHoverEffect = (card, mouseX, mouseY) => {
+          const rect = card.getBoundingClientRect();
+          const x = mouseX - rect.left;
+          const y = mouseY - rect.top;
+    
+          card.style.setProperty("--mouse-x", `${x}px`);
+          card.style.setProperty("--mouse-y", `${y}px`);
+        };
+    
+      
+        cards.forEach((card) => {
+          card.addEventListener("mousemove", (e) => handleMouseMove(e, card));
+          card.addEventListener("mouseleave", () => handleMouseLeave(card));
+        });
+    
+        
+        return () => {
+          cards.forEach((card) => {
+            card.removeEventListener("mousemove", (e) => handleMouseMove(e, card));
+            card.removeEventListener("mouseleave", () => handleMouseLeave(card));
+          });
+        };
+      }, []);
 
 
 
