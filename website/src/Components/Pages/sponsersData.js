@@ -23,8 +23,24 @@ const sponsorsData = [
         imageUrl: "images/pngaaa.com-1098574.png",
         type: "Youth Partner",
       },
-    
-      
+      {
+        id: 5,
+        name: "Nike",
+        imageUrl: "images/pngaaa.com-1098574.png",
+        type: "Youth Partner",
+      },
+      {
+        id: 6,
+        name: "Nike",
+        imageUrl: "images/pngaaa.com-1098574.png",
+        type: "Youth Partner",
+      },
+      {
+        id: 7,
+        name: "Nike",
+        imageUrl: "images/pngaaa.com-1098574.png",
+        type: "Youth Partner",
+      },
       
   ];
   
