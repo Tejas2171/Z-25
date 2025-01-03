@@ -11,7 +11,7 @@ const Sponser = () => {
         // GSAP animation for the header
         gsap.fromTo(
             headerRef.current, 
-            { y: 50, opacity: 0 }, 
+            { y: 90, opacity: 0 }, 
             { y: 0, opacity: 1, duration: 2.5
             , ease: "power3.out" } 
         );
