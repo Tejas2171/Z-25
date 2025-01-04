@@ -29,6 +29,7 @@ const Sponser = () => {
                         name={sponsor.name}
                         imageUrl={sponsor.imageUrl}
                         type={sponsor.type}
+                        buttonURL={sponsor.buttonURL}
                     />
                 ))}
             </div>

@@ -16,22 +16,75 @@
 }
 
 .card {
+    background-color: black;
+    height: 400px;
+    box-shadow: 5px 5px 20px black;
+    margin:10px;
+    overflow:hidden;
     position: relative;
-    padding: 30px;
-    text-align: center;
-    max-width: 350px;
-    font-size: 30px;
-    font-family: myFont3;
-    -webkit-text-fill-color: #f0bd1b;
-    /* color: #f0bd1b; */
-    overflow: hidden;
-    background:black;
-    z-index: 1;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+img{
+    height: 400px;
+    width:390px;
+    border-radius: 3px;
+    opacity: 0.8;
+    transition: transform 0.5s ease, filter 0.5s ease; 
+}
+.intro{
+    height: 80px;
+    width: 390px;
+    padding:6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(27,27,27,0.5); /* Add a semi-transparent background for contrast */
+    color: white; /* Make the text visible */
+    font-family: myFont; /* Optional: Use one of your custom fonts */
+    transition: 0.5s;
 }
 
-.card::before{
+#name{
+    margin:7px;
+    font-size: 30px;
+}
+#type{
+    font-size: 15px;
+    color: #f0bd1b;
+    margin:7px;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover {
+     cursor: pointer;
+}
+.card:hover .intro{
+    height:150px;
+    background-color: rgba(27,27,27,0.8);
+}
+
+.card:hover #type{
+    visibility: visible;
+    opacity: 1;
+}
+.card:hover .card-button{
+    visibility: visible;
+    opacity: 1;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+    filter: brightness(1.3);
+}
+.card-button {
+    margin: 7px;
+    border: 2px solid #f0bd1b; /* Add border-width and border-style */
+    background-color: transparent; /* Optional: Make button background transparent */
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+/*.card::before{
     content:'';
     position: absolute;
     top: 50%;
@@ -60,13 +113,10 @@
     background: #2b2b2b; 
     z-index: -1; 
     border-radius: 10px; 
-}
+}*/
 
 
-.card:hover {
-    transform: scale(1.1); /* Slightly increase the card size */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Add a subtle shadow for the pop-out effect */
-}
+
 
 @keyframes rotate {
     0% {
@@ -75,11 +125,6 @@
     100% {
         transform: rotate(360deg);
     }
-}
-
-img {
-    height: 150px;
-    margin: 20px auto;
 }
 
 
