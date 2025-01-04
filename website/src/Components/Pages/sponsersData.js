@@ -2,7 +2,7 @@ const sponsorsData = [
     {
       id: 1,
       name: "Sakal",
-      imageUrl: "images/pngaaa.com-1098574.png",  
+      imageUrl: "images/sakalSponser.jpg",  
       type: "Media Partner",  
     },
     {

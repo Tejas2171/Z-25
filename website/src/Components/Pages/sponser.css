@@ -18,22 +18,24 @@
 .sponsor-page::before{
     content: ''; /* No text, just an empty box */
     position: absolute;
+    inset:0;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('images/mediaBackground.jpg');
+    background-image: url('images/zestSBg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Keeps the background static */
-    opacity: 0.1; /* Adjust the opacity (0 = fully transparent, 1 = fully opaque) */
+    opacity: 0.2; /* Adjust the opacity (0 = fully transparent, 1 = fully opaque) */
     z-index: -1; /* Make sure the background is behind the content */
 }
 .header {
     background: transparent;
     font-family: myFont4;
     width: 100%;
+    margin-top: 25px;
     /* height: 100vh; */
     /* background-color: #000; */
     color: #f0bd1b;
