@@ -6,9 +6,9 @@ const AppLayout = () => {
 
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
         <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

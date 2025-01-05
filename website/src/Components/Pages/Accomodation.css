@@ -25,6 +25,7 @@ body::before {
 }
 .smlgmain{
   color: #6fb948;
+  font-size: 10vw;
 }
 .cards {
   padding-top: 30px;
@@ -32,8 +33,21 @@ body::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 2vw;
   text-align: justify;
+}
+
+.card-template{
+  background-color: #00000000;
+  border-radius: 2vw;
+  height: 40vw;
+  width: 75vw;
+  animation: appear 1s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;  
 }
 
 @keyframes appear {
@@ -46,44 +60,54 @@ body::before {
     opacity: 0.75 ;
     clip-path: inset(0 0 0 0);
   }
-}
+} 
 
-@keyframes background {
-  10% {
-    background-position: 10% 50%;
-  }
-
-  50% {
-    background-position: 70% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.card-template{
-  background-color: #000000;
-  border-radius: 2vw;
-  height: 40vw;
-  width: 80vw;
-  background-image: linear-gradient(-50deg, #8cb57e 25%,
-  #6fb948 50%,
-  #2d5a20b7 100%,
-  #6fb948 75%,
-  #8cb57e 100%);
-  animation: background 10s ease infinite, appear 1s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 35%;
-  display: flex;
-  flex-direction: column;
-  padding: 2.5%;
-}
-
-/* .textbox{
+@keyframes gradient {
+        0%{
+             background-position: 
+                 -100% -100%,
+                 200% 200%,
+                 -100% 200%,
+                 200% -100%;
+        }
+        50% {
+             background-position: 
+                 150% 100%,
+                 -200% 100%,
+                 100% 0%,
+                 0% 100%;
+        }
+        100% {
+             background-position: 
+                 -100% -100%,
+                 200% 200%,
+                 -100% 200%,
+                 200% -100%;
+        }
   
-  animation: background 10s ease infinite;
-} */
+  }
+
+.all{
+  background: 
+        radial-gradient(ellipse at center, #6fb9487f 0%, rgba(0,0,0,0) 50%), 
+        radial-gradient(ellipse at center, #6ab9489a 0%, rgba(0,0,0,0) 50%), 
+        radial-gradient(ellipse at center, #448b506c 0%, rgba(0,0,0,0) 50%) ,
+        radial-gradient(ellipse at center, #9df9ac89 0%, rgba(0,0,0,0) 50%)
+        #000000;
+    background-repeat: 
+        no-repeat, 
+        no-repeat, 
+        no-repeat;
+    background-size: 
+        900px 900px,
+        900px 900px,
+        900px 900px;
+    background-attachment: fixed;
+    animation:gradient 13s infinite linear;
+    
+    
+}
+
 ul{
     display: block;
     list-style-type: disc;
@@ -96,7 +120,7 @@ ul{
 }
 
 li {
-  font-size: 1.4rem;
+  /*font-size: 1.4rem;*/
   /* Adjust font size */
 }
 
@@ -108,13 +132,29 @@ li {
 
 .card-info {
   font-size: 1.5rem;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 250, 250);
   overflow: auto;
   padding-top: 1%;
   padding-right: 5%;
   padding-left: 5%;
 
 }
+
+/* Customize the scrollbar */
+.card-info::-webkit-scrollbar {
+  width: 1vw; /* Width of the scrollbar */
+}
+
+.card-info::-webkit-scrollbar-track {
+  background: #0000; /* Background color of the scrollbar track */
+}
+
+.card-info::-webkit-scrollbar-thumb {
+  background-color: #29282808; /* Scrollbar color */
+  border-radius: 10px; /* Rounded edges */
+  border: 1px solid #0c0c0c04; /* Space around scrollbar thumb */
+}
+
 
 .list {
   list-style-type: disc;
@@ -128,8 +168,50 @@ li {
   align-items: center;
 }
 
+.list {
+  list-style-type: square;
+}
+
 
 ol {
   list-style-type: decimal;
   margin-left: 20px; /* Optional for indentation */
 }
+
+.animated-gradient-frame {
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right,rgb(240, 189, 27, 1), rgb(234, 217, 162));
+  border-image-slice: 1;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+  .card-template {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row on medium screens */
+  }
+}
+@media (max-width: 768px) {
+  
+  .card-template {
+    flex: 1 1 100%; /* 1 card per row on small screens */
+  }
+
+  .smlgmain {
+    font-size: 2.5rem; /* Smaller font size for smaller screens */
+  }
+
+  .card-head {
+    font-size: 1.2rem; /* Smaller font size for card headers */
+  }
+
+  .card-info {
+    font-size: 0.9rem; /* Smaller font size for content */
+  }
+
+  li{
+    font-size: 1.2rem;
+  }
+}
+
