@@ -9,12 +9,27 @@ function IconWithText({ icon: Icon, text }) {
         </div>
     );
 }
+const guidelines = [
+    "Bring valid college ID during registration.",
+    "No students from other colleges allowed to stay in COEP Hostel rooms. Misconduct may lead to disqualification.",
+    "Deposit will not be refunded in case of misconduct.",
+    "Only authorized members on the list can stay at COEP Hostel.",
+    "Ensure the entire team arrives at once for quicker registration.",
+    "Rooms will be checked daily. No smoking, drinking, loud music, arguing, or fighting allowed.",
+    "Misconduct will lead to disqualification, cancelled accommodation, and non-refundable deposit.",
+    "Hostel gates open at 5:30 am and close at 11:30 pm (9:00 pm for girls). No entry/exit between 11:30 pm and 5:00 am.",
+    "Maintain cleanliness and decorum in the COEP hostel.",
+    "COEP or ZEST'24 organizers are not responsible for mishaps during your stay.",
+    "All guidelines are subject to change. Final decision rests with the ZEST'24 managing committee.",
+  ];
+  
 const Accomodation = () => {
     return (
         <>
+        <div className="all">
             <p className="smlgmain justify-center items-center">ACCOMODATION</p>
             <div className="cards">
-                <div className="card-template textbox">
+                <div className="card-template animated-gradient-frame ">
                     <h1 className="card-head">Guidelines</h1>
                     <h1 className="card-head">Rules and Regulation</h1>
                     <div className="card-info">
@@ -26,23 +41,13 @@ const Accomodation = () => {
                                 <li>College identity cards</li>
                                 <li>Passport size photo</li>
                             </ol>
-
-                            <li>Every participant should produce their valid college ID cards during Registration.</li>
-                            <li>Students from outside college are not allowed to stay with their COEP Hostel friends in their rooms during ZEST. If any such misconduct is found, strict action will be taken against both the student and their college team, which may lead to disqualification.</li>
-                            <li>The deposit (Of all team members from all sports participated from his/her college) will not be refunded in the case of misconduct.</li>
-                            <li>No extra members other than those on the authorized list will be entertained. They won’t be allowed to stay at the COEP Hostel Campus.</li>
-                            <li>Make sure that the entire team arrives at the same time for smoother and faster registration.</li>
-                            <li>Rooms will be checked at least once throughout the day. Activities such as smoking, drinking, loud music, noise, arguing with coordinators, fighting, and so on are not permitted on the COEP Hostel Campus.</li>
-                            <li>If found, the student and all team members of all sports participated from his/her college will be disqualified, accommodation will be cancelled, and the deposit will not be refunded.</li>
-                            <li>Hostel gates open at 5:30 am and close at 11:30 pm (9:00 pm for girls)</li>
-                            <li>Coming in or going out between 11:30 pm and 5:00 am will not be allowed.</li>
-                            <li>All students are required to maintain the decorum and cleanliness of the COEP hostel campus and follow the rules of the hostel campus.</li>
-                            <li>COEP Technological University or the Zest'24 organizing team will not be responsible for any mishaps during the stay.</li>
-                            <li>All the guidelines are subject to change and the final decision will be taken by the managing committee of ZEST'24.</li>
-                        </ol>
+        {guidelines.map((point, index) => (
+          <li key={index}>{point}</li>
+        ))}
+      </ol>
                     </div>
                 </div>
-                <div className="card-template textbox">
+                <div className="card-template textbox animated-gradient-frame ">
                     <h1 className="card-head">Price</h1>
                     <h1 className="card-head">Fee Structure</h1>
                     <div className="card-info">
@@ -94,7 +99,7 @@ const Accomodation = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="card-template textbox">
+                <div className="card-template textbox animated-gradient-frame ">
                     <h1 className="card-head">Route to COEP</h1>
                     <div className="card-info">
                         <p>Pune is well connected to most major cities in India by railways and roads. There are frequent trains and buses to Pune.</p>
@@ -114,7 +119,7 @@ const Accomodation = () => {
                         <p>The nearest bus stand is the New Shivajinagar bus stand. The distance is close to 2 kilometres. You take a local autorickshaw or book a cab to COEP Hostel. Alternatively, you can reach the Swargate bus stand. The distance is approximately 4.4 kilometres. Travel time is approximately 15 minutes. Similarly, you can take a local autorickshaw or book a cab to COEP Hostel.</p>
                     </div>
                 </div>
-                <div className="card-template textbox">
+                <div className="card-template textbox animated-gradient-frame ">
                     <h1 className="card-head">Contact Us</h1>
                     <div className="card-info">
                         <p>ZEST has been a great example of providing a platform to all the players around the country.
@@ -140,6 +145,7 @@ const Accomodation = () => {
 
                     </div>
                 </div>
+            </div>
             </div>
         </>
     );
