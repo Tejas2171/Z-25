@@ -10,11 +10,13 @@ const Card = ({ name, imageUrl, type,buttonURL }) => {
             <div className="intro">
             <p id="name">{name}</p>
             <p id="type">{type}</p>
+            
             {buttonURL && (
                     <button className=" card-button" onClick={handleButtonClick}>
                         Visit Now
                     </button>
                 )}
+                
             </div>
         </div>
     );

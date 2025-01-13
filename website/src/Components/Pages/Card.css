@@ -17,7 +17,8 @@
 
 .card {
     background-color: black;
-    height: 400px;
+    height: 350px;
+    width:350px;
     box-shadow: 5px 5px 20px black;
     margin:10px;
     overflow:hidden;
@@ -25,16 +26,16 @@
     }
 
 img{
-    height: 400px;
-    width:390px;
+    height: 350px;
+    width:350px;
     border-radius: 3px;
     opacity: 0.8;
     transition: transform 0.5s ease, filter 0.5s ease; 
 }
 .intro{
     height: 80px;
-    width: 390px;
-    padding:6px;
+    width: 350px;
+    padding:0px;
     box-sizing: border-box;
     position: absolute;
     bottom: 0;
@@ -135,18 +136,58 @@ img{
         max-width: 400px;
         font-size: 35px;
     }
-
+    .card-button{
+        font-size: 19px;
+        
+    }
+    
+    
     img {
-        height: 110px;
+        height: 100%;
     }
 }
 
 @media (max-width:500px) {
     .card {
         max-width: 300px;
-        font-size: 30px;
+        font-size: 10px;
+    }
+    .card-button{
+        font-size: 15px;
     }
     img {
-        height: 95px;
+        height: 100%;
+        padding-bottom: 100px;
+    }
+    .intro {
+        height: 100px !important; /* Make the intro fully visible */
+        background-color: rgba(27,27,27,0.8);
+        transition: none !important; /* Remove hover transition */
+        opacity: 0.9;
+        padding-left: 8px ;
+    }
+    #name{
+        margin: 1px 0;
+    }
+    #type {
+        visibility: visible;
+        opacity: 1;
+        margin: 1px 0;
+    }
+    
+    img {
+        transform: none !important; /* Disable hover transformations */
+        filter: none !important;
+        transition: none !important; /* Remove image hover transition */
+    }
+
+    .card-button {
+        visibility: visible;
+        opacity: 1;
+        margin: 1px 0;
+    }
+
+    .card:hover {
+        cursor: default; /* Disable pointer cursor */
     }
 }
