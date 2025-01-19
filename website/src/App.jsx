@@ -30,10 +30,7 @@ const App = () => {
     //       path: "/events",
     //       element: <Events />,
     //     },
-    //     {
-    //       path: "/coreTeam",
-    //       element: <CoreTeam />,
-    //     },
+    //    
     //     {
     //       path: "/supportingTeam",
     //       element: <SupportingTeam />,
@@ -57,8 +54,14 @@ const App = () => {
     //   ],
     // },
     {
+            path: "/coreTeam",
+            element: <CoreTeam />,
+            loader: Loader,
+    },
+    {
       path: "/marathon",
       element: <Marathon />,
+   
       loader: Loader,
     },
     {
