@@ -59,7 +59,7 @@ const Marathon = () => {
   });
 
   return (
-    <div className="">
+    <div className="mara-body">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-siteGreen">
         <div>

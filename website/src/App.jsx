@@ -65,6 +65,11 @@ const App = () => {
       path: "*",
       element: <ErrorPage />,
     },
+    {
+      path: "/events",
+      element: <Events />,
+      loader:Loader,
+    }
   ]);
 
   return <RouterProvider router={router} />;
