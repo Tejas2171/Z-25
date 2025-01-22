@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { PDFDocument, rgb } from 'pdf-lib';
 import { saveAs } from 'file-saver';
 import * as fontkit from 'fontkit';
-
+import "./CertificateGenerator.css";
 
 
 const CertificateGenerator = () => {
@@ -174,7 +174,10 @@ const CertificateGenerator = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg p-6">
+    <body className='certificate-generator-page'>
+      <div className="smlgmain runathon-font ">RUNATHON
+      </div>
+      <div className="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg p-6 bib-block">
       <h2 className="text-2xl font-bold text-center mb-6">
         Marathon Certificate Generator
       </h2>
@@ -186,7 +189,7 @@ const CertificateGenerator = () => {
             value={bibNumber}
             onChange={(e) => setBibNumber(e.target.value)}
             placeholder="Enter BIB Number"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="text-white w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           />
         </div>
@@ -194,10 +197,10 @@ const CertificateGenerator = () => {
         <button 
           type="submit" 
           disabled={loading || !bibNumber.trim()}
-          className={`w-full py-2 px-4 rounded-md text-white font-medium
+          className={`w-full py-2 px-4 rounded-md text-white font-medium submit-button
             ${loading 
               ? 'bg-gray-400 cursor-not-allowed' 
-              : 'bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+              : 'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
             }`}
         >
           {loading ? (
@@ -220,6 +223,7 @@ const CertificateGenerator = () => {
         )}
       </form>
     </div>
+    </body>
   );
 };
 
