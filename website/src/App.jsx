@@ -4,6 +4,7 @@ import ErrorPage from './Components/Layout/ErrorPage'
 import Home from './Components/Pages/Home';
 import Events from './Components/Pages/Events';
 import Marathon from './Components/Pages/Marathon';
+import CertificateGenerator from './Components/Pages/CertificateGenerator';
 import CoreTeam from './Components/Pages/CoreTeam';
 import SupportingTeam from './Components/Pages/SupportingTeam';
 import Accomodation from './Components/Pages/Accomodation';
@@ -16,50 +17,54 @@ import Loader from './Components/Layout/Loader';
 const App = () => {
 
   const router = createBrowserRouter([
-    // {
-    //   path: "/",
-    //   element: (
-    //     <AppLayout />
-    //   ),
-    //   children: [
-    //     {
-    //       path: "/",
-    //       element: <Home />
-    //     },
-    //     {
-    //       path: "/events",
-    //       element: <Events />,
-    //     },
-    //     {
-    //       path: "/coreTeam",
-    //       element: <CoreTeam />,
-    //     },
-    //     {
-    //       path: "/supportingTeam",
-    //       element: <SupportingTeam />,
-    //     },
-    //     {
-    //       path: "/accomodation",
-    //       element: <Accomodation />,
-    //     },
-    //     {
-    //       path: "/gallery",
-    //       element: <Gallery />,
-    //     },
-    //     {
-    //       path: "/sponsers",
-    //       element: <Sponser />,
-    //     },
-    //     {
-    //       path: "/contact",
-    //       element: <Contact />,
-    //     },
-    //   ],
-    // },
+    {
+      path: "/",
+      element: (
+        <AppLayout />
+      ),
+      children: [
+        {
+          path: "/",
+          element: <Home />
+        },
+        {
+          path: "/events",
+          element: <Events />,
+        },
+        {
+          path: "/coreTeam",
+          element: <CoreTeam />,
+        },
+        {
+          path: "/supportingTeam",
+          element: <SupportingTeam />,
+        },
+        {
+          path: "/accomodation",
+          element: <Accomodation />,
+        },
+        {
+          path: "/gallery",
+          element: <Gallery />,
+        },
+        {
+          path: "/sponsers",
+          element: <Sponser />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+      ],
+    },
     {
       path: "/marathon",
       element: <Marathon />,
       loader: Loader,
+    },
+    {
+      path: "/certificate-generator",
+      element: <CertificateGenerator />,
     },
     {
       path: "*",
