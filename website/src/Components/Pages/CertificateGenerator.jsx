@@ -86,7 +86,29 @@ const CertificateGenerator = () => {
       ['5095','prithvirajsingh rajput'],
       ['5097','suhani'],
       ['1234567890','Mahaaksh'],
-      ['30004', 'Maithili Joshi']])
+      ['30004', 'Maithili Joshi'],
+      ['5053', 'Rudraksh Shinde'],
+      ['5021', 'Kaushik Narang'],
+      ['5022', 'Khushbu Jethwani'],
+      ['5036', 'Balaji Kale'],
+      ['5039', 'Kaiwalya Pingle'],
+      ['5040', 'Anvayee Pingle'],
+      ['5054', 'Suraj Sidankar'],
+      ['5070', 'Torvna Porfani'],
+      ['3072', 'Ritesh Patil'],
+      ['3080', 'Gaurav Wayal'],
+      ['3092', 'Damini Patil'],
+      ['3004', 'Pavan Palaskar'],
+      ['3088', 'Lokesh Naik'],
+      ['3056', 'Sumit Korde'],
+      ['3100', 'Aditya Gajbhiye'],
+      ['3204', 'Mahind Salve'],
+      ['3052', 'Maruti Zore'],
+      ['3344', 'Abhijit Jamble'],
+      ['3340', 'Soham Dhurve'],
+      ['5105', 'Kalim Khan'],
+      ['3348', 'Sachin Korde']
+    ])
   };
 
   const getTextWidth = (text, font) => {
