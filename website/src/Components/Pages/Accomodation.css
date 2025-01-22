@@ -1,15 +1,12 @@
 body {
-  height: 100%;
   width: 100%;
   background: #000000;
-  /* Solid green background color */
   position: relative;
   background-size: cover;
   background-attachment: fixed;
-  /* Keeps the image static while scrolling */
   background-position: center;
-  /* Optional, centers the background image */
 }
+
 body::before {
   content: '';
   position: absolute;
@@ -19,28 +16,20 @@ body::before {
   height: 100%;
   background-image: url("https://static.vecteezy.com/system/resources/previews/036/267/218/non_2x/set-of-hand-drawn-sport-theme-isolated-on-black-background-doodle-set-of-sport-theme-illustration-vector.jpg");
   background-size: cover;
-  filter: opacity(0.07);
-  /* Makes the image 30% opaque */
-  z-index: 0;
-}
-.smlgmain{
-  color: #6fb948;
-}
-.cards {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  text-align: justify;
+  filter: opacity(0.09);
+  /* z-index: 0; */
 }
 
-.card-template{
+.smlgmain{
+  color: #6fb948;
+  font-size: 10vw;
+}
+
+.card-template {
   background-color: #00000000;
   border-radius: 2vw;
-  height: 50vw;
-  width: 80vw;
+  height: 40vw;
+  width: 75vw;
   animation: appear 1s ease forwards;
   animation-timeline: view();
   animation-range: entry 0% cover 35%;
@@ -54,45 +43,43 @@ body::before {
     opacity: 0;
     clip-path: inset(100% 0 0 0);
   }
-
   to {
-    opacity: 0.75 ;
+    opacity: 0.75;
     clip-path: inset(0 0 0 0);
   }
-} 
+}
 
 @keyframes gradient {
-  0%   {
-             background-position: 
-                 -100% -100%,
-                 200% 200%,
-                 -100% 200%,
-                 200% -100%;
-        }
-        50% {
-             background-position: 
-                 150% 100%,
-                 -200% 100%,
-                 100% 0%,
-                 0% 100%;
-        }
-        100% {
-             background-position: 
-                 -100% -100%,
-                 200% 200%,
-                 -100% 200%,
-                 200% -100%;
-        }
-  
+  0% {
+    background-position: 
+      -100% -100%,
+      200% 200%,
+      -100% 200%,
+      200% -100%;
   }
+  50% {
+    background-position: 
+      150% 100%,
+      -200% 100%,
+      100% 0%,
+      0% 100%;
+  }
+  100% {
+    background-position: 
+      -100% -100%,
+      200% 200%,
+      -100% 200%,
+      200% -100%;
+  }
+}
 
 .all{
   background: 
-        radial-gradient(ellipse at center, #6fb9487f 0%, rgba(0,0,0,0) 50%), 
-        radial-gradient(ellipse at center, #6ab9489a 0%, rgba(0,0,0,0) 50%), 
-        radial-gradient(ellipse at center, #448b506c 0%, rgba(0,0,0,0) 50%) ,
-        radial-gradient(ellipse at center, #9df9ac89 0%, rgba(0,0,0,0) 50%)
-        #000000;
+        radial-gradient(ellipse at center, #6fb94893 0%, rgba(0,0,0,0) 50%), 
+        radial-gradient(ellipse at center, #6ab948a9 0%, rgba(0,0,0,0) 50%), 
+        radial-gradient(ellipse at center, #448b5082 0%, rgba(0,0,0,0) 50%) ,
+        radial-gradient(ellipse at center, #9df9ac9e 0%, rgba(0,0,0,0) 50%)
+        #00000084;
     background-repeat: 
         no-repeat, 
         no-repeat, 
@@ -106,30 +93,19 @@ body::before {
     animation:gradient 13s infinite linear;
 }
 
-/* .textbox{
-  
-  animation: background 10s ease infinite;
-} */
 ul{
     display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     unicode-bidi: isolate;
 }
 
-li {
-  font-size: 1.4rem;
-  /* Adjust font size */
-}
-
 .card-head {
   color: rgb(240, 189, 27, 1);
   font-size: 4rem;
-  padding: 1%;
+  padding: 2%;
 }
 
 .card-info {
@@ -139,7 +115,20 @@ li {
   padding-top: 1%;
   padding-right: 5%;
   padding-left: 5%;
+  overflow-y: auto;
+}
+.card-info::-webkit-scrollbar {
+  width: 1vw;
+}
 
+.card-info::-webkit-scrollbar-track {
+  background: #0000; /* Background color of the scrollbar track */
+}
+
+.card-info::-webkit-scrollbar-thumb {
+  background-color: #29282808;
+  border-radius: 10px; /* Rounded edges */
+  border: 1px solid #0c0c0c04; /* Space around scrollbar thumb */
 }
 
 .list {
@@ -158,15 +147,9 @@ li {
   list-style-type: square;
 }
 
-
-ol {
-  list-style-type: decimal;
-  margin-left: 20px; /* Optional for indentation */
-}
-
 .animated-gradient-frame {
   border: 2px solid transparent;
-  border-image: linear-gradient(to right,rgb(240, 189, 27, 1), rgb(234, 217, 162));
+  border-image: linear-gradient(to right,rgba(240, 190, 27, 0.236), rgba(234, 217, 162, 0.214));
   border-image-slice: 1;
   padding: 20px;
   margin: 10px;
@@ -180,8 +163,14 @@ ol {
 }
 @media (max-width: 768px) {
   
+  .card-info {
+    max-height: 120vw; /* Ensure it has enough height */
+    overflow-y: auto;
+    padding: 1%;
+}
   .card-template {
     flex: 1 1 100%; /* 1 card per row on small screens */
+    padding: 5%;
   }
 
   .smlgmain {
@@ -189,15 +178,44 @@ ol {
   }
 
   .card-head {
-    font-size: 1.2rem; /* Smaller font size for card headers */
+    font-size: 1.5rem; /* Smaller font size for card headers */
+    padding: 2%;
   }
 
   .card-info {
-    font-size: 0.9rem; /* Smaller font size for content */
+    font-size: 0.7rem; /* Smaller font size for content */
   }
   li{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 }
 
 
+.basic:hover{
+  background-color: #6fb948;
+}
+
+
+  /* background: 
+        radial-gradient(ellipse at center, #6fb94866 0%, rgba(0,0,0,0) 50%), 
+        radial-gradient(ellipse at center, #6ab948a9 0%, rgba(0,0,0,0) 50%), 
+        radial-gradient(ellipse at center, #448b5050 0%, rgba(0,0,0,0) 50%) ,
+        radial-gradient(ellipse at center, #9df9ac9e 0%, rgba(0,0,0,0) 50%)
+        #00000084;
+    background-repeat: 
+        no-repeat, 
+        no-repeat, 
+        no-repeat;
+    background-size: 
+        900px 900px,
+        900px 900px,
+        900px 900px;
+    background-attachment: fixed;
+  border-radius: 2vw;
+  height: 50vw;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;  
+
+  animation: appear 1s ease forwards, gradient 10s infinite linear; */

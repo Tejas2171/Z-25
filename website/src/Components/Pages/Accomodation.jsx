@@ -21,131 +21,129 @@ const guidelines = [
     "Maintain cleanliness and decorum in the COEP hostel.",
     "COEP or ZEST'24 organizers are not responsible for mishaps during your stay.",
     "All guidelines are subject to change. Final decision rests with the ZEST'24 managing committee.",
-  ];
-  
+];
+
 const Accomodation = () => {
     return (
         <>
-        <div className="all">
-            <p className="smlgmain justify-center items-center">ACCOMODATION</p>
-            <div className="cards">
-                <div className="card-template animated-gradient-frame ">
-                    <h1 className="card-head">Guidelines</h1>
-                    <h1 className="card-head">Rules and Regulation</h1>
-                    <div className="card-info">
-                        <ol className="list">
-                            <li>Students willing to avail of accommodation facilities must carry</li>
-                            <ol>
-                                <li>Registration receipt (Accommodation Registration)</li>
-                                <li>Government Id proof</li>
-                                <li>College identity cards</li>
-                                <li>Passport size photo</li>
+            <div className=" flex flex-col gap-y-4 items-center">
+                <div><p className="smlgmain justify-center items-center">ACCOMODATION</p></div>
+                <div><button onClick="https://qr.codes/ce9WAN" className="basic text-[20px] h-[8vh] w-[17vh] rounded-[4vh] border-2 border-[#6fb9489e] items-center hover:bg-green-500 ">Register</button></div>
+                <div className=" cards pt-[50px] flex flex-col justify-center items-center gap-[15px] text-justify">
+                    <div className="all card-template animated-gradient-frame">
+                        <h1 className="card-head ">Guidelines</h1>
+                        <h1 className="card-head">Rules and Regulation</h1>
+                        <div className="card-info">
+                            <ol className="list-[square]">
+                                <li>Students willing to avail of accommodation facilities must carry</li>
+                                <ol>
+                                    <li>Registration receipt (Accommodation Registration)</li>
+                                    <li>Government Id proof</li>
+                                    <li>College identity cards</li>
+                                    <li>Passport size photo</li>
+                                </ol>
+                                {guidelines.map((point, index) => (
+                                    <li key={index}>{point}</li>
+                                ))}
                             </ol>
-        {guidelines.map((point, index) => (
-          <li key={index}>{point}</li>
-        ))}
-      </ol>
+                        </div>
                     </div>
-                </div>
-                <div className="card-template textbox animated-gradient-frame ">
-                    <h1 className="card-head">Price</h1>
-                    <h1 className="card-head">Fee Structure</h1>
-                    <div className="card-info">
-                        <ol>
-                            <li>The accommodation will be available from 12th January ( 9:00 am ) to 14th January (5:00 pm) .For cricket, accommodation will be available as per the given dates for matches.</li>
-                            <li>The Accommodation Fee per person per day is ₹400/-(all charges included).</li>
-                            <li>The Fee will be ₹350/- per day if accommodation is confirmed for 2 days or more .</li>
-                            <li>A refundable deposit of ₹500/- will have to be paid before the procurement of the room by every individual. Deposit will be received in cash form only.</li>
-                            <li>Once the accommodation fees is made, no amount shall be refunded.</li>
-                        </ol>
-                        <ul>
-                            <p><strong>Facilities Provided</strong></p>
-                            <p>Everyone will be provided with:</p>
-                            <div>
-                                <p><IconWithText
-                                    icon={FaBoxOpen}
-                                    text="Welcome Kit"
-                                /></p>
-                                 <p><IconWithText
-                                    icon={FaAppleAlt}
-                                    text="One-time meal (Lunch)"
-                                /></p>
-                                 <p><IconWithText
-                                    icon={FaWifi}
-                                    text="Free Wifi"
-                                /></p>
-                                 <p><IconWithText
-                                    icon={FaBed}
-                                    text="1 Bed, bedsheet and a blanket"
-                                /></p>
-                                <p>If any of the Above Items are found to be missing in the given Room a fine of ₹500/- ( per item missing) is charged ."</p>
-                            </div>
-                            <br></br>
-                            <p>Each room will be provided with:</p>
-                            <ol>
-                            <p><IconWithText
-                                    icon={FaFan}
-                                    text="Ceiling fan, Tubelights"
-                                /></p>
-                                <p><IconWithText
-                                    icon={FaLockOpen}
-                                    text="Lock and Key"
-                                /></p>
-                                <p><IconWithText
-                                    icon={FaBitbucket}
-                                    text="Bucket and a Mug"
-                                /></p>
+                    <div className="all card-template textbox animated-gradient-frame">
+                        <h1 className="card-head">Price</h1>
+                        <h1 className="card-head">Fee Structure</h1>
+                        <div className="card-info">
+                            <ol >
+                                <li>The accommodation will be available from 12th January ( 9:00 am ) to 14th January (5:00 pm) .For cricket, accommodation will be available as per the given dates for matches.</li>
+                                <li>The Accommodation Fee per person per day is ₹400/-(all charges included).</li>
+                                <li>The Fee will be ₹350/- per day if accommodation is confirmed for 2 days or more .</li>
+                                <li>A refundable deposit of ₹500/- will have to be paid before the procurement of the room by every individual. Deposit will be received in cash form only.</li>
+                                <li>Once the accommodation fees is made, no amount shall be refunded.</li>
                             </ol>
-                        </ul>
-                    </div>
-                </div>
-                <div className="card-template textbox animated-gradient-frame ">
-                    <h1 className="card-head">Route to COEP</h1>
-                    <div className="card-info">
-                        <p>Pune is well connected to most major cities in India by railways and roads. There are frequent trains and buses to Pune.</p>
-                        <p>COEP ZEST won't provide any facilities to reach the destination. Reaching inside the campus, participants have to first report to the registration desk situated in the visitors' room of the hostel campus.</p>
-                        <p>You can reach COEP Hostel in two ways from the nearby railway station and bus stand.</p>
-                        <br></br>
-                        <div style={{ display: 'inline-flex', alignItems: 'center' }}>
-                            <FaTrain style={{ marginRight: '8px', color: 'rgb(240, 189, 27, 1)' }} />
-                            <p>From the train station:</p>
+                            <ul>
+                                <p><strong>Facilities Provided</strong></p>
+                                <p>Everyone will be provided with:</p>
+                                <div>
+                                    <p><IconWithText
+                                        icon={FaBoxOpen}
+                                        text="Welcome Kit"
+                                    /></p>
+                                    <p><IconWithText
+                                        icon={FaAppleAlt}
+                                        text="One-time meal (Lunch)"
+                                    /></p>
+                                    <p><IconWithText
+                                        icon={FaWifi}
+                                        text="Free Wifi"
+                                    /></p>
+                                    <p><IconWithText
+                                        icon={FaBed}
+                                        text="1 Bed, bedsheet and a blanket"
+                                    /></p>
+                                    <p>If any of the Above Items are found to be missing in the given Room a fine of ₹500/- ( per item missing) is charged ."</p>
+                                </div>
+                                <br></br>
+                                <p>Each room will be provided with:</p>
+                                <ol className="list-decimal ml-5">
+                                    <p><IconWithText
+                                        icon={FaFan}
+                                        text="Ceiling fan, Tubelights"
+                                    /></p>
+                                    <p><IconWithText
+                                        icon={FaLockOpen}
+                                        text="Lock and Key"
+                                    /></p>
+                                    <p><IconWithText
+                                        icon={FaBitbucket}
+                                        text="Bucket and a Mug"
+                                    /></p>
+                                </ol>
+                            </ul>
                         </div>
-                        <p>The nearest station is Chhatrapati Shivaji Maharaj Nagar Railway Station. The COEP hostel is 850 metres away. Alternatively, you can reach the Pune railway station. The distance is almost 3.3 kilometres. Take a local autorickshaw or book a cab to reach COEP Hostel via the road. The travel time is approximately 10 minutes.</p>
-                        <br></br>
-                        <div style={{ display: 'flex', alignItems: 'center' }}>
-                            <FaLocationArrow style={{ marginRight: '8px', color: 'rgb(240, 189, 27, 1)' }} />
-                            <p>From the bus stand:</p>
-                        </div>
-                        <p>The nearest bus stand is the New Shivajinagar bus stand. The distance is close to 2 kilometres. You take a local autorickshaw or book a cab to COEP Hostel. Alternatively, you can reach the Swargate bus stand. The distance is approximately 4.4 kilometres. Travel time is approximately 15 minutes. Similarly, you can take a local autorickshaw or book a cab to COEP Hostel.</p>
                     </div>
-                </div>
-                <div className="card-template textbox animated-gradient-frame ">
-                    <h1 className="card-head">Contact Us</h1>
-                    <div className="card-info">
-                        <p>ZEST has been a great example of providing a platform to all the players around the country.
-                            ZEST Hospitality committee constantly strive toward the satisfaction of each sportsperson. We will leave no stone unturned in meeting the needs of secure accommodation away from home and ensure a comfortable and memorable stay at COEP Hostel.</p>
-                        <div className="contact-info">
-                            <p><strong>For any query or details contact us:</strong></p>
+                    <div className="all card-template textbox animated-gradient-frame">
+                        <h1 className="card-head">Route to COEP</h1>
+                        <div className="card-info">
+                            <p>Pune is well connected to most major cities in India by railways and roads. There are frequent trains and buses to Pune.</p>
+                            <p>COEP ZEST won't provide any facilities to reach the destination. Reaching inside the campus, participants have to first report to the registration desk situated in the visitors' room of the hostel campus.</p>
+                            <p>You can reach COEP Hostel in two ways from the nearby railway station and bus stand.</p>
                             <br></br>
-                            <div>
-                                <p><strong>Jayesh Awachar</strong></p>
-                                <p>+91 90228 90253</p>
+                            <div style={{ display: 'inline-flex', alignItems: 'center' }}>
+                                <FaTrain style={{ marginRight: '8px', color: 'rgb(240, 189, 27, 1)' }} />
+                                <p>From the train station:</p>
                             </div>
-                            <div>
-                                <p><strong>Adhiraj Ghadge</strong></p>
-                                <p>+91 83698 24221</p>
+                            <p>The nearest station is Chhatrapati Shivaji Maharaj Nagar Railway Station. The COEP hostel is 850 metres away. Alternatively, you can reach the Pune railway station. The distance is almost 3.3 kilometres. Take a local autorickshaw or book a cab to reach COEP Hostel via the road. The travel time is approximately 10 minutes.</p>
+                            <br></br>
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                                <FaLocationArrow style={{ marginRight: '8px', color: 'rgb(240, 189, 27, 1)' }} />
+                                <p>From the bus stand:</p>
                             </div>
-                            <div>
-                                <p><strong>Nagesh Kanchangire</strong></p>
-                                <p>+91 90045 27329</p>
+                            <p>The nearest bus stand is the New Shivajinagar bus stand. The distance is close to 2 kilometres. You take a local autorickshaw or book a cab to COEP Hostel. Alternatively, you can reach the Swargate bus stand. The distance is approximately 4.4 kilometres. Travel time is approximately 15 minutes. Similarly, you can take a local autorickshaw or book a cab to COEP Hostel.</p>
+                        </div>
+                    </div>
+                    <div className="all card-template textbox animated-gradient-frame ">
+                        <h1 className="card-head">Contact Us</h1>
+                        <div className="card-info">
+                            <p>ZEST has been a great example of providing a platform to all the players around the country.
+                                ZEST Hospitality committee constantly strive toward the satisfaction of each sportsperson. We will leave no stone unturned in meeting the needs of secure accommodation away from home and ensure a comfortable and memorable stay at COEP Hostel.</p>
+                            <div className="contact-info">
+                                <p><strong>For any query or details contact us:</strong></p>
+                                <br></br>
+                                <div>
+                                    <p><strong>Jayesh Awachar</strong></p>
+                                    <p>+91 90228 90253</p>
+                                </div>
+                                <div>
+                                    <p><strong>Adhiraj Ghadge</strong></p>
+                                    <p>+91 83698 24221</p>
+                                </div>
+                                <div>
+                                    <p><strong>Nagesh Kanchangire</strong></p>
+                                    <p>+91 90045 27329</p>
+                                </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
-            </div>
             </div>
         </>
     );
