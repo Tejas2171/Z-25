@@ -2,15 +2,22 @@ import React, { useState } from 'react';
 import { PDFDocument, rgb } from 'pdf-lib';
 import { saveAs } from 'file-saver';
 import * as fontkit from 'fontkit';
-import "./CertificateGenerator.css";
-
+import './CertificateGenerator.css';
 
 const CertificateGenerator = () => {
   const [bibNumber, setBibNumber] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [finishTime, setFinishTime] = useState(''); // State for finish time message
 
-  // Participant data maps
+  // Map of participant data
+  // const participantMaps = new Map([
+  //   ['3241', { name: 'Parth Doshi', time: '00:32:15' }],
+  //   ['3213', { name: 'Vinit Chaudhari', time: '00:29:45' }],
+  //   ['3278', { name: 'Samruddhi Bodkhe', time: '00:31:30' }],
+  //   ['3281', { name: 'Chirag Gujrathi' }],
+  // ]);
+
   const participantMaps = {
     'Runners': new Map([['3241', 'Parth Doshi'],
       ['3213', 'Vinit Chaudhari'],
@@ -67,7 +74,7 @@ const CertificateGenerator = () => {
       ['3176', 'Renukaaa Pande'],
       ['3174', 'Radhika Parkhi'],
       ['3184', 'Anuja Raikwar'],
-      ['3021', 'Vaibhav Kamble'],
+      ['vaibhav', 'Vaibhav Kamble'],
       ['3017', 'Pranita Khilare'],
       ['3180', 'Prathamnesh Patil'],
       ['3045', 'Ayaan Ali'],
@@ -188,7 +195,8 @@ const CertificateGenerator = () => {
       ['5050','Yogesh Ghodake'],
       ['5033','Pankaj Boir'],
       ['5005','Meghana N'],
-      ['5004', 'Pranav Lakhar'],
+      ['5004', 'Pranav Lakhkar'],
+      ['suhani', 'Suhani Kolhatkar'],
       ['5013','Krushna Jadhav'],
       ['5014','Vikas Salunkhe'],
       ['5015','Balasaheb Mule'],
@@ -387,10 +395,11 @@ const CertificateGenerator = () => {
       ['10205','Vaishali Gaurav'],
       ['10027','Rajendra Muthe'],
       ['10197','Pradeep Parate'],
+      ['10196','Sanjay Shirsad'],
       ['10219','Anil Kumar'],
       ['10077','Vaidehi Srivastava'],
       ['10206','Samrat Phadnis'],
-      ['10663','Dipanshu Mohanty'],
+      ['10063','Dipanshu Mohanty'],
       ['10207','Mangesh Kolapkar'],
       ['10054','Sumit Jadhav'],
       ['10208','Janhvai Patil'],
@@ -445,6 +454,8 @@ const CertificateGenerator = () => {
       ['10193','Atul Jamk'],
       ['10211','Krishna Pal'],
       ['ankush','Ankush Lad'],
+      ['sagardahi','Sagar Dahiwale'],
+      ['shivkak','Shivshankar Kakade'],
       ['10212','Shakuntaladevi']
     ])
   };
@@ -463,19 +474,11 @@ const CertificateGenerator = () => {
       setError('');
       
       console.log('Fetching PDF template...');
-      const response = await fetch('/3km1.pdf').catch(err => {
-        console.error('PDF Fetch Error:', err);
-        setError('Failed to fetch PDF template.');
-        throw err;
-      });
+      const response = await fetch('/3km1.pdf');
       const existingPdfBytes = await response.arrayBuffer();
   
       console.log('Fetching font...');
-      const fontResponse = await fetch('/fonts/cert.ttf').catch(err => {
-        console.error('Font Fetch Error:', err);
-        setError('Failed to fetch font.');
-        throw err;
-      });
+      const fontResponse = await fetch('/fonts/cert.ttf');
       const fontBytes = await fontResponse.arrayBuffer();
   
       console.log('Loading PDF document...');
@@ -487,7 +490,6 @@ const CertificateGenerator = () => {
   
       const [firstPage] = pdfDoc.getPages();
       const fontSize = 38;
-      // const xPosition = 100; // Use fixed value for testing
   
       console.log('Drawing text...');
       firstPage.drawText(name, {
@@ -500,11 +502,7 @@ const CertificateGenerator = () => {
   
       console.log('Saving PDF...');
       const pdfBytes = await pdfDoc.save();
-      const file = new File(
-        [pdfBytes],
-        `marathon_certificate_${distance}.pdf`,
-        { type: 'application/pdf;charset=utf-8' }
-      );
+      const file = new File([pdfBytes], `marathon_certificate_${distance}.pdf`, { type: 'application/pdf;charset=utf-8' });
       saveAs(file);
   
       setBibNumber('');
@@ -515,74 +513,82 @@ const CertificateGenerator = () => {
       setLoading(false);
     }
   };
-  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const trimmedBib = bibNumber.trim();
 
-    // Check which distance category the BIB belongs to
-    for (const [distance, map] of Object.entries(participantMaps)) {
-      if (map.has(trimmedBib)) {
-        const participantName = map.get(trimmedBib);
-        await generatePDF(participantName, distance);
-        return;
-      }
-    }
+    // Check for matching BIB ID in the participantMap
+    const participant = participantMaps.get(trimmedBib);
 
-    setError('Invalid BIB number. Please check and try again.');
+    if (participant) {
+      const { name, time } = participant; // Get participant name and time
+      if (time) {
+        setFinishTime(`Finish Time: ${time}`); // Set the finish time if available
+      } else {
+        setFinishTime('You were not timed for the Event'); // If no time, show this message
+      }
+      await generatePDF(name, '3km'); // Use appropriate distance
+    } else {
+      setError('Invalid BIB number. Please check and try again.');
+    }
   };
 
   return (
     <body className='certificate-generator-page'>
-      <div className="smlgmain runathon-font ">RUNATHON
-      </div>
+      <div className="smlgmain runathon-font ">RUNATHON</div>
       <div className="w-full max-w-md mx-auto bg-white shadow-lg rounded-lg p-6 bib-block">
-      <h2 className="text-2xl font-bold text-center mb-6">
-        Marathon Certificate Generator
-      </h2>
-      
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <input
-            type="text"
-            value={bibNumber}
-            onChange={(e) => setBibNumber(e.target.value)}
-            placeholder="Enter BIB Number"
-            className="text-white w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
-          />
-        </div>
+        <h2 className="text-2xl font-bold text-center mb-6">
+          Marathon Certificate Generator
+        </h2>
         
-        <button 
-          type="submit" 
-          disabled={loading || !bibNumber.trim()}
-          className={`w-full py-2 px-4 rounded-md text-white font-medium submit-button
-            ${loading 
-              ? 'bg-gray-400 cursor-not-allowed' 
-              : 'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
-            }`}
-        >
-          {loading ? (
-            <span className="flex items-center justify-center">
-              <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-              </svg>
-              Generating Certificate...
-            </span>
-          ) : (
-            'Generate Certificate'
-          )}
-        </button>
-
-        {error && (
-          <div className="text-red-500 text-sm text-center mt-2">
-            {error}
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <input
+              type="text"
+              value={bibNumber}
+              onChange={(e) => setBibNumber(e.target.value)}
+              placeholder="Enter BIB Number"
+              className="text-white w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
           </div>
-        )}
-      </form>
-    </div>
+          
+          <button 
+            type="submit" 
+            disabled={loading || !bibNumber.trim()}
+            className={`w-full py-2 px-4 rounded-md text-white font-medium submit-button
+              ${loading 
+                ? 'bg-gray-400 cursor-not-allowed' 
+                : 'focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
+              }`}
+          >
+            {loading ? (
+              <span className="flex items-center justify-center">
+                <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Generating Certificate...
+              </span>
+            ) : (
+              'Generate Certificate'
+            )}
+          </button>
+
+          {finishTime && (
+            <div className="text-green-500 text-sm text-center mt-2">
+              {finishTime}
+            </div>
+          )}
+
+          {error && (
+            <div className="text-red-500 text-sm text-center mt-2">
+              {error}
+            </div>
+          )}
+        </form>
+      </div>
     </body>
   );
 };
