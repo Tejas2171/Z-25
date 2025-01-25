@@ -33,18 +33,18 @@ const Accomodation = () => {
                     <h1 className="card-head">Guidelines</h1>
                     <h1 className="card-head">Rules and Regulation</h1>
                     <div className="card-info">
-                        <ol className="list">
+                        <ol>
                             <li>Students willing to avail of accommodation facilities must carry</li>
-                            <ol>
+                            <ul>
                                 <li>Registration receipt (Accommodation Registration)</li>
                                 <li>Government Id proof</li>
                                 <li>College identity cards</li>
                                 <li>Passport size photo</li>
-                            </ol>
-        {guidelines.map((point, index) => (
-          <li key={index}>{point}</li>
-        ))}
-      </ol>
+                            </ul>
+                        {guidelines.map((point, index) => (
+                        <li key={index}>{point}</li>
+                        ))}
+                        </ol>
                     </div>
                 </div>
                 <div className="card-template animated-gradient-frame">
@@ -78,7 +78,7 @@ const Accomodation = () => {
                                     icon={FaBed}
                                     text="1 Bed, bedsheet and a blanket"
                                 /></p>
-                                <p>If any of the Above Items are found to be missing in the given Room a fine of ₹500/- ( per item missing) is charged .</p>
+                                <p>If any of the Above Items are found to be missing in the given Room a fine of ₹500/- ( per item missing) is charged.</p>
                             </div>
                             <br></br>
                             <p>Each room will be provided with:</p>

@@ -19,14 +19,16 @@ body::before {
   height: 100%;
   background-image: url("https://static.vecteezy.com/system/resources/previews/036/267/218/non_2x/set-of-hand-drawn-sport-theme-isolated-on-black-background-doodle-set-of-sport-theme-illustration-vector.jpg");
   background-size: cover;
-  filter: opacity(0.07);
+  filter: opacity(0.1);
   /* Makes the image 30% opaque */
   z-index: 0;
 }
+
 .smlgmain{
   color: #6fb948;
-  font-size: 10vw;
+  font-size: 9vw;
 }
+
 .cards {
   padding-top: 30px;
   display: flex;
@@ -126,18 +128,18 @@ li {
 
 .card-head {
   color: rgb(240, 189, 27, 1);
-  font-size: 4rem;
+  font-size: 3vw;
   padding: 1%;
 }
 
 .card-info {
-  font-size: 1.5rem;
+  font-size: 1.3vw;
   color: rgb(255, 250, 250);
-  overflow: auto;
+  overflow-y: auto;
   padding-top: 1%;
   padding-right: 5%;
   padding-left: 5%;
-
+  max-height: 120vw;
 }
 
 /* Customize the scrollbar */
@@ -156,9 +158,9 @@ li {
 }
 
 
-.list {
+/* .list {
   list-style-type: disc;
-}
+} */
 
 .contact-info {
   padding-top: 4%;
@@ -167,10 +169,10 @@ li {
   justify-content: center;
   align-items: center;
 }
-
+/* 
 .list {
   list-style-type: square;
-}
+} */
 
 
 ol {
@@ -210,8 +212,5 @@ ol {
     font-size: 0.9rem; /* Smaller font size for content */
   }
 
-  li{
-    font-size: 1.2rem;
-  }
 }
 
