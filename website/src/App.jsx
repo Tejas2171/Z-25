@@ -31,10 +31,7 @@ const App = () => {
     //       element: <Events />,
     //     },
     //    
-    //     {
-    //       path: "/supportingTeam",
-    //       element: <SupportingTeam />,
-    //     },
+    //    
     //     {
     //       path: "/accomodation",
     //       element: <Accomodation />,
@@ -64,6 +61,10 @@ const App = () => {
    
       loader: Loader,
     },
+    {
+            path: "/supportingTeam",
+            element: <SupportingTeam />,
+          },
     {
       path: "*",
       element: <ErrorPage />,
