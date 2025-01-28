@@ -1,53 +1,41 @@
 const sponsorsData = [
     {
       id: 1,
-      name: "Sakal",
-      imageUrl: "images/sakalSponser.jpg",  
+      name: "The Global Hues",
+      imageUrl: "images/GlobalHues.png",  
       type: "Media Partner",
-      buttonURL:"https://sakalmediagroup.com/",  
+      link:"https://theglobalhues.com/", 
+      x: 0, y: 1000
     },
     {
       id: 2,
-      name: "Sports Digests",
-      imageUrl: "images/sportsDigestSponser.jpg",
-      type: "Sports Partner",
-      buttonURL:"https://sakalmediagroup.com/",
+      name: "ED Times",
+      imageUrl: "images/EDTimes.png",
+      type: "Media Partner",
+      link:"https://edtimes.in/",
     },
     {
       id: 3,
-      name: "Campus Times Pune",
-      imageUrl: "images/campustimesSponser.jpg",
-      type: "Youth Partner",
-      buttonURL:"https://sakalmediagroup.com/",
+      name: "Youth Incorporated",
+      imageUrl: "images/youthIncorporated.png",
+      type: "Youth Media Partner",
+      link:"https://youthincmag.com/",
     },
     {
         id: 4,
-        name: "Nike",
-        imageUrl: "images/indieSponser.jpg",
-        type: "Youth Partner",
-        buttonURL:"https://sakalmediagroup.com/",
+        name: "Punekar News",
+        imageUrl: "images/Punekarlogo.png",
+        type: "Digital Media Partner",
+        link:"https://www.punekarnews.in/",
       },
       {
         id: 5,
-        name: "Nike",
-        imageUrl: "images/pngaaa.com-1098574.png",
+        name: "Campus Times Pune",
+        imageUrl: "images/campustimesSponser.jpg",
         type: "Youth Partner",
-        buttonURL:"https://sakalmediagroup.com/",
+        link:"https://www.campustimespune.com/",
       },
-      {
-        id: 6,
-        name: "Nike",
-        imageUrl: "images/pngaaa.com-1098574.png",
-        type: "Youth Partner",
-        buttonURL:"https://sakalmediagroup.com/",
-      },
-      {
-        id: 7,
-        name: "Nike",
-        imageUrl: "images/pngaaa.com-1098574.png",
-        type: "Youth Partner",
-        buttonURL:"https://sakalmediagroup.com/",
-      },
+      
       
   ];
   
