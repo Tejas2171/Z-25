@@ -19,8 +19,8 @@ const guidelines = [
     "Misconduct will lead to disqualification, cancelled accommodation, and non-refundable deposit.",
     "Hostel gates open at 5:30 am and close at 11:30 pm (9:00 pm for girls). No entry/exit between 11:30 pm and 5:00 am.",
     "Maintain cleanliness and decorum in the COEP hostel.",
-    "COEP or ZEST'24 organizers are not responsible for mishaps during your stay.",
-    "All guidelines are subject to change. Final decision rests with the ZEST'24 managing committee.",
+    "COEP or ZEST'25 organizers are not responsible for mishaps during your stay.",
+    "All guidelines are subject to change. Final decision rests with the ZEST'25 managing committee.",
   ];
   
 const Accomodation = () => {
@@ -28,6 +28,13 @@ const Accomodation = () => {
         <>
         <div className="all">
             <p className="smlgmain justify-center items-center">ACCOMODATION</p>
+            <div className="flex justify-center items-center pt-7">
+            <a href="https://forms.gle/NzLcDPvFyQFNciiJ7" target="_blank">
+                <button className="px-6 py-2 border-2 border-green-500 text-green-500 font-semibold rounded-lg 
+                hover:bg-green-500 hover:text-white transition-all duration-300 
+                transform hover:scale-105 hover:shadow-lg">REGISTER</button>
+            </a>    
+            </div>
             <div className="cards">
                 <div className="card-template animated-gradient-frame">
                     <h1 className="card-head">Guidelines</h1>
@@ -52,8 +59,8 @@ const Accomodation = () => {
                     <h1 className="card-head">Fee Structure</h1>
                     <div className="card-info">
                         <ol>
-                            <li>The accommodation will be available from 12th January ( 9:00 am ) to 14th January (5:00 pm) .For cricket, accommodation will be available as per the given dates for matches.</li>
-                            <li>The Accommodation Fee per person per day is ₹400/-(all charges included).</li>
+                            <li>The accommodation will be available from 6th February ( 9:00 am ) to 9th February (5:00 pm) .For cricket, accommodation will be available as per the given dates for matches.</li>
+                            <li>The Accommodation Fee per person per day is ₹450/-(all charges included).</li>
                             <li>The Fee will be ₹350/- per day if accommodation is confirmed for 2 days or more .</li>
                             <li>A refundable deposit of ₹500/- will have to be paid before the procurement of the room by every individual. Deposit will be received in cash form only.</li>
                             <li>Once the accommodation fees is made, no amount shall be refunded.</li>
@@ -127,17 +134,13 @@ const Accomodation = () => {
                         <div className="contact-info">
                             <p><strong>For any query or details contact us:</strong></p>
                             <br></br>
-                            <div>
-                                <p><strong>Jayesh Awachar</strong></p>
-                                <p>+91 90228 90253</p>
+                            <div className="text-center">
+                                <p><strong>Aditya</strong></p>
+                                <p>+91 77560 20782</p>
                             </div>
-                            <div>
-                                <p><strong>Adhiraj Ghadge</strong></p>
-                                <p>+91 83698 24221</p>
-                            </div>
-                            <div>
-                                <p><strong>Nagesh Kanchangire</strong></p>
-                                <p>+91 90045 27329</p>
+                            <div className="text-center">
+                                <p><strong>Atharva</strong></p>
+                                <p>+91 70588 14599</p>
                             </div>
                         </div>
 
@@ -146,7 +149,7 @@ const Accomodation = () => {
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
         </>
     );
 }

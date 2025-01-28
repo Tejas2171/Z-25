@@ -1,16 +1,33 @@
-body {
+.all{
   height: 100%;
   width: 100%;
   background: #000000;
-  /* Solid green background color */
   position: relative;
+  padding-bottom: 6vw;
   background-size: cover;
   background-attachment: fixed;
-  /* Keeps the image static while scrolling */
   background-position: center;
-  /* Optional, centers the background image */
+  background: 
+        radial-gradient(ellipse at center, #6fb9487f 0%, rgba(0,0,0,0) 50%), 
+        radial-gradient(ellipse at center, #6ab9489a 0%, rgba(0,0,0,0) 50%), 
+        radial-gradient(ellipse at center, #448b506c 0%, rgba(0,0,0,0) 50%) ,
+        radial-gradient(ellipse at center, #9df9ac89 0%, rgba(0,0,0,0) 50%)
+        #000000;
+  background-repeat: 
+        no-repeat, 
+        no-repeat, 
+        no-repeat;
+  background-size: 
+        900px 900px,
+        900px 900px,
+        900px 900px;
+  background-attachment: fixed;
+  animation:gradient 13s infinite linear;
+    
+    
 }
-body::before {
+
+.all::before {
   content: '';
   position: absolute;
   top: 0;
@@ -46,7 +63,7 @@ body::before {
   width: 75vw;
   animation: appear 1s ease forwards;
   animation-timeline: view();
-  animation-range: entry 0% cover 35%;
+  animation-range: entry 0% cover 34%;
   display: flex;
   flex-direction: column;
   padding: 3%;  
@@ -89,27 +106,6 @@ body::before {
   
   }
 
-.all{
-  background: 
-        radial-gradient(ellipse at center, #6fb9487f 0%, rgba(0,0,0,0) 50%), 
-        radial-gradient(ellipse at center, #6ab9489a 0%, rgba(0,0,0,0) 50%), 
-        radial-gradient(ellipse at center, #448b506c 0%, rgba(0,0,0,0) 50%) ,
-        radial-gradient(ellipse at center, #9df9ac89 0%, rgba(0,0,0,0) 50%)
-        #000000;
-    background-repeat: 
-        no-repeat, 
-        no-repeat, 
-        no-repeat;
-    background-size: 
-        900px 900px,
-        900px 900px,
-        900px 900px;
-    background-attachment: fixed;
-    animation:gradient 13s infinite linear;
-    
-    
-}
-
 ul{
     display: block;
     list-style-type: disc;
@@ -148,13 +144,13 @@ li {
 }
 
 .card-info::-webkit-scrollbar-track {
-  background: #0000; /* Background color of the scrollbar track */
+  background: #212121ad; /* Background color of the scrollbar track */
 }
 
 .card-info::-webkit-scrollbar-thumb {
-  background-color: #29282808; /* Scrollbar color */
+  background-color: #0b0b0b77; /* Scrollbar color */
   border-radius: 10px; /* Rounded edges */
-  border: 1px solid #0c0c0c04; /* Space around scrollbar thumb */
+  border: 1px solid #7f7e7e42; /* Space around scrollbar thumb */
 }
 
 
