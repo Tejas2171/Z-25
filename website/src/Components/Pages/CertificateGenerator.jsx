@@ -32,7 +32,7 @@ const CertificateGenerator = () => {
     //   [' ', 'Pravin wadekar'],
     //   ['3012', 'Sujal Dhawade'],
     //   ['3077', 'Pranav Pande'],
-    //   ['3348', 'Avadhoot Sonavane'],
+      ['3348', {name:'Avadhoot Sonavane'}],
     //   ['3223', 'Vedang Badgujar'],
     //   ['3286', 'Gauri Narke'],
     //   ['3226', 'Roshan Thakare'],
@@ -451,6 +451,7 @@ const CertificateGenerator = () => {
       ['shivkak',{ name: 'Shivshankar Kakade'}],
       ['sureshp',{ name: 'Suresh P'}],
       ['ananyam',{ name: 'Ananya Mallik'}],
+
       ['10212',{ name: 'Shakuntaladevi', time: '00:34:00' }]
     ])
   ;
