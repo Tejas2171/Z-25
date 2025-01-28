@@ -26,22 +26,26 @@ const guidelines = [
 const Accomodation = () => {
     return (
         <>
-            <div className=" flex flex-col gap-y-4 items-center">
+            <div className="flex flex-col gap-y-4 items-center">
                 <div><p className="smlgmain justify-center items-center">ACCOMODATION</p></div>
-                <div><button onClick="https://qr.codes/ce9WAN" className="basic text-[20px] h-[8vh] w-[17vh] rounded-[4vh] border-2 border-[#6fb9489e] items-center hover:bg-green-500 ">Register</button></div>
+                <div > <a
+                    href="https://qr.codes/ce9WAN"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                ></a><button class="button" >Register</button></div>
                 <div className=" cards pt-[50px] flex flex-col justify-center items-center gap-[15px] text-justify">
-                    <div className="all card-template animated-gradient-frame">
+                    <div className=" all card-template animated-gradient-frame">
                         <h1 className="card-head ">Guidelines</h1>
                         <h1 className="card-head">Rules and Regulation</h1>
                         <div className="card-info">
                             <ol className="list-[square]">
                                 <li>Students willing to avail of accommodation facilities must carry</li>
-                                <ol>
+                                 <ol>
                                     <li>Registration receipt (Accommodation Registration)</li>
                                     <li>Government Id proof</li>
                                     <li>College identity cards</li>
                                     <li>Passport size photo</li>
-                                </ol>
+                                 </ol>
                                 {guidelines.map((point, index) => (
                                     <li key={index}>{point}</li>
                                 ))}
@@ -127,7 +131,6 @@ const Accomodation = () => {
                                 ZEST Hospitality committee constantly strive toward the satisfaction of each sportsperson. We will leave no stone unturned in meeting the needs of secure accommodation away from home and ensure a comfortable and memorable stay at COEP Hostel.</p>
                             <div className="contact-info">
                                 <p><strong>For any query or details contact us:</strong></p>
-                                <br></br>
                                 <div>
                                     <p><strong>Jayesh Awachar</strong></p>
                                     <p>+91 90228 90253</p>
