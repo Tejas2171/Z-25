@@ -47,15 +47,16 @@ const App = () => {
           path: "/gallery",
           element: <Gallery />,
         },
-        {
-          path: "/sponsers",
-          element: <Sponser />,
-        },
+        
         {
           path: "/contact",
           element: <Contact />,
         },
       ],
+    },
+    {
+      path: "/sponsors",
+      element: <Sponser />,
     },
     {
       path: "/marathon",
