@@ -7,7 +7,7 @@ import { pageData } from "../../data";
 import { useState } from "react";
 import "../../styles/reset.css"
 import "../../styles/events.scss"
-// import Header from "../components/Header";
+import Header from "../Layout/Header";
 // import Footer from "../components/Footer";
 const WindowSize = { width: window.innerWidth, height: window.innerHeight };
 
@@ -56,35 +56,34 @@ const  Events=() => {
   useEffect(() => {
     const clonesHeight = cloneItems();
     initScroll();
-    menuItems.current.style.scrollBehavior = "unset";
-
-    const scrollUpdate = () => {
-      const scrollPos = getScrollPos();
-
-      if (clonesHeight + scrollPos >= menuItems.current.scrollHeight) {
-        // menuItems.current.style.scrollBehavior = "unset";
-        // Scroll to the top when you’ve reached the bottom
-        setScrollPos(1); // Scroll down 1 pixel to allow upwards scrolling
-        // menuItems.current.style.scrollBehavior = "smooth";
-      } else if (scrollPos <= 0) {
-        // Scroll to the bottom when you reach the top
-        setScrollPos(menuItems.current.scrollHeight - clonesHeight);
-        // menuItems.current.style.scrollBehavior = "smooth";
-      }
-    };
-
-    menuItems.current.addEventListener("scroll", scrollUpdate);
-
-    return () => {
-      menuItems.current.removeEventListener("scroll", scrollUpdate);
-    };
+  
+    if (menuItems.current) {
+      menuItems.current.style.scrollBehavior = "unset";
+  
+      const scrollUpdate = () => {
+        const scrollPos = getScrollPos();
+  
+        if (clonesHeight + scrollPos >= menuItems.current.scrollHeight) {
+          setScrollPos(1);
+        } else if (scrollPos <= 0) {
+          setScrollPos(menuItems.current.scrollHeight - clonesHeight);
+        }
+      };
+  
+      const currentMenuItems = menuItems.current;
+      currentMenuItems.addEventListener("scroll", scrollUpdate);
+  
+      return () => {
+        currentMenuItems.removeEventListener("scroll", scrollUpdate);
+      };
+    }
   }, []);
 
   return (
     <CursorManager>
       <CustomCursor />
 
-      {/* <Header /> */}
+      <Header />
       <div className="main-container" id="main-container">
         <ul ref={menuItems}>
           {renderItems.map((project, index) => (

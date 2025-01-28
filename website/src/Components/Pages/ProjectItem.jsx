@@ -136,6 +136,7 @@ const ProjectItem = ({ project, itemIndex }) => {
     <li ref={listItem} className="project-item-container">
       <Title
         title={project.title}
+        link={project.link}
         handleMouseEnter={handleMouseEnter}
         handleMouseLeave={handleMouseLeave}
       />

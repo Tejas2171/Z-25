@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
+import Header from"../Layout/Header"
 gsap.registerPlugin(ScrollTrigger);
 
 const Marathon = () => {
@@ -60,6 +61,8 @@ const Marathon = () => {
   });
 
   return (
+    <>
+    <Header />
     <div className="mara-body">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-siteGreen">
@@ -439,6 +442,7 @@ const Marathon = () => {
         </div>
       </footer>
     </div>
+    </>
   );
 };
 
