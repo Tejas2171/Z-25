@@ -3,11 +3,11 @@ import AppLayout from "./Components/Layout/AppLayout";
 import ErrorPage from './Components/Layout/ErrorPage'
 // import Home from './Components/Pages/Home';
 // import Events from './Components/Pages/Events';
-import Marathon from './Components/Pages/Marathon';
+// import Marathon from './Components/Pages/Marathon';
 // import CoreTeam from './Components/Pages/CoreTeam';
 // import SupportingTeam from './Components/Pages/SupportingTeam';
-import Accomodation from './Components/Pages/Accomodation';
-// import Gallery from './Components/Pages/Gallery';
+// import Accomodation from './Components/Pages/Accomodation';
+import Gallery from './Components/Pages/Gallery';
 // import Sponser from './Components/Pages/Sponser';
 // import Contact from './Components/Pages/Contact';
 import Loader from './Components/Layout/Loader';
@@ -38,15 +38,12 @@ const App = () => {
         //   path: "/supportingTeam",
         //   element: <SupportingTeam />,
         // },
-        {
-       path: "/accomodation",
-       element: <Accomodation />,
-       loader: Loader,
-        },
-        // {
-        //   path: "/gallery",
-        //   element: <Gallery />,
-        // },
+      //   {
+      //  path: "/accomodation",
+      //  element: <Accomodation />,
+      //  loader: Loader,
+      //   },
+       
         // {
         //   path: "/sponsers",
         //   element: <Sponser />,
@@ -57,11 +54,16 @@ const App = () => {
         // },
       ],
     },
-   {
-     path: "/marathon",
-     element: <Marathon />,
-     loader: Loader,
-    },
+  //  {
+  //    path: "/marathon",
+  //    element: <Marathon />,
+  //    loader: Loader,
+  //   },
+  {
+    path: "/gallery",
+    element: <Gallery />,
+    loader: Loader,
+  },
     {
       path: "*",
       element: <ErrorPage />,
