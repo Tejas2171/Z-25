@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState,useRef,useEffect } from 'react';
+import { gsap } from 'gsap';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -32,6 +33,18 @@ const Contact = () => {
     alert('Thank you for your message!');
   };
 
+  const headerRef = useRef(null); // Create a reference for the "Sponsors" text
+  
+      useEffect(() => {
+          // GSAP animation for the header
+          gsap.fromTo(
+              headerRef.current, 
+              { y: 40, opacity: 0 }, 
+              { y: 0, opacity: 1, duration: 2.5
+              , ease: "power3.out" } 
+          );
+      }, []);
+
   return (
     
     <div
@@ -39,11 +52,11 @@ const Contact = () => {
   style={{ backgroundImage: "url('/images/ContactBG.jpg')" }}
 >
       <div className="max-w-6xl mx-auto ">
-        <h1 className="text-3xl font-bold text-center text-white mb-8">Contact Us</h1>
+        <h1 className="text-3xl font-bold text-center text-white mb-8" ref={headerRef}>Contact Us</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Form */}
-          <div className="bg-black bg-opacity-65 p-6 rounded-lg shadow-md">
+          <div className="bg-black bg-opacity-65 p-4 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg ease-in-out">
             <h2 className="text-xl font-semibold mb-4 text-white">Send us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -109,7 +122,7 @@ const Contact = () => {
               
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-gray-700 to-gray-900 !text-white py-2 px-4 rounded-lg shadow-lg hover:from-gray-900 hover:to-gray-700 transition-transform transform hover:scale-105 duration-300"
+                className="w-full bg-gradient-to-r from-gray-700 to-gray-900 text-white py-2 px-4 rounded-lg shadow-lg hover:from-gray-900 hover:to-gray-700 transition-transform transform hover:scale-105 duration-300 focus:outline-none mb-2"  style={{ color: 'white !important' }}
               >
                 Send Message
               </button>
@@ -119,7 +132,7 @@ const Contact = () => {
           {/* Contact Information and Map */}
           <div className="space-y-8 ">
             {/* Contact Info */}
-            <div className="bg-black bg-opacity-65 p-6 rounded-lg shadow-md">
+            <div className="bg-black bg-opacity-65 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg ease-in-out">
               <h2 className="text-xl font-semibold mb-4 text-white">Contact Information</h2>
               <div className="space-y-3">
                 <div>
@@ -141,15 +154,15 @@ const Contact = () => {
                   <div className="flex space-x-4">
                     
                     
-                    <a href="https://www.instagram.com/coepzest/" className="text-blue-500 hover:text-blue-600">Instagram</a>
-                    <a href="https://www.linkedin.com/company/zest-coep/posts/?feedView=all" className="text-blue-500 hover:text-blue-600">LinkedIn</a>
+                    <a href="https://www.instagram.com/coepzest/" className="text-blue-500 hover:text-blue-600"><img src="/images/instagram.png" style={{ width: "40px", height: "40px", padding: '0', margin: '0', objectFit: 'contain' }}></img></a>
+                    <a href="https://www.linkedin.com/company/zest-coep/posts/?feedView=all" className="text-blue-500 hover:text-blue-600"><img src="/images/LinkedInIcon.png" style={{ width: "40px", height: "40px", padding: '0', margin: '0', objectFit: 'contain' }}></img></a>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Map */}
-            <div className="bg-black bg-opacity-65 p-6 rounded-lg shadow-md">
+            <div className="bg-black bg-opacity-65 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg ease-in-out">
               <h2 className="text-xl font-semibold mb-4 text-white">Find Us</h2>
               <div className="w-full h-64 bg-gray-200 rounded">
                 <iframe
