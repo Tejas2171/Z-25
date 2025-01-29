@@ -18,19 +18,33 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // For now, just log the form data
-    console.log('Form submitted:', formData);
-    // Clear the form
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
-    alert('Thank you for your message!');
+  
+    const scriptURL = "https://script.google.com/macros/s/AKfycby_0rfh_bh3Eo0wBaWs5LdE3EjP0S2DagXiZdk-PSg-TyV85_kMlvqGXmMfhYT1sLBg/exec"; // Replace with actual URL
+  
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+  
+      console.log("Form submitted:", formData);
+      alert("Thank you for your message!");
+  
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+  
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Something went wrong. Please try again!");
+    }
   };
 
   const headerRef = useRef(null); // Create a reference for the "Sponsors" text
@@ -141,7 +155,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-white">Phone</h3>
-                  <p className="text-white">8446573069</p>
+                  <p className="text-white" >7385892082</p>
+                  
                 </div>
                 <div>
                   <h3 className="font-medium text-white">Email</h3>
@@ -154,8 +169,8 @@ const Contact = () => {
                   <div className="flex space-x-4">
                     
                     
-                    <a href="https://www.instagram.com/coepzest/" className="text-blue-500 hover:text-blue-600"><img src="/images/instagram.png" style={{ width: "40px", height: "40px", padding: '0', margin: '0', objectFit: 'contain' }}></img></a>
-                    <a href="https://www.linkedin.com/company/zest-coep/posts/?feedView=all" className="text-blue-500 hover:text-blue-600"><img src="/images/LinkedInIcon.png" style={{ width: "40px", height: "40px", padding: '0', margin: '0', objectFit: 'contain' }}></img></a>
+                    <a href="https://www.instagram.com/coepzest/" target="_blank" className="text-blue-500 hover:text-blue-600"><img src="/images/instagram.png" style={{ width: "40px", height: "40px", padding: '0', margin: '0', objectFit: 'contain' }}></img></a>
+                    <a href="https://www.linkedin.com/company/zest-coep/posts/?feedView=all" target="_blank" className="text-blue-500 hover:text-blue-600"><img src="/images/LinkedInIcon.png" style={{ width: "40px", height: "40px", padding: '0', margin: '0', objectFit: 'contain' }}></img></a>
                   </div>
                 </div>
               </div>
