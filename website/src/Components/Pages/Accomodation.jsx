@@ -36,7 +36,7 @@ const Accomodation = () => {
             </a>    
             </div>
             <div className="cards">
-                <div className="card-template animated-gradient-frame">
+                <div className="card-template animated-gradient-frame animation">
                     <h1 className="card-head">Guidelines</h1>
                     <h1 className="card-head">Rules and Regulation</h1>
                     <div className="card-info">
@@ -54,14 +54,14 @@ const Accomodation = () => {
                         </ol>
                     </div>
                 </div>
-                <div className="card-template animated-gradient-frame">
+                <div className="card-template animated-gradient-frame animation">
                     <h1 className="card-head">Price</h1>
                     <h1 className="card-head">Fee Structure</h1>
                     <div className="card-info">
                         <ol>
-                            <li>The accommodation will be available from 6th February ( 9:00 am ) to 9th February (5:00 pm) .For cricket, accommodation will be available as per the given dates for matches.</li>
+                            <li>The accommodation will be available from 7th February ( 9:00 am ) to 9th February (5:00 pm) .For cricket, accommodation will be available as per the given dates for matches.</li>
                             <li>The Accommodation Fee per person per day is ₹450/-(all charges included).</li>
-                            <li>The Fee will be ₹350/- per day if accommodation is confirmed for 2 days or more .</li>
+                            <li>The Fee will be ₹400/- per day if accommodation is confirmed for 2 days or more .</li>
                             <li>A refundable deposit of ₹500/- will have to be paid before the procurement of the room by every individual. Deposit will be received in cash form only.</li>
                             <li>Once the accommodation fees is made, no amount shall be refunded.</li>
                         </ol>
@@ -106,7 +106,7 @@ const Accomodation = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="card-template animated-gradient-frame">
+                <div className="card-template animated-gradient-frame animation">
                     <h1 className="card-head">Route to COEP</h1>
                     <div className="card-info">
                         <p>Pune is well connected to most major cities in India by railways and roads. There are frequent trains and buses to Pune.</p>
@@ -126,7 +126,7 @@ const Accomodation = () => {
                         <p>The nearest bus stand is the New Shivajinagar bus stand. The distance is close to 2 kilometres. You take a local autorickshaw or book a cab to COEP Hostel. Alternatively, you can reach the Swargate bus stand. The distance is approximately 4.4 kilometres. Travel time is approximately 15 minutes. Similarly, you can take a local autorickshaw or book a cab to COEP Hostel.</p>
                     </div>
                 </div>
-                <div className="card-template animated-gradient-frame">
+                <div className="card-template animated-gradient-frame animation">
                     <h1 className="card-head">Contact Us</h1>
                     <div className="card-info">
                         <p>ZEST has been a great example of providing a platform to all the players around the country.
@@ -135,11 +135,11 @@ const Accomodation = () => {
                             <p><strong>For any query or details contact us:</strong></p>
                             <br></br>
                             <div className="text-center">
-                                <p><strong>Aditya</strong></p>
+                                <p><strong>Aditya Dalvi</strong></p>
                                 <p>+91 77560 20782</p>
                             </div>
                             <div className="text-center">
-                                <p><strong>Atharva</strong></p>
+                                <p><strong>Atharva Dalvi</strong></p>
                                 <p>+91 70588 14599</p>
                             </div>
                         </div>

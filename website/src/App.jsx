@@ -22,39 +22,39 @@ const App = () => {
         <AppLayout />
       ),
       children: [
-        // {
-        //   path: "/",
-        //   element: <Home />
-        // },
-        // {
-        //   path: "/events",
-        //   element: <Events />,
-        // },
-        // {
-        //   path: "/coreTeam",
-        //   element: <CoreTeam />,
-        // },
-        // {
-        //   path: "/supportingTeam",
-        //   element: <SupportingTeam />,
-        // },
+        {
+          path: "/",
+          element: <Home />
+        },
+        {
+          path: "/events",
+          element: <Events />,
+        },
+        {
+          path: "/coreTeam",
+          element: <CoreTeam />,
+        },
+        {
+          path: "/supportingTeam",
+          element: <SupportingTeam />,
+        },
         {
        path: "/accomodation",
        element: <Accomodation />,
        loader: Loader,
         },
-        // {
-        //   path: "/gallery",
-        //   element: <Gallery />,
-        // },
-        // {
-        //   path: "/sponsers",
-        //   element: <Sponser />,
-        // },
-        // {
-        //   path: "/contact",
-        //   element: <Contact />,
-        // },
+        {
+          path: "/gallery",
+          element: <Gallery />,
+        },
+        {
+          path: "/sponsers",
+          element: <Sponser />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
       ],
     },
    {

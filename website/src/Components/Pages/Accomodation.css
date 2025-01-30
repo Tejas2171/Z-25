@@ -6,25 +6,7 @@
   padding-bottom: 6vw;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
-  background: 
-        radial-gradient(ellipse at center, #6fb9487f 0%, rgba(0,0,0,0) 50%), 
-        radial-gradient(ellipse at center, #6ab9489a 0%, rgba(0,0,0,0) 50%), 
-        radial-gradient(ellipse at center, #448b506c 0%, rgba(0,0,0,0) 50%) ,
-        radial-gradient(ellipse at center, #9df9ac89 0%, rgba(0,0,0,0) 50%)
-        #000000;
-  background-repeat: 
-        no-repeat, 
-        no-repeat, 
-        no-repeat;
-  background-size: 
-        900px 900px,
-        900px 900px,
-        900px 900px;
-  background-attachment: fixed;
-  animation:gradient 13s infinite linear;
-    
-    
+  background-position: center;   
 }
 
 .all::before {
@@ -61,12 +43,33 @@
   border-radius: 2vw;
   height: 40vw;
   width: 75vw;
-  animation: appear 1s ease forwards;
-  animation-timeline: view();
-  animation-range: entry 0% cover 34%;
   display: flex;
   flex-direction: column;
-  padding: 3%;  
+  padding: 3%; 
+  animation: appear 1s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+   
+}
+
+.animation{
+  background: 
+  radial-gradient(ellipse at center, #6fb9487f 0%, rgba(0,0,0,0) 50%), 
+  radial-gradient(ellipse at center, #6ab9489a 0%, rgba(0,0,0,0) 50%), 
+  radial-gradient(ellipse at center, #448b506c 0%, rgba(0,0,0,0) 50%) ,
+  radial-gradient(ellipse at center, #9df9ac89 0%, rgba(0,0,0,0) 50%)
+  #000000;
+background-repeat: 
+  no-repeat, 
+  no-repeat, 
+  no-repeat;
+background-size: 
+  900px 900px,
+  900px 900px,
+  900px 900px;
+background-attachment: fixed;
+animation:gradient 13s infinite linear;
+z-index: 0;
 }
 
 @keyframes appear {
@@ -209,4 +212,3 @@ ol {
   }
 
 }
-
