@@ -21,26 +21,25 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const scriptURL = "https://script.google.com/macros/s/AKfycby_0rfh_bh3Eo0wBaWs5LdE3EjP0S2DagXiZdk-PSg-TyV85_kMlvqGXmMfhYT1sLBg/exec"; // Replace with actual URL
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyLh5m0toiFTT3Ek-iGgilbH7Aa3w62igs3Y75kR2kSVN2Yw6_t9TgZ6x57pxDDWjU1/exec"; // Replace with your deployed Google Apps Script URL
   
     try {
       const response = await fetch(scriptURL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "text/plain"  // Use text/plain to avoid CORS issues
+        },
         body: JSON.stringify(formData),
       });
   
-      console.log("Form submitted:", formData);
-      alert("Thank you for your message!");
+      const result = await response.text();
+      
   
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        message: ''
-      });
-  
+      if (result.includes("Success")) {
+        setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' });
+      } else {
+        throw new Error(result);
+      }
     } catch (error) {
       console.error("Error:", error);
       alert("Something went wrong. Please try again!");
