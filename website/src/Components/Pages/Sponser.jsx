@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./sponser.css";
 import Card from "./Card";
 import sponsorsData from "./sponsersData";
+import Header from "../Layout/Header"
 import { gsap } from "gsap";
 
 const Sponser = () => {
@@ -19,6 +20,7 @@ const Sponser = () => {
 
     return (
         <div className="sponsor-page">
+            <Header />
             <div className="header" ref={headerRef}> {/* Attach the ref here */}
                 <p>Sponsors</p>
             </div>

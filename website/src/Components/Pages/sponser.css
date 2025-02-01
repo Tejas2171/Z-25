@@ -64,7 +64,7 @@
 /* responsive */
 @media (min-width:800px) and (max-width:1210px) {
     .header p{
-        font-size: 120px;
+        font-size: 110px;
     }
 
     .cards {
@@ -75,7 +75,7 @@
 
 @media (max-width:800px) {
     .header p{
-        font-size: 95px;
+        font-size: 85px;
     }
 
     .cards {
@@ -85,6 +85,6 @@
 
 @media (max-width:500px) {
     .header p{
-        font-size: 80px;
+        font-size: 70px;
     }
 }
