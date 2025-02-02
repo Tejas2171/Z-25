@@ -38,14 +38,14 @@ const App = () => {
     //       path: "/supportingTeam",
     //       element: <SupportingTeam />,
     //     },
-    //     {
-    //       path: "/accomodation",
-    //       element: <Accomodation />,
-    //     },
-    //     {
-    //       path: "/gallery",
-    //       element: <Gallery />,
-    //     },
+        {
+          path: "/accomodation",
+          element: <Accomodation />,
+        },
+        {
+          path: "/gallery",
+          element: <Gallery />,
+        },
     //     {
     //       path: "/sponsers",
     //       element: <Sponser />,
