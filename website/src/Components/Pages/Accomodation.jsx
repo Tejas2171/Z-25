@@ -5,7 +5,7 @@ function IconWithText({ icon: Icon, text }) {
     return (
         <div style={{ display: 'flex', alignItems: 'center' }}>
             <Icon style={{ marginRight: '8px' }} />
-            <span>{text}</span>
+            <p>{text}</p>
         </div>
     );
 }
@@ -69,39 +69,39 @@ const Accomodation = () => {
                             <p><strong>Facilities Provided</strong></p>
                             <p>Everyone will be provided with:</p>
                             <div>
-                                <div><IconWithText
+                                <p><IconWithText
                                     icon={FaBoxOpen}
                                     text="Welcome Kit"
-                                /></div>
-                                 <div><IconWithText
+                                /></p>
+                                 <p><IconWithText
                                     icon={FaAppleAlt}
                                     text="One-time meal (Lunch)"
-                                /></div>
-                                 <div><IconWithText
+                                /></p>
+                                 <p><IconWithText
                                     icon={FaWifi}
                                     text="Free Wifi"
-                                /></div>
-                                 <div><IconWithText
+                                /></p>
+                                 <p><IconWithText
                                     icon={FaBed}
                                     text="1 Bed, bedsheet and a blanket"
-                                /></div>
+                                /></p>
                                 <p>If any of the Above Items are found to be missing in the given Room a fine of ₹500/- ( per item missing) is charged.</p>
                             </div>
                             <br></br>
                             <p>Each room will be provided with:</p>
                             <ol>
-                            <div><IconWithText
+                            <p><IconWithText
                                     icon={FaFan}
                                     text="Ceiling fan, Tubelights"
-                                /></div>
-                                <div><IconWithText
+                                /></p>
+                                <p><IconWithText
                                     icon={FaLockOpen}
                                     text="Lock and Key"
-                                /></div>
-                                <div><IconWithText
+                                /></p>
+                                <p><IconWithText
                                     icon={FaBitbucket}
                                     text="Bucket and a Mug"
-                                /></div>
+                                /></p>
                             </ol>
                         </ul>
                     </div>
