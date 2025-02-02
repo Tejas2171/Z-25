@@ -39,20 +39,21 @@ const App = () => {
           path: "/supportingTeam",
           element: <SupportingTeam />,
         },
-        {
-          path: "/accomodation",
-          element: <Accomodation />,
-        },
-        {
-          path: "/gallery",
-          element: <Gallery />,
-        },
         
-        {
-          path: "/contact",
-          element: <Contact />,
-        },
       ],
+    },
+    {
+      path: "/accomodation",
+      element: <Accomodation />,
+    },
+    {
+      path: "/gallery",
+      element: <Gallery />,
+    },
+    
+    {
+      path: "/contact",
+      element: <Contact />,
     },
     {
       path: "/sponsors",
