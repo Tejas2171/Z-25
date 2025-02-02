@@ -23,24 +23,22 @@ const App = () => {
         <AppLayout />
       ),
       children: [
-        {
-          path: "/",
-          element: <Home />
-        },
-        {
-          path: "/events",
-          element: <Events />,
-        },
-        {
-          path: "/coreTeam",
-          element: <CoreTeam />,
-        },
+        
+        
         {
           path: "/supportingTeam",
           element: <SupportingTeam />,
         },
         
       ],
+    },
+    {
+      path: "/home",
+      element: <Home />
+    },
+    {
+      path: "/coreTeam",
+      element: <CoreTeam />,
     },
     {
       path: "/accomodation",
