@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, useLocation } from "react-router-dom";
 import AppLayout from "./Components/Layout/AppLayout";
-import ErrorPage from './Components/Layout/ErrorPage'
+import ErrorPage from './Components/Layout/ErrorPage';
 import Home from './Components/Pages/Home';
 import Events from './Components/Pages/Events';
 import Marathon from './Components/Pages/Marathon';
@@ -14,27 +14,10 @@ import Contact from './Components/Pages/Contact';
 import Loader from './Components/Layout/Loader';
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Show loader for 3.7 seconds
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3700);
-
-    return () => clearTimeout(timer);  // Cleanup timer
-  }, []);
-
-  // If still loading, show Loader component
-  if (isLoading) {
-    return <Loader />;
-  }
-
-  // Define routes after loader finishes
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <AppLayout />,
+      element: <AppWithLoader />,
       children: [
         { path: "/", element: <Home /> },
         { path: "/events", element: <Events /> },
@@ -47,10 +30,38 @@ const App = () => {
       ],
     },
     { path: "/marathon", element: <Marathon /> },
-    { path: "*", element: <ErrorPage /> }, // Catch-all for undefined routes
+    { path: "*", element: <ErrorPage /> },
   ]);
 
   return <RouterProvider router={router} />;
+};
+
+const AppWithLoader = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const location = useLocation(); // Get the current route
+
+  useEffect(() => {
+    localStorage.removeItem("visitedBefore");
+    const isFirstVisit = localStorage.getItem("visitedBefore");
+
+    if (!isFirstVisit && location.pathname === "/") {
+      // Only show the loader on the first visit and only on the main page "/"
+      localStorage.setItem("visitedBefore", "true"); // Mark the user as visited
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+      }, 3700);
+
+      return () => clearTimeout(timer);
+    } else {
+      setIsLoading(false);
+    }
+  }, [location.pathname]); // Run when the path changes
+
+  if (isLoading && location.pathname === "/") {
+    return <Loader />;
+  }
+
+  return <AppLayout />;
 };
 
 export default App;
