@@ -59,6 +59,7 @@ const Gallery = () => {
 
   useEffect(() => {
     setShuffledImages(shuffleArray(images));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Runs only once when component mounts
 
   return (
