@@ -1,15 +1,16 @@
-
-    .core {
-    background-image: url(/coreTeamBackground.webp);
+.core {
+    background-image: url('images/coreTeamBackground.webp');
+    background-color: rgba(255, 255, 255, 0.1); /* Black with 70% opacity */
+    background-blend-mode: overlay; /* Blends color with image */
     backdrop-filter: blur(5px);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    /* color: #F0BD1B; */
-    /* color: white; */
     color: white;
-    }
+    opacity: 0.9;
+}
+
     
     .shantanuheader {
     text-align: center;
@@ -21,13 +22,14 @@
     }
     
     .mainContainer {
+    padding-top: 90px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2em;
-    margin: 3em;
+    /* margin: 3em; */
     }
     
     .portfolio {
@@ -70,7 +72,7 @@
     transition: 0.6s;
     }
     
-    .image {
+    .shantanuimage {
     position: relative;
     height: 100%;
     width: 100%;
@@ -80,7 +82,7 @@
     justify-content: center;
     }
     
-    .image img {
+    .shantanuimage img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -93,7 +95,7 @@
     font-weight: 700;
     } */
     
-    .upper:hover .image img {
+    .upper:hover .shantanuimage img {
     border-radius: 5%;
     height: 80%;
     width: 80%;
@@ -183,6 +185,7 @@
     
     .mainContainer {
         gap: 1em;
+        padding-top: 10px;
     }
     
     .portfolio {
@@ -199,11 +202,11 @@
         gap: 5em;
     }
     
-    .image img {
+    .shantanuimage img {
         border-radius: 8%;
     }
     
-    .upper:hover .image img {
+    .upper:hover .shantanuimage img {
         border-radius: 4%;
         transform: translateY(-2.3em);
     }
@@ -258,7 +261,7 @@
         gap: 3em;
     }
     
-    .upper:hover .image img {
+    .upper:hover .shantanuimage img {
         border-radius: 3%;
         transform: translateY(-2em);
     }
@@ -314,7 +317,7 @@
         gap: 3em;
     }
     
-    .upper:hover .image img {
+    .upper:hover .shantanuimage img {
         border-radius: 3%;
         transform: translateY(-1.8em);
     }

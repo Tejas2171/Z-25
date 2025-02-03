@@ -11,14 +11,44 @@ $bg-color: rgb(100, 158, 203);
 
 body {
   font-family: "serif", sans-serif;
-  background-color: $bg-color;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
+.forbg {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+}
+
+.forbg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(54, 100, 232, 0.1), rgba(184, 153, 13, 1)),
+                url('images/eventsback.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+  
+
+
 .main-container {
+    // background-image: url('images/eventsback.jpg');
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+
   .unordered {
     scroll-behavior: smooth;
     position: relative;

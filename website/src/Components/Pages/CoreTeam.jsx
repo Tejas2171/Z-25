@@ -10,9 +10,9 @@ const CoreTeam = () => {
               <div className="teamContainer">
 
                 <div className='shantanucard'>
-                  <div className='upper'>
-                    <div className="image">
-                      <img src="/Mashal.webp" />
+                  <div className='upper '>
+                    <div className="shantanuimage">
+                      <img src="/images/Mashal.webp" alt="sarvesh" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -37,8 +37,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/abhishekAmbekar_oc.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/abhishekAmbekar_oc.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -63,8 +63,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/virajPatil_accounts.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/virajPatil_accounts.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -82,8 +82,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/Mashal.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/Mashal.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -108,8 +108,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/atharvaSomaiya_aog.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/atharvaSomaiya_aog.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -127,8 +127,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/mansi_aog.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/mansi_aog.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -146,8 +146,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/Mashal.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/Mashal.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -172,8 +172,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/parth_campus.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/parth_campus.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -191,8 +191,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/Mashal.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/Mashal.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -217,8 +217,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/Mashal.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/Mashal.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -243,8 +243,8 @@ const CoreTeam = () => {
 
               <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/nagesh_crn.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/nagesh_crn.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -262,8 +262,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/shreya_crn.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/shreya_crn.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -288,8 +288,8 @@ const CoreTeam = () => {
 
               <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/Mashal.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/Mashal.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -307,8 +307,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/Mashal.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/Mashal.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -333,8 +333,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/ved_esm.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/ved_esm.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -359,8 +359,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/arnav_events.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/arnav_events.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -378,7 +378,7 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
+                    <div className="shantanuimage">
                       <img src="https://imgcdn.stablediffusionweb.com/2024/3/18/79386d33-28e5-4c5f-8237-049db4eeee09.jpg" />
                     </div>
                     <div className="last">
@@ -404,8 +404,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/rajkale_finance.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/rajkale_finance.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -423,8 +423,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/tanmaySakhare_finance.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/tanmaySakhare_finance.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -442,8 +442,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/dishantkale_finance.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/dishantkale_finance.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -461,8 +461,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/Mashal.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/Mashal.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -487,8 +487,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/atharvaDalvi_hospi.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/atharvaDalvi_hospi.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -506,8 +506,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/adityaDalvi_hospi.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/adityaDalvi_hospi.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -532,8 +532,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/athravTagali_infra.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/athravTagali_infra.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -558,8 +558,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/anshumanMore_logistics.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/anshumanMore_logistics.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -584,8 +584,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/adityaThasale_media.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/adityaThasale_media.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -610,8 +610,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/onkarBhagwat_refreshment.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/onkarBhagwat_refreshment.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -636,8 +636,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/siddhi_vfx.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/siddhi_vfx.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -655,7 +655,7 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
+                    <div className="shantanuimage">
                       <img src="https://imgcdn.stablediffusionweb.com/2024/3/18/79386d33-28e5-4c5f-8237-049db4eeee09.jpg" />
                     </div>
                     <div className="last">
@@ -681,8 +681,8 @@ const CoreTeam = () => {
 
               <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/Mashal.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/Mashal.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">
@@ -700,8 +700,8 @@ const CoreTeam = () => {
 
                 <div className='shantanucard'>
                   <div className='upper'>
-                    <div className="image">
-                      <img src="/adhiraj_web.webp" />
+                    <div className="shantanuimage">
+                      <img src="/images/adhiraj_web.webp" />
                     </div>
                     <div className="last">
                       <div className="socialMedia">

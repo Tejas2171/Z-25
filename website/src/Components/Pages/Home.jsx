@@ -97,7 +97,7 @@ const Home = () => {
           start: "top center",
           end: "bottom bottom",
           scrub: 3,
-          markers: true,
+        //   markers: true,
         },
       });
 
@@ -163,7 +163,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="w-full bg-zinc-900">
+      <div className="w-full bg-zinc-900 font-serif">
         <div className="relative w-full h-screen text-white bg-[#d8bf78]">
           <div
             className="absolute lg:top-20 top-12 left-5 lg:left-10 h-24 w-40 lg:h-44 lg:w-72 bg-cover opacity-70"
@@ -189,7 +189,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="parent relative top-0 left-0 w-full h-[400vh]">
+        <div className="parent relative top-0 left-0 w-full h-[500vh]">
           <div className="cnav bg-white/20 sticky top-0 left-0 w-full h-screen">
             <canvas className="opacity-80 w-full h-screen"></canvas>
           </div>

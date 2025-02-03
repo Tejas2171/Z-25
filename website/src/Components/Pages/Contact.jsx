@@ -66,7 +66,7 @@ const Contact = () => {
   return (
     <div
       className="min-h-screen bg-gray-100 py-4 px-2 bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/ContactBG.jpg')" }}
+      style={{ backgroundImage: "url('/images/ContactBG.jpg')", opacity:0.9 }}
     >
         <div className="pt-16"></div>
       <div className="max-w-6xl mx-auto ">

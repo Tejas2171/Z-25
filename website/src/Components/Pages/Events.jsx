@@ -7,7 +7,7 @@ import { pageData } from "../../data";
 import { useState } from "react";
 import "../../styles/reset.css"
 import "../../styles/events.scss"
-import Header from "../Layout/Header";
+// import Header from "../Layout/Header";
 // import Footer from "../components/Footer";
 const WindowSize = { width: window.innerWidth, height: window.innerHeight };
 
@@ -77,14 +77,15 @@ const  Events=() => {
         currentMenuItems.removeEventListener("scroll", scrollUpdate);
       };
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <CursorManager>
       <CustomCursor />
 
-      <Header />
-      <div className="main-container" id="main-container">
+      {/* <Header /> */}
+      <div className="main-container forbg" id="main-container">
         <ul className="unordered
         " ref={menuItems}>
           {renderItems.map((project, index) => (

@@ -38,9 +38,9 @@ const Header = () => {
             <div className="nav-item"><a href="/events">Events</a></div>
             <div className="nav-item"><a href="/marathon">Marathon</a></div>
             <div className="nav-item"><a href="/sponsers">Sponsors</a></div>
-            <div className="nav-item"><a href="/accomodation">Accommodation</a></div>
             <div className="nav-item"><a href="/coreTeam">CoreTeam</a></div>
             <div className="nav-item"><a href="/supportingTeam">SupportingTeam</a></div>
+            <div className="nav-item"><a href="/accomodation">Accommodation</a></div>
             <div className="nav-item"><a href="/gallery">Gallery</a></div>
             <div className="nav-item"><a href="/contact">Contact Us</a></div>
           </div>
