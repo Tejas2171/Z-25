@@ -63,13 +63,13 @@ const Marathon = () => {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-siteGreen">
         <div>
-          <div className="coep-logo absolute z-40 top-4 left-4 w-32 lg:top-10 lg:left-10 lg:w-52 opacity-60">
+          <div className="coep-logo absolute z-40 top-4 left-4 w-32 lg:top-20 lg:left-10 lg:w-52 opacity-60">
             <img src="images/Coep logo white.png" />
           </div>
-          <div className="line-logo absolute z-40 top-5 left-16 w-32 lg:top-14 lg:left-32 lg:w-48 opacity-60">
+          <div className="line-logo absolute z-40 top-5 left-16 w-32 lg:top-24 lg:left-32 lg:w-48 opacity-60">
             <img src="images/line.png" />
           </div>
-          <div className="fit-logo absolute z-40 top-9 left-36 w-24 lg:top-14 lg:left-64 lg:w-48 opacity-60">
+          <div className="fit-logo absolute z-40 top-9 left-36 w-24 lg:top-24 lg:left-64 lg:w-48 opacity-60">
             <img src="images/pngaaa.com-1098574.png" />
           </div>
         </div>

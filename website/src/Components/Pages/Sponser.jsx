@@ -19,6 +19,7 @@ const Sponser = () => {
 
     return (
         <div className="sponsor-page">
+            <div className="pt-16"></div>
             <div className="header" ref={headerRef}> {/* Attach the ref here */}
                 <p>Sponsors</p>
             </div>

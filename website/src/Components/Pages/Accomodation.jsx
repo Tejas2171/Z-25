@@ -26,6 +26,7 @@ const Accomodation = () => {
     return (
         <>
         <div className="all">
+            <div className="pt-32"></div>
             <p className="smlgmain justify-center items-center">ACCOMODATION</p>
             <div className="flex justify-center items-center pt-7">
             <a href="https://forms.gle/NzLcDPvFyQFNciiJ7" target="_blank">

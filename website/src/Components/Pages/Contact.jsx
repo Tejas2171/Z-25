@@ -1,42 +1,48 @@
-import React, { useState,useRef,useEffect } from 'react';
-import { gsap } from 'gsap';
+import React, { useState, useRef, useEffect } from "react";
+import { gsap } from "gsap";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: ''
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    const scriptURL = "https://script.google.com/macros/s/AKfycbyLh5m0toiFTT3Ek-iGgilbH7Aa3w62igs3Y75kR2kSVN2Yw6_t9TgZ6x57pxDDWjU1/exec"; // Replace with your deployed Google Apps Script URL
-  
+
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyLh5m0toiFTT3Ek-iGgilbH7Aa3w62igs3Y75kR2kSVN2Yw6_t9TgZ6x57pxDDWjU1/exec"; // Replace with your deployed Google Apps Script URL
+
     try {
       const response = await fetch(scriptURL, {
         method: "POST",
         headers: {
-          "Content-Type": "text/plain"  // Use text/plain to avoid CORS issues
+          "Content-Type": "text/plain", // Use text/plain to avoid CORS issues
         },
         body: JSON.stringify(formData),
       });
-  
+
       const result = await response.text();
-      
-  
+
       if (result.includes("Success")) {
-        setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' });
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
       } else {
         throw new Error(result);
       }
@@ -47,30 +53,36 @@ const Contact = () => {
   };
 
   const headerRef = useRef(null); // Create a reference for the "Sponsors" text
-  
-      useEffect(() => {
-          // GSAP animation for the header
-          gsap.fromTo(
-              headerRef.current, 
-              { y: 40, opacity: 0 }, 
-              { y: 0, opacity: 1, duration: 2.5
-              , ease: "power3.out" } 
-          );
-      }, []);
+
+  useEffect(() => {
+    // GSAP animation for the header
+    gsap.fromTo(
+      headerRef.current,
+      { y: 40, opacity: 0 },
+      { y: 0, opacity: 1, duration: 2.5, ease: "power3.out" }
+    );
+  }, []);
 
   return (
-    
     <div
-  className="min-h-screen bg-gray-100 py-4 px-2 bg-cover bg-center"
-  style={{ backgroundImage: "url('/images/ContactBG.jpg')" }}
->
+      className="min-h-screen bg-gray-100 py-4 px-2 bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/ContactBG.jpg')" }}
+    >
+        <div className="pt-16"></div>
       <div className="max-w-6xl mx-auto ">
-        <h1 className="text-3xl font-bold text-center text-white mb-8" ref={headerRef}>Contact Us</h1>
-        
+        <h1
+          className="text-3xl font-bold text-center text-white mb-8"
+          ref={headerRef}
+        >
+          Contact Us
+        </h1>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Form */}
           <div className="bg-black bg-opacity-65 p-4 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg ease-in-out">
-            <h2 className="text-xl font-semibold mb-4 text-white">Send us a Message</h2>
+            <h2 className="text-xl font-semibold mb-4 text-white">
+              Send us a Message
+            </h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
@@ -96,7 +108,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label className="block text-white mb-1">Email</label>
                 <input
@@ -108,7 +120,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              
+
               <div>
                 <label className="block text-white mb-1">Phone Number</label>
                 <input
@@ -120,7 +132,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              
+
               <div>
                 <label className="block text-white mb-1">Message</label>
                 <textarea
@@ -132,10 +144,11 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-gray-700 to-gray-900 text-white py-2 px-4 rounded-lg shadow-lg hover:from-gray-900 hover:to-gray-700 transition-transform transform hover:scale-105 duration-300 focus:outline-none mb-2"  style={{ color: 'white !important' }}
+                className="w-full bg-gradient-to-r from-gray-700 to-gray-900 text-white py-2 px-4 rounded-lg shadow-lg hover:from-gray-900 hover:to-gray-700 transition-transform transform hover:scale-105 duration-300 focus:outline-none mb-2"
+                style={{ color: "white !important" }}
               >
                 Send Message
               </button>
@@ -146,30 +159,63 @@ const Contact = () => {
           <div className="space-y-8 ">
             {/* Contact Info */}
             <div className="bg-black bg-opacity-65 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 hover:shadow-lg ease-in-out">
-              <h2 className="text-xl font-semibold mb-4 text-white">Contact Information</h2>
+              <h2 className="text-xl font-semibold mb-4 text-white">
+                Contact Information
+              </h2>
               <div className="space-y-3">
                 <div>
                   <h3 className="font-medium text-white">Address</h3>
-                  <p className="text-white">Zest Office, Shivaji Nagar, Pune-411005</p>
+                  <p className="text-white">
+                    Zest Office, Shivaji Nagar, Pune-411005
+                  </p>
                 </div>
                 <div>
                   <h3 className="font-medium text-white">Phone</h3>
-                  <p className="text-white" >7385892082</p>
-                  
+                  <p className="text-white">7385892082</p>
                 </div>
                 <div>
                   <h3 className="font-medium text-white">Email</h3>
                   <p className="text-white">zs.zest@coep.ac.in</p>
                 </div>
-                
+
                 {/* Social Media Links */}
                 <div className="pt-4">
-                  <h3 className="font-medium text-gray-800 mb-2 text-white">Follow Us</h3>
+                  <h3 className="font-medium text-gray-800 mb-2 text-white">
+                    Follow Us
+                  </h3>
                   <div className="flex space-x-4">
-                    
-                    
-                    <a href="https://www.instagram.com/coepzest/" target="_blank" className="text-blue-500 hover:text-blue-600"><img src="/images/instagram.png" style={{ width: "40px", height: "40px", padding: '0', margin: '0', objectFit: 'contain' }}></img></a>
-                    <a href="https://www.linkedin.com/company/zest-coep/posts/?feedView=all" target="_blank" className="text-blue-500 hover:text-blue-600"><img src="/images/LinkedInIcon.png" style={{ width: "40px", height: "40px", padding: '0', margin: '0', objectFit: 'contain' }}></img></a>
+                    <a
+                      href="https://www.instagram.com/coepzest/"
+                      target="_blank"
+                      className="text-blue-500 hover:text-blue-600"
+                    >
+                      <img
+                        src="/images/instagram.png"
+                        style={{
+                          width: "40px",
+                          height: "40px",
+                          padding: "0",
+                          margin: "0",
+                          objectFit: "contain",
+                        }}
+                      ></img>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/zest-coep/posts/?feedView=all"
+                      target="_blank"
+                      className="text-blue-500 hover:text-blue-600"
+                    >
+                      <img
+                        src="/images/LinkedInIcon.png"
+                        style={{
+                          width: "40px",
+                          height: "40px",
+                          padding: "0",
+                          margin: "0",
+                          objectFit: "contain",
+                        }}
+                      ></img>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -193,7 +239,6 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
