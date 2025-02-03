@@ -1,4 +1,4 @@
-.Gallery{
+.Gallery_g{
     width: 100%;
     height: 100%;
     position: relative;
@@ -9,15 +9,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
-.container {
+/* .container {
     width: 100vw;
     height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
-}
+} */
 
-.title {
+.title_g {
     font-size: 5vw;
     text-align: center;
     color: #5F8053;
@@ -31,24 +31,22 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 } */
 
-.image-gallery {
+.image-gallery_g {
     column-count: 4;
     column-gap: 0;
     /* padding-top: 5vh; */
 
 }
 
-.image-gallery div {
+.image-gallery_g div {
     flex-grow: 1;
     margin: 0.5vw;
     overflow: hidden;
     cursor: pointer;
 }
 
-.image-item{
-    
-}
-.image-item img {
+
+.image-item_g img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -58,42 +56,51 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     max-height: 70vh;
 }
 
-.image-item:nth-child(3n) {
+.image-item_g:nth-child(3n) {
     grid-column: span 2;
     grid-row: span 2;
 }
 
-.image-item:nth-child(5n) {
+.image-item_g:nth-child(5n) {
     grid-column: span 2;
 }
 
-.image-item:nth-child(7n) {
+.image-item_g:nth-child(7n) {
     grid-row: span 2;
 }
 
 
-img:hover {
+.image-item_g img:hover {
     transform: scale(1.05);
 }
 
 
 
-body {
-    overflow: auto; /* Enable scrolling within the body */
+.gallery_g {
+    overflow: auto; 
   }
   
-  body::-webkit-scrollbar {
+  .gallery_g::-webkit-scrollbar {
     width: 0.1vw;
   }
   
-  body::-webkit-scrollbar-track {
-    background: #0000; /* Background color of the scrollbar track */
+  .gallery_g::-webkit-scrollbar-track {
+    background: #0000; 
   }
   
-  body::-webkit-scrollbar-thumb {
+  .gallery_g::-webkit-scrollbar-thumb {
     background-color: #29282808;
-    border-radius: 10px; /* Rounded edges */
-    border: 1px solid #0c0c0c04; /* Space around scrollbar thumb */
+    border-radius: 10px; 
+    border: 1px solid #0c0c0c04;
   }
 
-  
+  @media (max-width: 600px) {
+    .image-gallery_g {
+        grid-template-columns: 1fr; /* One image per row */
+    }
+
+    .image-item_g img {
+        max-width: 90vw; /* Fit image within the screen */
+        max-height: 70vh;
+    }
+}

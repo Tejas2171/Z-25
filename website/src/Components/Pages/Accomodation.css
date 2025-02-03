@@ -1,4 +1,4 @@
-.all{
+.all_a{
     height: 100%;
     width: 100%;
     background: #000000;
@@ -9,7 +9,7 @@
     background-position: center;   
   }
   
-  .all::before {
+  .all_a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -28,7 +28,7 @@
     font-size: 9vw;
   }
   
-  .cards {
+  .cards_a {
     padding-top: 3vw;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
     text-align: justify;
   }
   
-  .card-template{
+  .card-template_a{
     background-color: #00000000;
     border-radius: 2vw;
     height: 40vw;
@@ -126,13 +126,13 @@
     /* Adjust font size */
   }
   
-  .card-head {
+  .card-head_a {
     color: rgb(240, 189, 27, 1);
     font-size: 3vw;
     padding: 1%;
   }
   
-  .card-info {
+  .card-info_a {
     font-size: 1.3vw;
     color: rgb(255, 250, 250);
     overflow-y: auto;
@@ -143,16 +143,16 @@
   }
   
   /* Customize the scrollbar */
-  .card-info::-webkit-scrollbar {
+  .card-info_a::-webkit-scrollbar {
     width: 1vw; /* Width of the scrollbar */
   }
   
-  .card-info::-webkit-scrollbar-track {
-    background: #212121ad; /* Background color of the scrollbar track */
+  .card-info_a::-webkit-scrollbar-track {
+    background: #21212162; /* Background color of the scrollbar track */
   }
   
-  .card-info::-webkit-scrollbar-thumb {
-    background-color: #0b0b0b77; /* Scrollbar color */
+  .card-info_a::-webkit-scrollbar-thumb {
+    background-color: #0b0b0b20; /* Scrollbar color */
     border-radius: 10px; /* Rounded edges */
     border: 1px solid #7f7e7e42; /* Space around scrollbar thumb */
   }
@@ -162,7 +162,7 @@
     list-style-type: disc;
   } */
   
-  .contact-info {
+  .contact-info_a {
     padding-top: 4%;
     display: flex;
     flex-direction: column;
@@ -180,7 +180,7 @@
     margin-left: 20px; /* Optional for indentation */
   }
   
-  .animated-gradient-frame {
+  .animated-gradient-frame_a {
     border: 2px solid transparent;
     border-image: linear-gradient(to right,rgb(240, 189, 27, 1), rgb(234, 217, 162));
     border-image-slice: 1;
@@ -190,13 +190,13 @@
   }
   
   @media (max-width: 1024px) {
-    .card-template {
+    .card-template_a {
       flex: 1 1 100%; /* 2 cards per row on medium screens */
     }
   }
   @media (max-width: 768px) {
     
-    .card-template {
+    .card-template_a {
       flex: 1 1 100%; /* 1 card per row on small screens */
     }
   
@@ -204,12 +204,17 @@
       font-size: 2.5rem; /* Smaller font size for smaller screens */
     }
   
-    .card-head {
+    .card-head_a {
       font-size: 1.2rem; /* Smaller font size for card headers */
     }
   
-    .card-info {
-      font-size: 0.9rem; /* Smaller font size for content */
+    .card-info_a {
+      font-size: 0.85rem; /* Smaller font size for content */
+      overflow-x: hidden;
+    }
+
+    ul{
+      padding: 0 0 0 1.2rem;
     }
   
   }

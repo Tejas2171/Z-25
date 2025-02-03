@@ -62,15 +62,17 @@ const Gallery = () => {
   }, []); // Runs only once when component mounts
 
   return (
-    <div className="Gallery">
-      <h1 className="title">GALLERY</h1>
-      <div className="image-gallery">
+    <div className="gallery_g">
+    <div className="Gallery_g">
+      <h1 className="title_g">GALLERY</h1>
+      <div className="image-gallery_g">
         {shuffledImages.map((image, index) => (
-          <div key={index} className="image-item">
+          <div key={index} className="image-item_g">
             <img src={image} alt={`Gallery ${index}`} />
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

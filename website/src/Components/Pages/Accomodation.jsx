@@ -26,7 +26,7 @@ const guidelines = [
 const Accomodation = () => {
     return (
         <>
-        <div className="all">
+        <div className="all_a">
             <p className="smlgmain justify-center items-center">ACCOMODATION</p>
             <div className="flex justify-center items-center pt-7">
             <a href="https://forms.gle/NzLcDPvFyQFNciiJ7" target="_blank">
@@ -35,11 +35,11 @@ const Accomodation = () => {
                 transform hover:scale-105 hover:shadow-lg">REGISTER</button>
             </a>    
             </div>
-            <div className="cards">
-                <div className="card-template animated-gradient-frame animation">
-                    <h1 className="card-head">Guidelines</h1>
-                    <h1 className="card-head">Rules and Regulation</h1>
-                    <div className="card-info">
+            <div className="cards_a">
+                <div className="card-template_a animated-gradient-frame_a animation">
+                    <h1 className="card-head_a">Guidelines</h1>
+                    <h1 className="card-head_a">Rules and Regulation</h1>
+                    <div className="card-info_a">
                         <ol>
                             <li>Students willing to avail of accommodation facilities must carry</li>
                             <ul>
@@ -54,10 +54,10 @@ const Accomodation = () => {
                         </ol>
                     </div>
                 </div>
-                <div className="card-template animated-gradient-frame animation">
-                    <h1 className="card-head">Price</h1>
-                    <h1 className="card-head">Fee Structure</h1>
-                    <div className="card-info">
+                <div className="card-template_a animated-gradient-frame_a animation">
+                    <h1 className="card-head_a">Price</h1>
+                    <h1 className="card-head_a">Fee Structure</h1>
+                    <div className="card-info_a">
                         <ol>
                             <li>The accommodation will be available from 7th February ( 9:00 am ) to 9th February (5:00 pm) .For cricket, accommodation will be available as per the given dates for matches.</li>
                             <li>The Accommodation Fee per person per day is ₹450/-(all charges included).</li>
@@ -106,9 +106,9 @@ const Accomodation = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="card-template animated-gradient-frame animation">
-                    <h1 className="card-head">Route to COEP</h1>
-                    <div className="card-info">
+                <div className="card-template_a animated-gradient-frame_a animation">
+                    <h1 className="card-head_a">Route to COEP</h1>
+                    <div className="card-info_a">
                         <p>Pune is well connected to most major cities in India by railways and roads. There are frequent trains and buses to Pune.</p>
                         <p>COEP ZEST won't provide any facilities to reach the destination. Reaching inside the campus, participants have to first report to the registration desk situated in the visitors' room of the hostel campus.</p>
                         <p>You can reach COEP Hostel in two ways from the nearby railway station and bus stand.</p>
@@ -126,12 +126,12 @@ const Accomodation = () => {
                         <p>The nearest bus stand is the New Shivajinagar bus stand. The distance is close to 2 kilometres. You take a local autorickshaw or book a cab to COEP Hostel. Alternatively, you can reach the Swargate bus stand. The distance is approximately 4.4 kilometres. Travel time is approximately 15 minutes. Similarly, you can take a local autorickshaw or book a cab to COEP Hostel.</p>
                     </div>
                 </div>
-                <div className="card-template animated-gradient-frame animation">
-                    <h1 className="card-head">Contact Us</h1>
-                    <div className="card-info">
+                <div className="card-template_a animated-gradient-frame_a animation">
+                    <h1 className="card-head_a">Contact Us</h1>
+                    <div className="card-info_a">
                         <p>ZEST has been a great example of providing a platform to all the players around the country.
                             ZEST Hospitality committee constantly strive toward the satisfaction of each sportsperson. We will leave no stone unturned in meeting the needs of secure accommodation away from home and ensure a comfortable and memorable stay at COEP Hostel.</p>
-                        <div className="contact-info">
+                        <div className="contact-info_a">
                             <p><strong>For any query or details contact us:</strong></p>
                             <br></br>
                             <div className="text-center">
