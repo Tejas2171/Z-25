@@ -21,7 +21,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #303030;
+  /* background-color: #303030; */
 }
 
 .smlgmain {
@@ -158,20 +158,20 @@ h1 {
   z-index: 5;
 }
 
-.category_card {
+.category_c_a_r_d {
   height: 350px;
   transition: ease-in-out;
   transition-duration: 0.4s;
   z-index: 5;
 }
-.category_card h2,
+.category_c_a_r_d h2,
 button {
   -webkit-text-fill-color: #f0bd1b;
 }
-.category_card p {
+.category_c_a_r_d p {
   -webkit-text-fill-color: #f2f2e6;
 }
-.category_card:hover {
+.category_c_a_r_d:hover {
   z-index: 5;
   transition: ease-in-out;
   transition-duration: 0.4s;
@@ -183,7 +183,7 @@ button {
   z-index: 1;
   font-size: 30px;
 }
-.each-card {
+.each-c-a-r-d {
   font-family: myFont2;
   background-color: #f2f2e6;
   z-index: 2;
@@ -200,7 +200,7 @@ button {
   font-family: myFont;
 }
 
-.card {
+.maracard {
   position: relative;
   background: rgba(42, 42, 42, 1); /* Change opacity using rgba */
   border-radius: 20px;
@@ -210,7 +210,7 @@ button {
   z-index: 5;
 }
 
-.card .lines {
+.maracard .lines {
   position: absolute;
   inset: 0;
   background: #000;
@@ -219,7 +219,7 @@ button {
   pointer-events: none;
 }
 
-.card .lines::before {
+.maracard .lines::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -237,7 +237,7 @@ button {
   transform-origin: 0 0;
 }
 
-.card .lines::after {
+.maracard .lines::after {
   content: "";
   position: absolute;
   inset: 3px;
@@ -356,17 +356,17 @@ button {
     transform: translateY(-200px);
   }
 
-  .category_card {
+  .category_c_a_r_d {
     width: 100%;
     padding: 15px;
     margin: 10px auto;
   }
 
-  .each-card {
+  .each-c-a-r-d {
     margin-bottom: 20px;
   }
 
-  .each-card img {
+  .each-c-a-r-d img {
     height: auto;
   }
 
@@ -523,10 +523,10 @@ button {
   .inside-inside-categories2 {
     padding-top: 80px;
   }
-  .card {
+  .maracard {
     width: 290px;
   }
-  .category_card {
+  .category_c_a_r_d {
     padding: 10px;
     width: 280px;
     height: 300px;

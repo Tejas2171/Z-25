@@ -28,7 +28,7 @@
     font-size: 9vw;
   }
   
-  .cards {
+  .sarthikacards {
     padding-top: 3vw;
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
     text-align: justify;
   }
   
-  .card-template{
+  .sarthikacard-template{
     background-color: #00000000;
     border-radius: 2vw;
     height: 40vw;
@@ -110,7 +110,7 @@
     
     }
   
-  ul{
+  .unordered_list{
       display: block;
       list-style-type: disc;
       margin-block-start: 1em;
@@ -121,13 +121,13 @@
       unicode-bidi: isolate;
   }
   
-  .card-head {
+  .sarthikacard-head {
     color: rgb(240, 189, 27, 1);
     font-size: 3vw;
     padding: 1%;
   }
   
-  .card-info {
+  .sarthikacard-info {
     font-size: 1.3vw;
     color: rgb(255, 250, 250);
     overflow-y: auto;
@@ -138,15 +138,15 @@
   }
   
   /* Customize the scrollbar */
-  .card-info::-webkit-scrollbar {
+  .sarthikacard-info::-webkit-scrollbar {
     width: 1vw; /* Width of the scrollbar */
   }
   
-  .card-info::-webkit-scrollbar-track {
+  .sarthikacard-info::-webkit-scrollbar-track {
     background: #212121ad; /* Background color of the scrollbar track */
   }
   
-  .card-info::-webkit-scrollbar-thumb {
+  .sarthikacard-info::-webkit-scrollbar-thumb {
     background-color: #0b0b0b77; /* Scrollbar color */
     border-radius: 10px; /* Rounded edges */
     border: 1px solid #7f7e7e42; /* Space around scrollbar thumb */
@@ -185,25 +185,25 @@
   }
   
   @media (max-width: 1024px) {
-    .card-template {
-      flex: 1 1 100%; /* 2 cards per row on medium screens */
+    .sarthikacard-template {
+      flex: 1 1 100%; /* 2 sarthikacards per row on medium screens */
     }
   }
   @media (max-width: 768px) {
     
-    .card-template {
-      flex: 1 1 100%; /* 1 card per row on small screens */
+    .sarthikacard-template {
+      flex: 1 1 100%; /* 1 sarthikacard per row on small screens */
     }
   
     .smlgmain {
       font-size: 2.5rem; /* Smaller font size for smaller screens */
     }
   
-    .card-head {
-      font-size: 1.2rem; /* Smaller font size for card headers */
+    .sarthikacard-head {
+      font-size: 1.2rem; /* Smaller font size for sarthikacard headers */
     }
   
-    .card-info {
+    .sarthikacard-info {
       font-size: 0.9rem; /* Smaller font size for content */
     }
   

@@ -175,9 +175,9 @@ const Marathon = () => {
               <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
             </div>
             <div className="inside-inside-categories2 flex justify-center items-center gap-10 py-32">
-              <div className="card relative rounded-2xl ">
+              <div className="maracard relative rounded-2xl ">
                 <div className="lines"></div>
-                <div className="category_card w-full flex flex-col justify-evenly items-center relative p-6  rounded-lg shadow-lg">
+                <div className="category_c_a_r_d w-full flex flex-col justify-evenly items-center relative p-6  rounded-lg shadow-lg">
                   <h2 className="text-4xl font-bold text-center">3 KM</h2>
                   <h3 className="text-2xl">Fun Run</h3>
                   <p className="text-sm">
@@ -194,9 +194,9 @@ const Marathon = () => {
                   </a>
                 </div>
               </div>
-              <div className="card relative rounded-2xl">
+              <div className="maracard relative rounded-2xl">
                 <div className="lines"></div>
-                <div className="category_card w-full flex flex-col justify-evenly items-center relative p-6 max-w-lg rounded-lg shadow-lg">
+                <div className="category_c_a_r_d w-full flex flex-col justify-evenly items-center relative p-6 max-w-lg rounded-lg shadow-lg">
                   <h2 className="text-4xl font-bold text-center">5 KM</h2>
                   <h3 className="text-2xl">Fitness Run</h3>
                   <p className="text-sm">Ideal for staying active and fit !</p>
@@ -211,9 +211,9 @@ const Marathon = () => {
                   </a>
                 </div>
               </div>
-              <div className="card relative rounded-2xl">
+              <div className="maracard relative rounded-2xl">
                 <div className="lines"></div>
-                <div className="category_card w-full flex flex-col justify-evenly items-center relative p-6 max-w-lg rounded-lg shadow-lg">
+                <div className="category_c_a_r_d w-full flex flex-col justify-evenly items-center relative p-6 max-w-lg rounded-lg shadow-lg">
                   <h2 className="text-4xl font-bold text-center">5 KM</h2>
                   <h3 className="text-2xl">Corporate Run</h3>
                   <p className="text-sm">A step up for aspiring runners !</p>
@@ -228,9 +228,9 @@ const Marathon = () => {
                   </a>
                 </div>
               </div>
-              <div className="card relative rounded-2xl">
+              <div className="maracard relative rounded-2xl">
                 <div className="lines"></div>
-                <div className="category_card w-full flex flex-col justify-evenly items-center relative p-6 max-w-lg rounded-lg shadow-lg">
+                <div className="category_c_a_r_d w-full flex flex-col justify-evenly items-center relative p-6 max-w-lg rounded-lg shadow-lg">
                   <h2 className="text-4xl font-bold text-center">10 KM</h2>
                   <h3 className="text-2xl">Endurance Run</h3>
                   <p className="text-sm">
@@ -260,7 +260,7 @@ const Marathon = () => {
             <hr className="w-1/2 mx-auto my-5 border-siteGreen border-2" />
           </div>
           <div className="py-6 md:py-32 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-24 max-w-[80%] mx-auto">
-            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+            <div className="border rounded-lg overflow-hidden shadow-lg each-c-a-r-d hover-effect">
               <div className="p-2 md:p-10">
                 <img
                   src="images/T-shirt (2).png"
@@ -274,7 +274,7 @@ const Marathon = () => {
                 </h4>
               </div>
             </div>
-            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+            <div className="border rounded-lg overflow-hidden shadow-lg each-c-a-r-d hover-effect">
               <div className="p-2 md:p-10">
                 <img
                   src="images/medals (2).png"
@@ -288,7 +288,7 @@ const Marathon = () => {
                 </h4>
               </div>
             </div>
-            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+            <div className="border rounded-lg overflow-hidden shadow-lg each-c-a-r-d hover-effect">
               <div className="p-2 md:p-10">
                 <img
                   src="images/certificates (2).png"
@@ -302,7 +302,7 @@ const Marathon = () => {
                 </h4>
               </div>
             </div>
-            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+            <div className="border rounded-lg overflow-hidden shadow-lg each-c-a-r-d hover-effect">
               <div className="p-2 md:p-10">
                 <img
                   src="images/refreshments (2).png"
@@ -316,7 +316,7 @@ const Marathon = () => {
                 </h4>
               </div>
             </div>
-            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+            <div className="border rounded-lg overflow-hidden shadow-lg each-c-a-r-d hover-effect">
               <div className="p-2 md:p-10">
                 <img
                   src="images/welcome (2).png"
@@ -330,7 +330,7 @@ const Marathon = () => {
                 </h4>
               </div>
             </div>
-            <div className="border rounded-lg overflow-hidden shadow-lg each-card hover-effect">
+            <div className="border rounded-lg overflow-hidden shadow-lg each-c-a-r-d hover-effect">
               <div className="p-2 md:p-10">
                 <img
                   src="images/medical (2).png"

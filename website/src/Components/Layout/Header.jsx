@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="z-50 fixed w-full h-[80px] text-lg text-[#4b3a25] font-semibold md:bg-white lg:bg-opacity-0 backdrop-blur-md flex items-center justify-between px-16 sm:px-8 md:px-12">
+      <div className="z-50 fixed w-full h-[80px] text-lg text-[#4b3a25] font-semibold md:bg-white lg:bg-opacity-10 backdrop-blur-xl flex items-center justify-between px-16 sm:px-8 md:px-12">
         <div id="logo" className="text-2xl sm:text-xl">ZEST`25</div>
 
         {/* Hamburger Icon (Visible on small screens) */}

@@ -34,17 +34,17 @@ const Accomodation = () => {
                 transform hover:scale-105 hover:shadow-lg">REGISTER</button>
             </a>    
             </div>
-            <div className="cards">
-                <div className="card-template animated-gradient-frame animation">
-                    <h1 className="card-head">Guidelines</h1>
-                    <h1 className="card-head">Rules and Regulation</h1>
-                    <div className="card-info">
-                        <ol>
+            <div className="sarthikacards">
+                <div className="sarthikacard-template animated-gradient-frame animation">
+                    <h1 className="sarthikacard-head">Guidelines</h1>
+                    <h1 className="sarthikacard-head">Rules and Regulation</h1>
+                    <div className="sarthikacard-info">
+                        <ol className="ordered_list">
                             <li>Students willing to avail of accommodation facilities must carry</li>
-                            <ul>
+                            <ul className="unordered_list">
                                 <li>Registration receipt (Accommodation Registration)</li>
                                 <li>Government Id proof</li>
-                                <li>College identity cards</li>
+                                <li>College identity sarthikacards</li>
                                 <li>Passport size photo</li>
                             </ul>
                         {guidelines.map((point, index) => (
@@ -53,18 +53,18 @@ const Accomodation = () => {
                         </ol>
                     </div>
                 </div>
-                <div className="card-template animated-gradient-frame animation">
-                    <h1 className="card-head">Price</h1>
-                    <h1 className="card-head">Fee Structure</h1>
-                    <div className="card-info">
-                        <ol>
+                <div className="sarthikacard-template animated-gradient-frame animation">
+                    <h1 className="sarthikacard-head">Price</h1>
+                    <h1 className="sarthikacard-head">Fee Structure</h1>
+                    <div className="sarthikacard-info">
+                        <ol className="ordered_list">
                             <li>The accommodation will be available from 7th February ( 9:00 am ) to 9th February (5:00 pm) .For cricket, accommodation will be available as per the given dates for matches.</li>
                             <li>The Accommodation Fee per person per day is ₹450/-(all charges included).</li>
                             <li>The Fee will be ₹400/- per day if accommodation is confirmed for 2 days or more .</li>
                             <li>A refundable deposit of ₹500/- will have to be paid before the procurement of the room by every individual. Deposit will be received in cash form only.</li>
                             <li>Once the accommodation fees is made, no amount shall be refunded.</li>
                         </ol>
-                        <ul>
+                        <ul className = "unordered_list">
                             <p><strong>Facilities Provided</strong></p>
                             <p>Everyone will be provided with:</p>
                             <div>
@@ -88,7 +88,7 @@ const Accomodation = () => {
                             </div>
                             <br></br>
                             <p>Each room will be provided with:</p>
-                            <ol>
+                            <ol className="ordered_list">
                             <p><IconWithText
                                     icon={FaFan}
                                     text="Ceiling fan, Tubelights"
@@ -105,9 +105,9 @@ const Accomodation = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="card-template animated-gradient-frame animation">
-                    <h1 className="card-head">Route to COEP</h1>
-                    <div className="card-info">
+                <div className="sarthikacard-template animated-gradient-frame animation">
+                    <h1 className="sarthikacard-head">Route to COEP</h1>
+                    <div className="sarthikacard-info">
                         <p>Pune is well connected to most major cities in India by railways and roads. There are frequent trains and buses to Pune.</p>
                         <p>{`COEP ZEST won't provide any facilities to reach the destination. Reaching inside the campus, participants have to first report to the registration desk situated in the visitors' room of the hostel campus.`}</p>
                         <p>You can reach COEP Hostel in two ways from the nearby railway station and bus stand.</p>
@@ -125,9 +125,9 @@ const Accomodation = () => {
                         <p>The nearest bus stand is the New Shivajinagar bus stand. The distance is close to 2 kilometres. You take a local autorickshaw or book a cab to COEP Hostel. Alternatively, you can reach the Swargate bus stand. The distance is approximately 4.4 kilometres. Travel time is approximately 15 minutes. Similarly, you can take a local autorickshaw or book a cab to COEP Hostel.</p>
                     </div>
                 </div>
-                <div className="card-template animated-gradient-frame animation">
-                    <h1 className="card-head">Contact Us</h1>
-                    <div className="card-info">
+                <div className="sarthikacard-template animated-gradient-frame animation">
+                    <h1 className="sarthikacard-head">Contact Us</h1>
+                    <div className="sarthikacard-info">
                         <p>ZEST has been a great example of providing a platform to all the players around the country.
                             ZEST Hospitality committee constantly strive toward the satisfaction of each sportsperson. We will leave no stone unturned in meeting the needs of secure accommodation away from home and ensure a comfortable and memorable stay at COEP Hostel.</p>
                         <div className="contact-info">
