@@ -23,11 +23,18 @@ const App = () => {
         <AppLayout />
       ),
       children: [
-        
+        {
+          path: "/accomodation",
+          element: <Accomodation />,
+        },
         
         {
           path: "/supportingTeam",
           element: <SupportingTeam />,
+        },
+        {
+          path: "/sponsors",
+          element: <Sponser />,
         },
         
       ],
@@ -40,10 +47,7 @@ const App = () => {
       path: "/coreTeam",
       element: <CoreTeam />,
     },
-    {
-      path: "/accomodation",
-      element: <Accomodation />,
-    },
+    
     {
       path: "/gallery",
       element: <Gallery />,
@@ -53,10 +57,7 @@ const App = () => {
       path: "/contact",
       element: <Contact />,
     },
-    {
-      path: "/sponsors",
-      element: <Sponser />,
-    },
+    
     {
       path: "/marathon",
       element: <Marathon />,
