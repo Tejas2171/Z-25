@@ -1,0 +1,79 @@
+.nav-item::after{
+    content: "";
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 0px;
+    border-bottom: 3px solid rgb(108, 95, 46); 
+    transition: all ease-in-out .2s; }
+
+.nav-item:hover::after {
+    width: 100%;
+    left: 0px;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+    position: absolute;
+    top: 20px;  /* Adjust the distance from the top */
+    right: 20px;  /* Adjust the distance from the right */
+  }
+  
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
+  
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+  }
+  
+  /* Transition for smoother animation */
+  .hamburger span {
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile Menu Styles */
+  @media (max-width: 768px) {
+    /* Aligning the logo in the top-left corner */
+    #logo {
+      font-size: 1.25rem;
+      left: 16px;
+      top: 16px;
+      position: absolute;
+    }
+  
+    /* Decrease space between the hamburger items */
+    .nav-item {
+      padding: 8px 0;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .nav-item a {
+      font-size: 1rem; /* Smaller text for mobile */
+    }
+  }
+  
+  /* Adjusting the spacing for the mobile menu when open */
+  @media (max-width: 480px) {
+    .nav-item {
+      padding: 5px 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  

@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
-        <>
-            <p>Footer</p>
-        </>
+        <div className="h-[0vh]">
+            {/* <p>Footer</p> */}
+        </div>
     )
 }
 
