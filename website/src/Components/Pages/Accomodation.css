@@ -121,11 +121,6 @@
       unicode-bidi: isolate;
   }
   
-  li {
-    /*font-size: 1.4rem;*/
-    /* Adjust font size */
-  }
-  
   .card-head {
     color: rgb(240, 189, 27, 1);
     font-size: 3vw;

@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
 import "./Accomodation.css";
-import { FaAppleAlt, FaBed, FaBitbucket, FaBowlingBall, FaBoxOpen, FaFan, FaLocationArrow, FaLockOpen, FaTrain, FaWifi } from "react-icons/fa";
+import { FaAppleAlt, FaBed, FaBitbucket, FaBoxOpen, FaFan, FaLocationArrow, FaLockOpen, FaTrain, FaWifi } from "react-icons/fa";
 function IconWithText({ icon: Icon, text }) {
     return (
         <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -110,7 +109,7 @@ const Accomodation = () => {
                     <h1 className="card-head">Route to COEP</h1>
                     <div className="card-info">
                         <p>Pune is well connected to most major cities in India by railways and roads. There are frequent trains and buses to Pune.</p>
-                        <p>COEP ZEST won't provide any facilities to reach the destination. Reaching inside the campus, participants have to first report to the registration desk situated in the visitors' room of the hostel campus.</p>
+                        <p>{`COEP ZEST won't provide any facilities to reach the destination. Reaching inside the campus, participants have to first report to the registration desk situated in the visitors' room of the hostel campus.`}</p>
                         <p>You can reach COEP Hostel in two ways from the nearby railway station and bus stand.</p>
                         <br></br>
                         <div style={{ display: 'inline-flex', alignItems: 'center' }}>
