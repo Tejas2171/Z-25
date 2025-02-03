@@ -64,8 +64,8 @@ const Gallery = () => {
 
   return (
     <div className="Gallery">
-    <div className="pt-24"></div>
-      <h1 className="title">GALLERY</h1>
+    <div className="pt-28"></div>
+      <h1 className="header pb-10">GALLERY</h1>
       <div className="image-gallery">
         {shuffledImages.map((image, index) => (
           <div key={index} className="image-item">

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
 const Contact = () => {
@@ -180,7 +180,7 @@ const Contact = () => {
 
                 {/* Social Media Links */}
                 <div className="pt-4">
-                  <h3 className="font-medium text-gray-800 mb-2 text-white">
+                  <h3 className="font-medium mb-2 text-white">
                     Follow Us
                   </h3>
                   <div className="flex space-x-4">
