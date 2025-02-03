@@ -33,13 +33,14 @@ const Header = () => {
           </div>
         </div>
 
-        <div className={`flex items-center bg-white/50 w-[1000px] lg:bg-transparent justify-center gap-16 sm:gap-8 md:gap-12 flex-wrap ${menuOpen ? 'block' : 'hidden'} sm:flex`}>
+        <div className={`flex items-center bg-white/50 w-[1200px] lg:bg-transparent justify-center gap-16 sm:gap-8 md:gap-12 flex-wrap ${menuOpen ? 'block' : 'hidden'} sm:flex`}>
           <div className="flex items-center justify-center pt-20 lg:pt-0 gap-4 sm:gap-1 md:gap-8 flex-wrap">
             <div className="nav-item"><a href="/events">Events</a></div>
             <div className="nav-item"><a href="/marathon">Marathon</a></div>
-            <div className="nav-item"><a href="/coreTeam">Team</a></div>
-            <div className="nav-item"><a href="/accomodation">Accommodation</a></div>
             <div className="nav-item"><a href="/sponsers">Sponsors</a></div>
+            <div className="nav-item"><a href="/accomodation">Accommodation</a></div>
+            <div className="nav-item"><a href="/coreTeam">CoreTeam</a></div>
+            <div className="nav-item"><a href="/supportingTeam">SupportingTeam</a></div>
             <div className="nav-item"><a href="/gallery">Gallery</a></div>
             <div className="nav-item"><a href="/contact">Contact Us</a></div>
           </div>
