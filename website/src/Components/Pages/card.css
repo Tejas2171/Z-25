@@ -1,0 +1,200 @@
+@font-face {
+    font-family: myFont;
+    src: url("/fonts/LuckiestGuy-Regular.ttf");
+}
+@font-face {
+    font-family: myFont2;
+    src: url("/fonts/InstrumentSans-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+    font-family: myFont3;
+    src: url("/fonts/PantonRustHeavy-GrSh.ttf");
+}
+@font-face {
+    font-family: myFont4;
+    src: url("/fonts/DIMIS___.TTF");
+}
+
+.palakcard {
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the content horizontally */
+  justify-content: center; /* Centers the content vertically (if necessary) */
+  padding: 16px;
+    background-color: black;
+    height: 350px;
+    width:350px;
+    box-shadow: 5px 5px 20px black;
+    margin:10px;
+    overflow:hidden;
+    position: relative;
+    }
+
+    .imageofsponser{
+    
+    height: 280px;
+    width:280px;
+    padding-bottom: 90px;
+    border-radius: 3px;
+    opacity: 0.8;
+    transition: transform 0.5s ease, filter 0.5s ease; 
+}
+.intro{
+    height: 80px;
+    width: 350px;
+    padding:0px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(27,27,27,0.5); /* Add a semi-transparent background for contrast */
+    color: white; /* Make the text visible */
+    font-family: myFont; /* Optional: Use one of your custom fonts */
+    transition: 0.5s;
+}
+
+#name{
+    margin:7px;
+    font-size: 30px;
+}
+#type{
+    font-size: 20px;
+    color: #f0bd1b;
+    margin:7px;
+    visibility: hidden;
+    opacity: 0;
+}
+.palakcard:hover {
+     cursor: pointer;
+}
+.palakcard:hover .intro{
+    height:110px;
+    background-color: rgba(27,27,27,0.8);
+}
+
+.palakcard:hover #type{
+    visibility: visible;
+    opacity: 1;
+}
+.palakcard:hover .palakcard-button{
+    visibility: visible;
+    opacity: 1;
+}
+.palakcard:hover .imageofsponser{
+    transform: scale(1.1) rotate(-3deg);
+    filter: brightness(1.3);
+}
+.palakcard-button {
+    margin: 7px;
+    border: 2px solid #f0bd1b; /* Add border-width and border-style */
+    background-color: transparent; /* Optional: Make button background transparent */
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+/*.palakcard::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height:200px;
+    width:150px;
+    z-index: -2;
+    background: linear-gradient(
+    transparent,
+    #f2f2e6,
+    #f2f2e6,
+    #f2f2e6,
+    transparent
+  );
+  animation: animate 2.5s linear infinite;
+  transform-origin: 0 0;
+} 
+  
+.palakcard::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: #2b2b2b; 
+    z-index: -1; 
+    border-radius: 10px; 
+}*/
+
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* responsive */
+@media (max-width:800px) {
+    .palakcard {
+        max-width: 400px;
+        font-size: 35px;
+    }
+    .palakcard-button{
+        font-size: 19px;
+        
+    }
+    
+    
+    .imageofsponser {
+        height: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .palakcard {
+        max-width: 300px;
+        font-size: 10px;
+    }
+    .palakcard-button{
+        font-size: 15px;
+    }
+    .imageofsponser {
+        height: 100%;
+        padding-bottom: 100px;
+    }
+    .intro {
+        height: 100px !important; /* Make the intro fully visible */
+        background-color: rgba(27,27,27,0.8);
+        transition: none !important; /* Remove hover transition */
+        opacity: 0.9;
+        padding-left: 8px ;
+    }
+    #name{
+        margin: 1px 0;
+    }
+    #type {
+        visibility: visible;
+        opacity: 1;
+        margin: 1px 0;
+    }
+    
+    .imageofsponser {
+        transform: none !important; /* Disable hover transformations */
+        filter: none !important;
+        transition: none !important; /* Remove image hover transition */
+    }
+
+    .palakcard-button {
+        visibility: visible;
+        opacity: 1;
+        margin: 1px 0;
+    }
+
+    .palakcard:hover {
+        cursor: default; /* Disable pointer cursor */
+    }
+}
