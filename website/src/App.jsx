@@ -49,7 +49,7 @@ const App = () => {
           element: <Gallery />,
         },
         {
-          path: "/sponsers",
+          path: "/sponsors",
           element: <Sponser />,
         },
         {
