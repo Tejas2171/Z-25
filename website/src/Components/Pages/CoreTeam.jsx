@@ -318,7 +318,7 @@ const CoreTeam = () => {
                   <div className="mobile">mobile number</div>
                 </div>
                 <div className="lower">
-                  <h3 className="name">Mahesh Badgujar</h3>
+                  <h3 className="name">Mitesh Badgujar</h3>
                 </div>
               </div>
             </div>
@@ -528,7 +528,7 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="https://imgcdn.stablediffusionweb.com/2024/3/18/79386d33-28e5-4c5f-8237-049db4eeee09.jpg" />
+                  <img src="images/Mashal.webp" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
@@ -545,7 +545,7 @@ const CoreTeam = () => {
                   <div className="mobile">mobile number</div>
                 </div>
                 <div className="lower">
-                  <h3 className="name">Name</h3>
+                  <h3 className="name">Pradnesh Doshi</h3>
                 </div>
               </div>
             </div>
@@ -856,7 +856,7 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="/images/onkarBhagwat_refreshment.webp" />
+                  <img src="/images/onkar.jpg" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
@@ -923,7 +923,7 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="https://imgcdn.stablediffusionweb.com/2024/3/18/79386d33-28e5-4c5f-8237-049db4eeee09.jpg" />
+                  <img src="images/Mashal.webp" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
@@ -955,7 +955,7 @@ const CoreTeam = () => {
                 <div className="shantanuimage">
                   <img src="/images/my.jpg" />
                 </div>
-                <div className="last">
+                <div className="last z-50">
                   <div className="socialMedia">
                     <a
                       href="mailto:tejassonawane1110@gmail.com"
@@ -976,7 +976,7 @@ const CoreTeam = () => {
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">m7385892082</div>
+                  <div className="mobile">7385892082</div>
                 </div>
                 <div className="lower">
                   <h3 className="name">Tejas Sonawane</h3>

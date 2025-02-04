@@ -328,6 +328,7 @@
     
     .last .socialMedia {
         gap: 1em;
+        z-index: 10;
     }
     
     .last .socialMedia a {
@@ -343,6 +344,7 @@
         border-bottom-right-radius: 11px;
         font-size: 0.8rem;
         font-weight: 500;
+        z-index: 9;
         transform: translateY(-6em);
     }
     }
