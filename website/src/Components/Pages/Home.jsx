@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -6,6 +7,7 @@ import "./home.css";
 import Lenis from "lenis";
 import Tooltip from "./share";
 import Button from "./downloadApp";
+// eslint-disable-next-line no-unused-vars
 import { BiBrightness } from "react-icons/bi";
 
 const Home = () => {
