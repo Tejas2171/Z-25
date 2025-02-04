@@ -31,7 +31,7 @@ const sponsorsData = [
       {
         id: 5,
         name: "Campus Times Pune",
-        imageUrl: "images/campustimesSponser.jpg",
+        imageUrl: "images/campustimesSponser.png",
         type: "Youth Partner",
         link:"https://www.campustimespune.com/",
       },

@@ -6,6 +6,7 @@ import "./home.css";
 import Lenis from "lenis";
 import Tooltip from "./share";
 import Button from "./downloadApp";
+import { BiBrightness } from "react-icons/bi";
 
 const Home = () => {
   useEffect(() => {
@@ -207,14 +208,9 @@ const Home = () => {
               OUR THEME
             </h2>
             <p className="pt-6 md:pt-8 lg:pt-10 text-sm md:text-lg lg:text-xl">
-              Lorem ipsum dolor sit amet consectetur earum exercitationem,
-              temporibus nulla molestias, porro blanditiis magnam dolorum
-              officia quod sed eum ducimus iste praesentium accusantium
-              distinctio saepe? Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Omnis praesentium voluptatibus autem eum?
-              Excepturi maiores iusto, delectus illum eaque obcaecati molestias
-              sequi doloribus voluptatem, quaerat aperiam, sed vitae. Velit,
-              explicabo veniam ipsam eveniet neque totam autem molestias!
+            आरोहणम् signifies the journey of every athlete striving for excellence, embracing determination, dedication, and resilience. Sports celebrate the human spirit, where victories are earned, and lessons shape character. This theme calls participants to embody sportsmanship, pushing limits to achieve glory. 
+            <br/>
+            The mantra "धैर्यं सर्वत्र साधनम्" reminds us that success comes through patience and perseverance. Beyond results, sports teach courage, teamwork, and resilience. Let आरोहणम् inspire everyone at Zest to nurture the sporting spirit and ascend toward personal and collective glory with passion and discipline.
             </p>
           </div>
 
@@ -228,7 +224,7 @@ const Home = () => {
                   <div className="text-center">200+</div>Colleges
                 </div>
                 <div>
-                  <div className="text-center">4+</div>FOOTFALL
+                  <div className="text-center">30K+</div>FOOTFALL
                 </div>
               </div>
               <div className="flex gap-10 text-xl font-semibold">
@@ -236,7 +232,7 @@ const Home = () => {
                   <div className="text-center">25K+</div>EYEBALLS
                 </div>
                 <div>
-                  <div className="text-center">100+</div>PARTICIPANTS
+                  <div className="text-center">5K+</div>PARTICIPANTS
                 </div>
               </div>
             </div>
@@ -246,10 +242,7 @@ const Home = () => {
               MARATHON
             </h2>
             <p className="text-[9px] sm:text-base lg:text-xs">
-              Lore nam, fugiat recusandae suscipit. Quo, adipisci quidem. Odio
-              veritatis quaerat nisi laudantium. Officia aperiam culpa
-              repellendus beatae placeat est adipisci id aliquid at. Veritatis
-              at esse mollitia itaque? Animi unde id consectetur.
+            Runathon, the exhilarating marathon by Zest, embodies resilience, determination, and the thrill of the race. It unites runners in a journey of endurance, pushing limits to achieve new milestones. With every stride, participants embrace the essence of perseverance and sportsmanship. Runathon isn't just a race—it's a celebration of grit, passion, and the joy of running!
             </p>
           </div>
 
