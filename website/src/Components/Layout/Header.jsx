@@ -35,7 +35,7 @@ const Header = () => {
         </div>
 
         <div
-          className={`flex flex-wrap flex-shrink items-center bg-white/90 w-[1000px] lg:bg-transparent justify-evenly gap-16 sm:gap-8 md:gap-12 ${
+          className={`flex flex-wrap flex-shrink items-center bg-white/90 lg:w-full w-[1000px]  lg:bg-transparent justify-evenly gap-16 sm:gap-8 md:gap-12 ${
             menuOpen ? "block" : "hidden"
           } sm:flex`}
         >
