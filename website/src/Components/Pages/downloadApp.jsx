@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Button = () => {
   return (
     <StyledWrapper>
+        <a href="https://play.google.com/store/apps/details?id=com.coepzest.zest23&pli=1">
       <button>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36px" height="36px">
           <rect width={36} height={36} x={0} y={0} fill="#fdd835" />
@@ -18,6 +19,7 @@ const Button = () => {
         <span className="now">DOWNLOAD</span>
         <span className="play">APP</span>
       </button>
+      </a>
     </StyledWrapper>
   );
 }

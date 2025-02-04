@@ -12,7 +12,7 @@ const Loader = () => {
   return (
     <div className="loader-container">
       <video className="loader-video" autoPlay loop muted playsInline disableRemotePlayback>
-        <source src="/website/public/videos/Mashsal1.mp4" type="video/mp4" />
+        <source src="videos/Mashsal1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
