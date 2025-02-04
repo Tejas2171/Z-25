@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import './header.css';
+import "./header.css";
 
 const Header = () => {
   const [rote, setRote] = useState(0);
@@ -22,27 +22,48 @@ const Header = () => {
   return (
     <>
       <div className="z-50 fixed w-full h-[80px] text-lg text-[#4b3a25] font-semibold md:bg-white lg:bg-opacity-10 backdrop-blur-xl flex items-center justify-between px-16 sm:px-8 md:px-12">
-        <a id="logo" className="text-2xl sm:text-xl" href="/">ZEST`25</a>
-
         {/* Hamburger Icon (Visible on small screens) */}
         <div className="sm:block md:hidden" onClick={toggleMenu}>
-          <div className={`hamburger ${menuOpen ? 'open' : ''}`}>
+          <div className={`hamburger ${menuOpen ? "open" : ""}`}>
             <span className="block w-6 h-1 bg-[#4b3a25] mb-2"></span>
             <span className="block w-6 h-1 bg-[#4b3a25] mb-2"></span>
             <span className="block w-6 h-1 bg-[#4b3a25]"></span>
           </div>
         </div>
 
-        <div className={`flex items-center bg-white/50 w-[1200px] lg:bg-transparent justify-center gap-16 sm:gap-8 md:gap-12 flex-wrap ${menuOpen ? 'block' : 'hidden'} sm:flex`}>
+        <div
+          className={`flex flex-wrap flex-shrink items-center bg-white/50 w-full lg:bg-transparent justify-evenly gap-16 sm:gap-8 md:gap-12 ${
+            menuOpen ? "block" : "hidden"
+          } sm:flex`}
+        >
+          <a id="logo" className="text-2xl sm:text-xl" href="/">
+            ZEST`25
+          </a>
           <div className="flex items-center justify-center pt-20 lg:pt-0 gap-4 sm:gap-1 md:gap-8 flex-wrap">
-            <div className="nav-item"><a href="/events">Events</a></div>
-            <div className="nav-item"><a href="/marathon">Marathon</a></div>
-            <div className="nav-item"><a href="/sponsers">Sponsors</a></div>
-            <div className="nav-item"><a href="/coreTeam">CoreTeam</a></div>
-            <div className="nav-item"><a href="/supportingTeam">SupportingTeam</a></div>
-            <div className="nav-item"><a href="/accomodation">Accommodation</a></div>
-            <div className="nav-item"><a href="/gallery">Gallery</a></div>
-            <div className="nav-item"><a href="/contact">Contact Us</a></div>
+            <div className="nav-item">
+              <a href="/events">Events</a>
+            </div>
+            <div className="nav-item">
+              <a href="/marathon">Marathon</a>
+            </div>
+            <div className="nav-item">
+              <a href="/sponsers">Sponsors</a>
+            </div>
+            <div className="nav-item">
+              <a href="/coreTeam">CoreTeam</a>
+            </div>
+            {/* <div className="nav-item">
+              <a href="/supportingTeam">SupportingTeam</a>
+            </div> */}
+            <div className="nav-item">
+              <a href="/accomodation">Accommodation</a>
+            </div>
+            <div className="nav-item">
+              <a href="/gallery">Gallery</a>
+            </div>
+            <div className="nav-item">
+              <a href="/contact">Contact Us</a>
+            </div>
           </div>
 
           {/* Image Section */}

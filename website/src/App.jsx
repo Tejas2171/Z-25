@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, useLocation } from "react-router-dom";
 import AppLayout from "./Components/Layout/AppLayout";
 import ErrorPage from './Components/Layout/ErrorPage'
 import Home from './Components/Pages/Home';
@@ -11,6 +11,7 @@ import Gallery from './Components/Pages/Gallery';
 import Sponser from './Components/Pages/Sponser';
 import Contact from './Components/Pages/Contact';
 import Loader from './Components/Layout/Loader';
+import { useEffect, useState } from "react";
 
 
 const App = () => {
@@ -19,7 +20,7 @@ const App = () => {
     {
       path: "/",
       element: (
-        <AppLayout />
+        <AppWithLoader />
       ),
       children: [
         {
@@ -70,4 +71,32 @@ const App = () => {
   return <RouterProvider router={router} />;
 }
 
-export default App;
+const AppWithLoader = () => {
+    const [isLoading, setIsLoading] = useState(true);
+    const location = useLocation(); // Get the current route
+  
+    useEffect(() => {
+      localStorage.removeItem("visitedBefore");
+      const isFirstVisit = localStorage.getItem("visitedBefore");
+  
+      if (!isFirstVisit && location.pathname === "/") {
+        // Only show the loader on the first visit and only on the main page "/"
+        localStorage.setItem("visitedBefore", "true"); // Mark the user as visited
+        const timer = setTimeout(() => {
+          setIsLoading(false);
+        }, 2100);
+  
+        return () => clearTimeout(timer);
+      } else {
+        setIsLoading(false);
+      }
+    }, [location.pathname]); // Run when the path changes
+  
+    if (isLoading && location.pathname === "/") {
+      return <Loader />;
+    }
+  
+    return <AppLayout />;
+  };
+  
+  export default App;

@@ -1,26 +1,34 @@
+import { useEffect, useRef } from 'react';
+import './Loader.css';  // Import the CSS file for styles
+
 const Loader = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(error => console.error("Autoplay blocked:", error));
+    }
+  }, []);
   return (
-    <div style={styles.container}>
-      <div style={styles.spinner}></div>
+    <div className="loader-container">
+      <video className="loader-video" autoPlay loop muted playsInline disableRemotePlayback>
+        <source src="/website/public/videos/Mashsal1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="zest-container">
+        <span className="letter">Z</span>
+        <span className="letter">E</span>
+        <span className="letter">S</span>
+        <span className="letter">T</span>
+        <span className="letter">{'`'}</span>
+        <span className="letter">2</span>
+        <span className="letter">5</span>
+        
+      </div>
+
     </div>
   );
-};
-
-const styles = {
-  container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-  },
-  spinner: {
-    border: '4px solid rgba(0, 0, 0, 0.1)',
-    borderTop: '4px solid #3498db',
-    borderRadius: '50%',
-    width: '50px',
-    height: '50px',
-    animation: 'spin 1s linear infinite',
-  },
 };
 
 export default Loader;

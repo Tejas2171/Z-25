@@ -1,0 +1,43 @@
+/* Loader.css */
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;  /* Optional: background color while loading */
+  }
+  
+  .loader-video {
+    width: 300px;  /* Adjust the size of the video */
+    height: auto;
+    border-radius: 8px;  /* Optional: rounded corners for the video */
+  }
+
+  .zest-container {
+    display: flex;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    letter-spacing: 10px;
+  }
+  
+  .letter {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .letter:nth-child(1) { animation-delay: 0.2s; }   /* "Z" */
+.letter:nth-child(2) { animation-delay: 0.4s; }     /* "E" */
+.letter:nth-child(3) { animation-delay: 0.6s; }   /* "S" */
+.letter:nth-child(4) { animation-delay: 0.8s; }     /* "T" */
+.letter:nth-child(5) { animation-delay: 1s; }   /* "'" */
+.letter:nth-child(6) { animation-delay: 1.2s; }     /* "2" */
+.letter:nth-child(7) { animation-delay: 1.4s; }   /* "5" */
+
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
