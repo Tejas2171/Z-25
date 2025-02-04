@@ -6,6 +6,7 @@ import "./home.css";
 import Lenis from "lenis";
 import Tooltip from "./share";
 import Button from "./downloadApp";
+import ParticlesComponent from "./ParticlesComponent";
 import { BiBrightness } from "react-icons/bi";
 
 const Home = () => {
@@ -166,6 +167,9 @@ const Home = () => {
     <>
       <div className="w-full bg-zinc-900 font-serif">
         <div className="relative w-full h-screen text-white bg-[#d8bf78]">
+          <div className="absolute inset-0 z-0">
+            <ParticlesComponent id="tsparticles" />
+          </div>
           <div
             className="absolute lg:top-20 top-12 left-5 lg:left-10 h-24 w-40 lg:h-44 lg:w-72 bg-cover opacity-70"
             style={{ backgroundImage: "url('/images/bothLogos.png')" }}
