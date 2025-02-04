@@ -199,7 +199,7 @@ const Marathon = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+                    <button className="marabutton mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
                       Register
                     </button>
                   </a>
@@ -216,7 +216,7 @@ const Marathon = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+                    <button className="marabutton mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
                       Register
                     </button>
                   </a>
@@ -233,7 +233,7 @@ const Marathon = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+                    <button className="marabutton mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
                       Register
                     </button>
                   </a>
@@ -252,7 +252,7 @@ const Marathon = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
+                    <button className="marabutton mt-10 py-2 px-6 border-[1px] border-[#F0BD1B] rounded-[10px]">
                       Register
                     </button>
                   </a>
