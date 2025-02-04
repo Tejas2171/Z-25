@@ -21,7 +21,7 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper ">
                 <div className="shantanuimage">
-                  <img src="/images/Mashal.webp" alt="sarvesh" />
+                  <img src="/images/sarvesh.jpg" alt="sarvesh" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
@@ -118,7 +118,7 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="/images/Mashal.webp" />
+                  <img src="/images/prasanna.jpg" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
@@ -301,7 +301,7 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="/images/Mashal.webp" />
+                  <img src="/images/mitesh.jpg" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
@@ -953,7 +953,7 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="/images/Mashal.webp" />
+                  <img src="/images/my.jpg" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
