@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./supportingteam.css";
 
 
@@ -7,7 +8,14 @@ const SupportingTeam = () => {
 
   return (
     <>
-
+        <Link to="/coreTeam">
+        <button
+          type="button"
+          className="fixed z-10 right-10 lg:top-[20%] top-0 transform -translate-y-1/2 px-6 py-3 bg-transparent text-yellow-500 border-2 border-solid border-yellow-500 font-bold rounded-lg shadow-lg focus:outline-none focus:ring-0 hover:bg-yellow-800"
+        >
+          Core Team
+        </button>
+      </Link>
       <div  style={{
         backgroundImage: "url('/images/supportinBG.jpg')",
         backgroundSize: "cover",

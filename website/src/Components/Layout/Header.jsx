@@ -55,9 +55,9 @@ const Header = () => {
             <div className="nav-item">
               <a href="/coreTeam">CoreTeam</a>
             </div>
-            {/* <div className="nav-item">
+            <div className="nav-item lg:hidden">
               <a href="/supportingTeam">SupportingTeam</a>
-            </div> */}
+            </div>
             <div className="nav-item">
               <a href="/accomodation">Accommodation</a>
             </div>
