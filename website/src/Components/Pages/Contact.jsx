@@ -71,10 +71,12 @@ const Contact = () => {
         <div className="pt-16"></div>
       <div className="max-w-6xl mx-auto ">
         <h1
-          className="text-3xl font-bold text-center text-white mb-8"
+          className="smlgmain text-3xl my-10 font-bold text-center text-white mb-8"
           ref={headerRef}
         >
-          Contact Us
+            <span className="text-white/70">
+            Contact Us
+            </span>
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

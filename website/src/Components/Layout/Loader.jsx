@@ -21,7 +21,7 @@ const Loader = () => {
         <span className="letter">E</span>
         <span className="letter">S</span>
         <span className="letter">T</span>
-        <span className="letter">{'`'}</span>
+        <span className="letter">{"'"}</span>
         <span className="letter">2</span>
         <span className="letter">5</span>
         

@@ -454,6 +454,8 @@ const CertificateGenerator = () => {
       ['ananyam',{ name: 'Ananya Mallik'}],
       ['ravind',{ name: 'Ravindra Dakve'}],
       ['ritesh',{ name: 'Ritesh Davkare'}],
+      ['aditya',{ name: 'Aditya Deshmukh'}],
+      ['pramod',{ name: 'Pramod Dudhal'}],
 
       ['10212',{ name: 'Shakuntaladevi', time: '00:34:00' }]
     ])
