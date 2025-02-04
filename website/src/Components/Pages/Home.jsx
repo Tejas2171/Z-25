@@ -172,7 +172,7 @@ const Home = () => {
           ></div>
           <div className="absolute flex flex-col justify-center items-center h-full w-full g-red-500 pt-10">
             <div
-              className="bg-cover lg:h-[70%] lg:w-[50%] h-[38%] w-[90%] opacity-5"
+              className="bg-cover lg:h-[70%] lg:w-[50%] h-[38%] w-[90%] opacity-70"
               style={{
                 backgroundImage:
                   "url('images/zest-black-removebg-preview.png')",

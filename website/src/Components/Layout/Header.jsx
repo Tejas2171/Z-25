@@ -73,7 +73,7 @@ const Header = () => {
           <div className="relative opacity-0 lg:opacity-100 flex justify-center items-center overflow-hidden">
             <img
               className="w-48 sm:w-40 md:w-44 translate-y-5 translate-x-2 cover"
-              src="images/peak-removebg-preview (1).png"
+              src="images/mascot.png"
               alt="Peak"
             />
             <div
