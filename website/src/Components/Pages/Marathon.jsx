@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 const Marathon = () => {
@@ -62,6 +63,16 @@ const Marathon = () => {
     <div className="">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-siteGreen">
+      <Link to="/certificate-generator">
+      <button 
+        type="button" 
+        className="absolute z-50 right-10 lg:top-[20%] top-[90%] transform -translate-y-1/2 px-6 py-3 bg-transparent text-yellow-500 border-2 border-solid border-yellow-500 font-bold rounded-lg shadow-lg focus:outline-none focus:ring-0 hover:bg-yellow-800"
+
+
+      >
+        Get e-Certificate
+      </button>
+      </Link>
         <div>
           <div className="coep-logo absolute z-40 top-24 left-4 w-32 lg:top-20 lg:left-10 lg:w-52 opacity-60">
             <img src="images/Coep logo white.png" />

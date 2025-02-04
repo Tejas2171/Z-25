@@ -22,6 +22,9 @@ const Header = () => {
   return (
     <>
       <div className="z-50 fixed w-full h-[80px] text-lg text-[#4b3a25] font-semibold md:bg-white lg:bg-opacity-10 backdrop-blur-xl flex items-center justify-between px-16 sm:px-8 md:px-12">
+          <a id="logo" className="lg:hidden text-2xl sm:text-xl" href="/">
+            ZEST`25
+          </a>
         {/* Hamburger Icon (Visible on small screens) */}
         <div className="sm:block md:hidden" onClick={toggleMenu}>
           <div className={`hamburger ${menuOpen ? "open" : ""}`}>
