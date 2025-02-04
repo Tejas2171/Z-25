@@ -28,13 +28,13 @@
     animation: fadeIn 1s ease-in-out forwards;
   }
   
-  .letter:nth-child(1) { animation-delay: 0.2s; }   /* "Z" */
-.letter:nth-child(2) { animation-delay: 0.4s; }     /* "E" */
-.letter:nth-child(3) { animation-delay: 0.6s; }   /* "S" */
-.letter:nth-child(4) { animation-delay: 0.8s; }     /* "T" */
-.letter:nth-child(5) { animation-delay: 1s; }   /* "'" */
-.letter:nth-child(6) { animation-delay: 1.2s; }     /* "2" */
-.letter:nth-child(7) { animation-delay: 1.4s; }   /* "5" */
+  .letter:nth-child(1) { animation-delay: 0.4s; }   /* "Z" */
+.letter:nth-child(2) { animation-delay: 0.8s; }     /* "E" */
+.letter:nth-child(3) { animation-delay: 1.2s; }   /* "S" */
+.letter:nth-child(4) { animation-delay: 1.6s; }     /* "T" */
+.letter:nth-child(5) { animation-delay: 2s; }   /* "'" */
+.letter:nth-child(6) { animation-delay: 2.4s; }     /* "2" */
+.letter:nth-child(7) { animation-delay: 2.8s; }   /* "5" */
 
   
   @keyframes fadeIn {

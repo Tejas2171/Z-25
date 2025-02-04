@@ -88,7 +88,7 @@ const AppWithLoader = () => {
         localStorage.setItem("visitedBefore", "true"); // Mark the user as visited
         const timer = setTimeout(() => {
           setIsLoading(false);
-        }, 2100);
+        }, 3500);
   
         return () => clearTimeout(timer);
       } else {
