@@ -35,7 +35,7 @@ const CoreTeam = () => {
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">mobile Number</div>
+                  <div className="mobile">7558635753</div>
                 </div>
                 <div className="lower">
                   <h3 className="name">Sarvesh Salunkhe</h3>
@@ -132,7 +132,7 @@ const CoreTeam = () => {
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">Mobile Number</div>
+                  <div className="mobile">7385638870</div>
                 </div>
                 <div className="lower">
                   <h3 className="name">Prasanna Pahilwan</h3>
@@ -528,21 +528,21 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="images/Mashal.webp" />
+                  <img src="/images/pradnesh_events.jpeg" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
-                    <a href="mailto:" target="_blank">
+                    <a href="mailto:pradneshdoshi10@gmail.com" target="_blank">
                       <i className="fa-solid fa-envelope"></i>
                     </a>
                     <a href="#" target="_main">
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.instagram.com/pradneshdoshi?igsh=MXIyeDZucXdqNHBvZw%3D%3D&utm_source=qr" target="_main">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">mobile number</div>
+                  <div className="mobile">9767217422</div>
                 </div>
                 <div className="lower">
                   <h3 className="name">Pradnesh Doshi</h3>
