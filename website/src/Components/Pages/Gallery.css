@@ -93,4 +93,15 @@ body {
     border: 1px solid #0c0c0c04; /* Space around scrollbar thumb */
   }
 
-  
+  @media (max-width: 600px) {
+    .image-gallery {
+        column-count: 1; /* Change to 1 column for small screens */
+    }
+
+    .image-item img {
+       margin-left:4.5vw;
+       margin-bottom: 1vh;
+        max-width: 90vw; /* Fit image within the screen */
+        max-height: 50vh;
+    }
+}
