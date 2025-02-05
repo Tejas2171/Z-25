@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,7 +8,7 @@ import "./home.css";
 import Lenis from "lenis";
 import Tooltip from "./share";
 import Button from "./downloadApp";
-// eslint-disable-next-line no-unused-vars
+import ParticlesComponent from "./ParticlesComponent";
 import { BiBrightness } from "react-icons/bi";
 
 const Home = () => {
@@ -168,8 +169,11 @@ const Home = () => {
     <>
       <div className="w-full bg-zinc-900 font-serif">
         <div className="relative w-full h-screen text-white bg-[#d8bf78]">
+          <div className="absolute inset-0 z-0">
+            <ParticlesComponent id="tsparticles" />
+          </div>
           <div
-            className="absolute lg:top-20 top-12 left-5 lg:left-10 h-24 w-40 lg:h-44 lg:w-72 bg-cover opacity-70"
+            className="absolute lg:top-24 top-24 left-5 lg:left-10 h-24 w-40 lg:h-44 lg:w-72 bg-cover opacity-70"
             style={{ backgroundImage: "url('/images/bothLogos.png')" }}
           ></div>
           <div className="absolute flex flex-col justify-center items-center h-full w-full g-red-500 pt-10">
@@ -177,17 +181,15 @@ const Home = () => {
               className="bg-cover lg:h-[70%] lg:w-[50%] h-[38%] w-[90%] opacity-70"
               style={{
                 backgroundImage:
-                  "url('images/zest-black-removebg-preview.png')",
+                  'url("/images/mainlogo.png")',
               }}
             >
-              {" "}
-              ZESt logo
             </div>
-            <div className="text-xl lg:text-3xl">{`7th, 8th & 9th of Feb'25`}</div>
+            <div className="text-xl lg:text-3xl text-[#BBB3B3]">{`7th, 8th & 9th of Feb'25`}</div>
             <div className="absolute bottom-20 lg:right-20 lg:z-50 lg:opacity-100 opacity-0 scale-125">
                 <Tooltip />
             </div>
-            <div className="absolute bottom-28 lg:bottom-20 lg:right-64 z-50 scale-125">
+            <div className="absolute bottom-28 lg:bottom-20 lg:right-44 z-50 scale-[0.7]">
                 <Button />
             </div>
           </div>

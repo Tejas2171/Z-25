@@ -35,7 +35,7 @@ const CoreTeam = () => {
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">mobile Number</div>
+                  <div className="mobile">7558635753</div>
                 </div>
                 <div className="lower">
                   <h3 className="name">Sarvesh Salunkhe</h3>
@@ -132,7 +132,7 @@ const CoreTeam = () => {
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">Mobile Number</div>
+                  <div className="mobile">7385638870</div>
                 </div>
                 <div className="lower">
                   <h3 className="name">Prasanna Pahilwan</h3>
@@ -213,24 +213,24 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="/images/Mashal.webp" />
+                  <img src="/images/sakshiGhatol_aog.png" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
-                    <a href="mailto:" target="_blank">
+                    <a href="mailto:ghatolsaakshi@gmail.com" target="_blank">
                       <i className="fa-solid fa-envelope"></i>
                     </a>
                     <a href="#" target="_main">
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.instagram.com/sxoxoshi_?igsh=bTJhaTV1dmU3Z2c4" target="_main">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">Mobile Number</div>
+                  <div className="mobile">9011078471</div>
                 </div>
                 <div className="lower">
-                  <h3 className="name">Sakshi Ghatol</h3>
+                  <h3 className="name">Saakshi Ghatol</h3>
                 </div>
               </div>
             </div>
@@ -271,24 +271,24 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="/images/Mashal.webp" />
+                  <img src="/images/jayeshAwachar_campus.png" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
-                    <a href="mailto:" target="_blank">
+                    <a href="mailto:jayeshawchar@gmail.com" target="_blank">
                       <i className="fa-solid fa-envelope"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.linkedin.com/in/jayesh-awachar-02336025b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_main">
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.instagram.com/jayesh_awchar3949?igsh=MTExZ2twMnJ4OHRrdQ==" target="_main">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">mobile number</div>
+                  <div className="mobile">8369824221</div>
                 </div>
                 <div className="lower">
-                  <h3 className="name">Jayesh Awchar</h3>
+                  <h3 className="name">Jayesh Awachar</h3>
                 </div>
               </div>
             </div>
@@ -301,7 +301,7 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="/images/mitesh.jpg" />
+                  <img src="/images/miteshlast.jpg" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
@@ -406,21 +406,21 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="/images/Mashal.webp" />
+                  <img src="/images/omNeware_design.jpeg" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
-                    <a href="mailto:" target="_blank">
+                    <a href="mailto:omneware23@gmail.com" target="_blank">
                       <i className="fa-solid fa-envelope"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.linkedin.com/in/om-neware-437b13198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_main">
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.instagram.com/omneware_?igsh=MXF6ajM1cTB0cjZ5NA%3D%3D&utm_source=qr" target="_main">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">Mobile Number</div>
+                  <div className="mobile">9028323162</div>
                 </div>
                 <div className="lower">
                   <h3 className="name">Om Neware</h3>
@@ -431,21 +431,21 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="/images/Mashal.webp" />
+                  <img src="/images/jayshree_design.jpg" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
-                    <a href="mailto:" target="_blank">
+                    <a href="mailto:dhandejoy@gmail.com" target="_blank">
                       <i className="fa-solid fa-envelope"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.linkedin.com/in/jayshree-dhande-763206272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_main">
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.instagram.com/00augwz?igsh=MTdydGpnZWRqbmh0ZQ==" target="_main">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">Mobile Number</div>
+                  <div className="mobile">9119408695</div>
                 </div>
                 <div className="lower">
                   <h3 className="name">Jayshree Dhande</h3>
@@ -461,7 +461,7 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="/images/ved_esm.webp" />
+                  <img src="/images/vedRe_esm.png" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
@@ -528,21 +528,21 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="images/Mashal.webp" />
+                  <img src="/images/pradnesh_events.jpeg" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
-                    <a href="mailto:" target="_blank">
+                    <a href="mailto:pradneshdoshi10@gmail.com" target="_blank">
                       <i className="fa-solid fa-envelope"></i>
                     </a>
                     <a href="#" target="_main">
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.instagram.com/pradneshdoshi?igsh=MXIyeDZucXdqNHBvZw%3D%3D&utm_source=qr" target="_main">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">mobile number</div>
+                  <div className="mobile">9767217422</div>
                 </div>
                 <div className="lower">
                   <h3 className="name">Pradnesh Doshi</h3>
@@ -651,21 +651,21 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="/images/Mashal.webp" />
+                  <img src="/images/samarth_finance.png" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
-                    <a href="mailto:" target="_blank">
+                    <a href="mailto:coepzestfinance2025@gmail.com" target="_blank">
                       <i className="fa-solid fa-envelope"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.linkedin.com/in/samarth-deshmukh-595318243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_main">
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.instagram.com/infinity._and._beyond?igsh=b2xuMnBvdWJ4ZzBj" target="_main">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">Mobile Number</div>
+                  <div className="mobile">8788339848</div>
                 </div>
                 <div className="lower">
                   <h3 className="name">Samarth Deshmukh</h3>
@@ -923,21 +923,21 @@ const CoreTeam = () => {
             <div className="shantanucard">
               <div className="upper">
                 <div className="shantanuimage">
-                  <img src="images/Mashal.webp" />
+                  <img src="/images/manavPatil_vfx.jpg" />
                 </div>
                 <div className="last">
                   <div className="socialMedia">
-                    <a href="mailto:" target="_blank">
+                    <a href="mailto:manavsandippatil@gmail.com" target="_blank">
                       <i className="fa-solid fa-envelope"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="linkedin.com/in/manav-patil-9166a2311" target="_main">
                       <i className="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="#" target="_main">
+                    <a href="https://www.instagram.com/lifeof.manav?igsh=MTk0NmdpcXJ4Znhubw==" target="_main">
                       <i className="fab fa-instagram"></i>
                     </a>
                   </div>
-                  <div className="mobile">mobile number</div>
+                  <div className="mobile">8668510990</div>
                 </div>
                 <div className="lower">
                   <h3 className="name">Manav Patil</h3>

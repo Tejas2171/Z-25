@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="z-50 fixed w-full h-[80px] text-lg text-[#4b3a25] font-semibold md:bg-white lg:bg-opacity-10 backdrop-blur-xl flex items-center justify-between px-16 sm:px-8 md:px-12">
+      <div className="z-50 fixed w-full h-[80px] text-lg text-[#4b3a25] font-semibold bg-white/50 lg:bg-opacity-50 backdrop-blur-xl flex items-center justify-between px-16 sm:px-8 md:px-12">
           <a id="logo" className="lg:hidden text-2xl sm:text-xl" href="/">
             ZEST`25
           </a>
@@ -35,7 +35,7 @@ const Header = () => {
         </div>
 
         <div
-          className={`flex flex-wrap flex-shrink items-center bg-white/50 w-full lg:bg-transparent justify-evenly gap-16 sm:gap-8 md:gap-12 ${
+          className={`flex flex-wrap flex-shrink items-center bg-white/90 lg:w-full w-[1000px]  lg:bg-transparent justify-evenly gap-16 sm:gap-8 md:gap-12 ${
             menuOpen ? "block" : "hidden"
           } sm:flex`}
         >

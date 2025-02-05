@@ -185,7 +185,7 @@ const Contact = () => {
                   <h3 className="font-medium mb-2 text-white">
                     Follow Us
                   </h3>
-                  <div className="flex space-x-4">
+                  <div className="lg:flex space-x-4">
                     <a
                       href="https://www.instagram.com/coepzest/"
                       target="_blank"
