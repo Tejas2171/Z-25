@@ -178,7 +178,7 @@ const Home = () => {
           ></div>
           <div className="absolute flex flex-col justify-center items-center h-full w-full g-red-500 pt-10">
             <div
-              className="bg-cover lg:h-[70%] lg:w-[50%] h-[38%] w-[90%] opacity-70"
+              className="bg-cover lg:h-[70%] lg:w-[50%] h-[38%] w-[90%] opacity-70 scale-75 lg:scale-100"
               style={{
                 backgroundImage:
                   'url("/images/mainlogo.png")',
@@ -250,7 +250,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="animate4 fixed lg:right-28 lg:top-96 top-72 left-32 z-20 opacity-0 text-[#4e2d11]">
+          <div className="animate4 fixed lg:right-28 lg:top-96 lg:left-32 top-72 left-28 z-20 opacity-0 text-[#4e2d11]">
             <h2 className="text-xl lg:text-5xl font-bold text-center pt-20">
               !! GO ZEST !!
             </h2>
