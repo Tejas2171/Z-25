@@ -189,9 +189,9 @@ const Home = () => {
             <div className="absolute bottom-20 lg:right-20 lg:z-50 lg:opacity-100 opacity-0 scale-125">
                 <Tooltip />
             </div>
-            <div className="absolute bottom-28 lg:bottom-20 lg:right-44 z-50 scale-[0.7]">
+            <a href="https://play.google.com/store/apps/details?id=com.coepzest.zest23" className="absolute bottom-28 lg:bottom-20 lg:right-44 z-50 scale-[0.7]">
                 <Button />
-            </div>
+            </a>
           </div>
         </div>
         <div className="parent relative top-0 left-0 w-full h-[500vh]">
