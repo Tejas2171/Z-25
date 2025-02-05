@@ -9,13 +9,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
-/* .container {
+
+.container {
     width: 100vw;
     height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
-} */
+}
 
 .title_g {
     font-size: 5vw;
@@ -76,19 +77,19 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 
-.gallery_g {
+body{
     overflow: auto; 
   }
   
-  .gallery_g::-webkit-scrollbar {
+  body::-webkit-scrollbar {
     width: 0.1vw;
   }
   
-  .gallery_g::-webkit-scrollbar-track {
+  body::-webkit-scrollbar-track {
     background: #0000; 
   }
   
-  .gallery_g::-webkit-scrollbar-thumb {
+  body::-webkit-scrollbar-thumb {
     background-color: #29282808;
     border-radius: 10px; 
     border: 1px solid #0c0c0c04;
@@ -96,11 +97,13 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   @media (max-width: 600px) {
     .image-gallery_g {
-        grid-template-columns: 1fr; /* One image per row */
+        column-count: 1; /* Change to 1 column for small screens */
     }
 
     .image-item_g img {
+       margin-left:4.5vw;
+       margin-bottom: 1vh;
         max-width: 90vw; /* Fit image within the screen */
-        max-height: 70vh;
+        max-height: 50vh;
     }
 }
