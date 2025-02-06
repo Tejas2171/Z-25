@@ -45,7 +45,7 @@ const Accomodation = () => {
                             <ul className="unordered_list">
                                 <li>Registration receipt (Accommodation Registration)</li>
                                 <li>Government Id proof</li>
-                                <li>College identity sarthikacards</li>
+                                <li>College identity cards</li>
                                 <li>Passport size photo</li>
                             </ul>
                         {guidelines.map((point, index) => (
