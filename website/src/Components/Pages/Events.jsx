@@ -86,6 +86,20 @@ const  Events=() => {
 
       {/* <Header /> */}
       <div className="main-container forbg" id="main-container">
+      <button
+  type="button"
+  className="fixed z-50 right-10 top-32 lg:top-32 transform -translate-y-1/2 px-6 py-3 bg-transparent text-yellow-500 border-2 border-solid border-yellow-500 font-bold rounded-lg shadow-lg focus:outline-none focus:ring-0 hover:bg-yellow-800"
+  onClick={() => {
+    const link = document.createElement("a");
+    link.href = "/ZEST'25 RULE BOOK (2)_compressed.pdf"; // Ensure the PDF is in the 'public' folder
+    link.download = "RuleBook.pdf"; // The name of the file when downloaded
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+>
+  Rulebook
+</button>
         <ul className="unordered
         " ref={menuItems}>
           {renderItems.map((project, index) => (
